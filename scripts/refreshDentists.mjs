@@ -59,12 +59,22 @@ if (dentists) {
   writeFileSync(DENTISTS_FILE, JSON.stringify(dentists, null, 2));
 
   // Netlify refuses to build with the whole lot. Let's strip out any properties we don't need
-  const smallerDentists = dentists.map(({ ODSCode, OrganisationName, Latitude, Longitude, AcceptingPatients }) => ({
-    ODSCode,
-    OrganisationName,
-    Latitude,
-    Longitude,
-    AcceptingPatients,
-  }));
+  const smallerDentists = dentists.map(
+    ({
+      ODSCode,
+      OrganisationName,
+      Latitude,
+      Longitude,
+      AcceptingPatients,
+      LastUpdatedDates: { DentistsAcceptingPatients: DentistsAcceptingPatientsLastUpdatedDate },
+    }) => ({
+      ODSCode,
+      OrganisationName,
+      Latitude,
+      Longitude,
+      AcceptingPatients,
+      DentistsAcceptingPatientsLastUpdatedDate,
+    })
+  );
   writeFileSync(SMALL_DENTISTS_FILE, JSON.stringify(smallerDentists, null, 2));
 }

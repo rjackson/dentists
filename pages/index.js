@@ -133,12 +133,14 @@ export async function getStaticProps() {
       Latitude,
       Longitude,
       AcceptingPatients: { Dentist: nhsAcceptingDentalPatients = [] },
+      DentistsAcceptingPatientsLastUpdatedDate
     } = {}) => ({
       ODSCode,
       OrganisationName,
       Latitude,
       Longitude,
       AcceptingPatients: mapFromNhs(nhsAcceptingDentalPatients),
+      DentistsAcceptingPatientsLastUpdatedDate
     })
   );
 

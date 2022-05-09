@@ -5,9 +5,15 @@ import DentistAcceptingPatientsTable from "./DentistAcceptingPatientsTable";
 const DentistInfo = ({
   as: Component = "div",
   className,
-  dentist: { ODSCode, OrganisationName, AcceptingPatients },
+  dentist: { ODSCode, OrganisationName, AcceptingPatients, DentistsAcceptingPatientsLastUpdatedDate },
   ...props
 }) => {
+  const lastUpdatedDate = new Date(DentistsAcceptingPatientsLastUpdatedDate);
+  const diffTime = lastUpdatedDate - new Date();
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  const rtf1 = new Intl.RelativeTimeFormat("en", { style: "narrow" });
+  const relativeTimeLabel = rtf1.format(diffDays, "days");
+
   return (
     <Component className={`space-y-4 text-center ${className}`} {...props}>
       <Link href={`https://www.nhs.uk/services/dentist/blah/${ODSCode}`} passHref>
@@ -16,6 +22,9 @@ const DentistInfo = ({
         </Anchor>
       </Link>
       <DentistAcceptingPatientsTable className="text-left" acceptingPatients={AcceptingPatients} />
+      <p className="text-sm before:content-['('] after:content-[')']">
+        Acceptance information updated <time dateTime={lastUpdatedDate.toISOString()}>{relativeTimeLabel}</time>
+      </p>
       <Link href={`https://www.nhs.uk/services/dentist/blah/${ODSCode}`} passHref>
         <Anchor target="_blank">
           See more details <span className="sr-only">about {OrganisationName}</span> on www.nhs.uk
