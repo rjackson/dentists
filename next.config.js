@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   reactStrictMode: true,
@@ -7,7 +7,7 @@ module.exports = {
     styledComponents: true,
   },
   eslint: {
-    dirs: ["pages", "components", "lib", "scripts"], // Explicit defaults
+    dirs: ["pages", "components", "lib", "scripts", "helpers"], // Explicit defaults
   },
   i18n: {
     locales: ["en-GB"],
