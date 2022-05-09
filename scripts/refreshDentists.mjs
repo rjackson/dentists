@@ -29,19 +29,31 @@ const getAllDentists = async (offset = 0) => {
     );
     const data = await response.json();
 
+    if ("error" in data) {
+      const { code, message } = data.error;
+      throw `Error fetching dentists. Code '${code}', message '${message}'`;
+    }
+
+    if ("statusCode" in data) {
+      const { statusCode, message } = data;
+      throw `Error fetching dentists. Code '${statusCode}', message '${message}'`;
+    }
+
     /* NHS Digital API has an internal URL that doesn't work. Instead of using
      * the link they give us, we'll just extract the appropriate offset for the
      * next page of results
      */
     const [, nextOffset] = data?.["@odata.nextLink"]?.match(/\$skip=([0-9]+)/) ?? [undefined, undefined];
 
-    return [...data.value, ...(nextOffset ? await getAllDentists(nextOffset) : [])];
+    return [...data?.value, ...(nextOffset ? await getAllDentists(nextOffset) : [])];
   } catch (e) {
     console.log(e);
-    return [];
+    return false;
   }
 };
 
 const dentists = await getAllDentists();
 
-writeFileSync(OUTPUT_FILE, JSON.stringify(dentists, null, 2));
+if (dentists) {
+  writeFileSync(OUTPUT_FILE, JSON.stringify(dentists, null, 2));
+}
