@@ -43,6 +43,14 @@ const ACCEPTANCE_MAPPING = {
   5: "AcceptingReferrals", // Only by referral from a dental practitioner
 };
 
+export const ACCEPTANCE_TYPES = {
+  AcceptingAdults: "Adults (18 and over)",
+  AcceptingAdultsEntitled: "Adults entitled to free dental care",
+  AcceptingChildren: "Children (up to the age of 18)",
+  AcceptingUrgent: "Urgent care appointments offered",
+  AcceptingReferrals: "Only by referral from a dental practitioner",
+};
+
 /**
  * @typedef AcceptanceObject
  * @property {string} AcceptingAdults

@@ -11,15 +11,19 @@
   },
   "dependencies": {
     "@rjackson/rjds": "^0.3.0",
+    "geonames.js": "^3.0.6",
     "leaflet": "^1.8.0",
     "next": "^12.1.5",
     "node-fetch": "^3.2.4",
     "react": "^18.1.0",
+    "react-autosuggest": "^10.1.0",
     "react-dom": "^18.1.0",
     "react-leaflet": "^4.0.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "@types/react": "^18.0.9",
+    "@types/react-autosuggest": "^10.1.5",
     "autoprefixer": "^10.4.5",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
