@@ -1,0 +1,35 @@
+name: refresh-data
+on:
+  schedule:
+    - cron: 0 0 * * *
+  workflow_dispatch: {}
+  push:
+    paths:
+      - .github/workflows/refresh-data.yml
+      - scripts/refreshDentists.mjs
+env:
+  GIT_TERMINAL_PROMPT: 0
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - run: npm install
+      - name: Refresh data
+        run: npm run refresh-data
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v9
+        id: verify-changed-files
+        with:
+          files: data/**/*.json
+      - name: Commit changes
+        if: contains(steps.verify-changed-files.outputs.changed_files, 'data/')
+        run: |
+          git config --global user.name 'Dentists (automated)'
+          git config --global user.email 'rob@rjackson.me'
+          git add "${{ steps.verify-changed-files.outputs.changed_files }}"
+          git commit -m "Regenerate data from NHS API"
+          git push
