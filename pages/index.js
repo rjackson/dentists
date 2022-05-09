@@ -85,6 +85,6 @@ export async function getStaticProps() {
   );
 
   return {
-    props: { dentists: dentists.slice(0, 100) },
+    props: { dentists },
   };
 }
