@@ -5,7 +5,7 @@ import { mapFromNhs } from "@helpers/DentalAcceptance";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
-import dentistJson from "../data/dentists.json";
+import dentistJson from "../data/small-dentists.json";
 import DentistInfo from "@components/DentistInfo";
 
 const Map = dynamic(() => import("@components/Map"), { ssr: false });

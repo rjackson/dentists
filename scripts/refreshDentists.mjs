@@ -8,7 +8,8 @@ nextEnv.loadEnvConfig(process.cwd());
 const baseUrl = process.env.NHSDIGITAL_ODATA_ENDPOINT.replace("//$/", "");
 const subscriptionKey = process.env.NHSDIGITAL_ODATA_SUBSCRIPTION_KEY;
 
-const OUTPUT_FILE = path.join(process.cwd(), "data/dentists.json");
+const DENTISTS_FILE = path.join(process.cwd(), "data/dentists.json");
+const SMALL_DENTISTS_FILE = path.join(process.cwd(), "data/small-dentists.json");
 
 const getAllDentists = async (offset = 0) => {
   try {
@@ -55,5 +56,15 @@ const getAllDentists = async (offset = 0) => {
 const dentists = await getAllDentists();
 
 if (dentists) {
-  writeFileSync(OUTPUT_FILE, JSON.stringify(dentists, null, 2));
+  writeFileSync(DENTISTS_FILE, JSON.stringify(dentists, null, 2));
+
+  // Netlify refuses to build with the whole lot. Let's strip out any properties we don't need
+  const smallerDentists = dentists.map(({ ODSCode, OrganisationName, Latitude, Longitude, AcceptingPatients }) => ({
+    ODSCode,
+    OrganisationName,
+    Latitude,
+    Longitude,
+    AcceptingPatients,
+  }));
+  writeFileSync(SMALL_DENTISTS_FILE, JSON.stringify(smallerDentists, null, 2));
 }
