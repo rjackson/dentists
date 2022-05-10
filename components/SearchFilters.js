@@ -3,10 +3,12 @@ import { DescriptionList, DescriptionListItem, H2, Panel, Section } from "@rjack
 import { useDentistsState, useDentistsUpdate } from "contexts/Dentists";
 import { useEffect, useRef, useState } from "react";
 import GeonamesAutosuggest from "./GeonamesAutosuggest";
+import Input from "./Input";
 
 const SearchFilters = () => {
-  const { searchLocation } = useDentistsState();
-  const { setSearchLocation, setFilters } = useDentistsUpdate();
+  const { searchLocation, searchRadius: upstreamSearchRadius } = useDentistsState();
+  const { setSearchLocation, setFilters, setSearchRadius: setUpstreamSearchRadius } = useDentistsUpdate();
+  const [searchRadius, setSearchRadius] = useState(upstreamSearchRadius);
 
   const [acceptanceStates, setAcceptanceStates] = useState(
     Object.fromEntries(Object.entries(ACCEPTANCE_TYPES).map(([property, _value]) => [property, false]))
@@ -44,6 +46,23 @@ const SearchFilters = () => {
     };
   }, [acceptanceFilters, setFilters]);
 
+  // Sync up any changes to controlled inputs after a short delay (prevent thrashing during input)
+  const syncTimeout = useRef(null);
+  useEffect(() => {
+    let mounted = true;
+
+    clearTimeout(syncTimeout.current);
+    syncTimeout.current = setTimeout(() => {
+      if (mounted) {
+        setUpstreamSearchRadius(searchRadius);
+      }
+    }, 1000);
+
+    return () => {
+      mounted = false;
+    };
+  }, [searchRadius, setUpstreamSearchRadius]);
+
   return (
     <Section className="space-y-4">
       <Panel>
@@ -54,6 +73,16 @@ const SearchFilters = () => {
               value={searchLocation}
               onChange={setSearchLocation}
               inputProps={{ id: "search-location" }}
+            />
+          </DescriptionListItem>
+          <DescriptionListItem className="space-y-1" title={<label htmlFor="search-radius">Search radius</label>}>
+            <Input
+              type="number"
+              step={5}
+              min={5}
+              max={200}
+              value={searchRadius}
+              onChange={(e) => setSearchRadius(e.target.value)}
             />
           </DescriptionListItem>
           <DescriptionListItem className="space-y-1" title="Only show dentists that are">

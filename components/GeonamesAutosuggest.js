@@ -1,6 +1,7 @@
 import Geonames from "geonames.js";
 import { useRef, useState } from "react";
 import Autosuggest from "react-autosuggest";
+import { inputClasses } from "./Input";
 
 const geonames = Geonames({
   username: process.env.NEXT_PUBLIC_GEONAMES_USERNAME,
@@ -78,8 +79,7 @@ const GeonamesAutosuggest = ({ value: selectedLocation, onChange: setSelectedLoc
     inputFocused: "",
     suggestionsContainer: "absolute z-30 mt-px w-full bg-white",
     suggestionsContainerOpen: "true",
-    suggestionsList:
-      `max-h-56
+    suggestionsList: `max-h-56
       rounded-b
       py-1
       text-base
@@ -111,24 +111,7 @@ const GeonamesAutosuggest = ({ value: selectedLocation, onChange: setSelectedLoc
         value,
         onChange,
         onBlur,
-        className: `
-        w-full
-        px-2
-        py-1
-        rounded
-
-        ring-2
-        ring-gray-400
-        
-        
-        focus:outline-none
-        focus:ring
-        focus:ring-indigo-500
-        
-        dark:focus:ring-fuchsia-400
-        dark:ring-gray-500
-        dark:bg-gray-900
-        `,
+        className: inputClasses,
       }}
       onSuggestionsFetchRequested={onSuggestionsFetchRequested}
       renderSuggestion={renderSuggestion}
