@@ -2,8 +2,11 @@ import { CircleMarker, MapContainer, Marker, Popup, TileLayer } from "react-leaf
 
 import "leaflet/dist/leaflet.css";
 import DentistInfo from "./DentistInfo";
+import { useDentistsState } from "contexts/Dentists";
 
 const Map = ({ dentists }) => {
+  const { dentists } = useDentistsState();
+
   // Geographic centre of GB - https://en.wikipedia.org/wiki/Centre_points_of_the_United_Kingdom#Great_Britain
   const center = [54.01, -2.33];
   const zoom = 7;

@@ -1,68 +1,19 @@
 import Footer from "@components/Footer";
 import Header from "@components/Header";
-import { Anchor, DescriptionList, DescriptionListItem, H2, Panel, Section } from "@rjackson/rjds";
-import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
+import { Anchor, H2, Panel, Section } from "@rjackson/rjds";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
-import DentistInfo from "@components/DentistInfo";
-import GeonamesAutosuggest from "@components/GeonamesAutosuggest";
-import { useEffect, useReducer, useRef, useState } from "react";
 import { loadDentists as loadDentistsServer } from "lib/dentists/server";
-import { loadDentists as loadDentistsClient } from "lib/dentists/client";
+import SearchFilters from "@components/SearchFilters";
+import DentistsList from "@components/DentistsList";
+import { DentistsProvider } from "contexts/Dentists";
 
-const Map = dynamic(() => import("@components/Map"), { ssr: false });
+const DentistsMap = dynamic(() => import("@components/DentistsMap"), { ssr: false });
 
-export default function Home({ initialDentists, defaultLocation, defaultRadius }) {
-  // TODO: One day we will apply this as a filter too
-  const [searchLocation, setSearchLocation] = useState(defaultLocation);
-  const [searchRadius, setSearchRadius] = useState(defaultRadius);
-  const [dentists, setDentists] = useState(initialDentists);
-
-  const [acceptanceStates, setAcceptanceStates] = useState(
-    Object.fromEntries(Object.entries(ACCEPTANCE_TYPES).map(([property, _value]) => [property, false]))
-  );
-
-  const activeAcceptanceFilters = Object.entries(acceptanceStates)
-    .filter(([, active]) => active)
-    .map(([property]) => property);
-
-  const toggleAcceptanceState = (property) =>
-    setAcceptanceStates({
-      ...acceptanceStates,
-      [property]: !acceptanceStates[property],
-    });
-
-  const filteredDentists =
-    activeAcceptanceFilters.length == 0
-      ? dentists
-      : dentists.filter(({ AcceptingPatients }) => {
-          return activeAcceptanceFilters.map((property) => AcceptingPatients[property]).every((v) => v);
-        });
-
-  const { lat: searchLat, lng: searchLng } = searchLocation;
-
-  const isFirstRun = useRef(true);
-  useEffect(() => {
-    let mounted = true;
-
-    if (mounted) {
-      // First run will be seeded by server. Skip it
-      if (isFirstRun.current) {
-        isFirstRun.current = false;
-      } else {
-        console.log("Arse");
-        loadDentistsClient(searchLat, searchLng, searchRadius).then((dentists) => setDentists(dentists));
-      }
-    }
-
-    return () => {
-      mounted = false;
-    };
-  }, [searchLat, searchLng, searchRadius]);
-
+export default function Home({ initialDentists, initialLocation, initialRadius }) {
   return (
-    <>
+    <DentistsProvider initialDentists={initialDentists} initialLocation={initialLocation} initialRadius={initialRadius}>
       <div
         className={`
           flex
@@ -96,68 +47,32 @@ export default function Home({ initialDentists, defaultLocation, defaultRadius }
                 </p>
               </Panel>
             </Section>
-            <Section className="space-y-4">
-              <H2>Search parameters</H2>
-              <Panel>
-                <DescriptionList>
-                  <DescriptionListItem className="space-y-1" title={<label htmlFor="search-location">Location</label>}>
-                    <GeonamesAutosuggest
-                      value={searchLocation}
-                      onChange={setSearchLocation}
-                      inputProps={{ id: "search-location" }}
-                    />
-                  </DescriptionListItem>
-                  <DescriptionListItem className="space-y-1" title="Only show dentists that are">
-                    {Object.entries(ACCEPTANCE_TYPES).map(([property, label]) => (
-                      <label key={property} htmlFor={property} className="block space-x-2">
-                        <input
-                          type="checkbox"
-                          id={property}
-                          value={property}
-                          checked={acceptanceStates[property]}
-                          onChange={() => toggleAcceptanceState(property)}
-                        />
-                        <span>{label}</span>
-                      </label>
-                    ))}
-                  </DescriptionListItem>
-                </DescriptionList>
-              </Panel>
-            </Section>
-            <Section className="space-y-4">
-              <H2>List of dental practises ({filteredDentists.length})</H2>
-              <ul className="space-y-4">
-                {filteredDentists.map((dentist) => (
-                  <Panel key={dentist.ODSCode}>
-                    <DentistInfo as="li" dentist={dentist} />
-                  </Panel>
-                ))}
-              </ul>
-            </Section>
+            <SearchFilters />
+            <DentistsList />
           </div>
           <Footer />
         </div>
         <section className="flex-shrink-0 h-1/3 lg:h-full lg:w-full lg:flex-1">
-          <Map dentists={filteredDentists} />
+          <DentistsMap />
         </section>
       </div>
-    </>
+    </DentistsProvider>
   );
 }
 
 export async function getStaticProps() {
   const maxDentists = process.env.NODE_ENV == "development" ? process.env.MAX_DENTISTS ?? false : false;
 
-  const defaultLocation = {
+  const initialLocation = {
     lng: "-2.23743",
     lat: "53.48095",
     name: "Manchester",
   };
-  const defaultRadius = 15; // km
+  const initialRadius = 15; // km
 
-  const dentists = loadDentistsServer(defaultLocation.lat, defaultLocation.lng, defaultRadius);
+  const dentists = loadDentistsServer(initialLocation.lat, initialLocation.lng, initialRadius);
 
   return {
-    props: { initialDentists: maxDentists ? dentists.slice(0, maxDentists) : dentists, defaultLocation, defaultRadius },
+    props: { initialDentists: maxDentists ? dentists.slice(0, maxDentists) : dentists, initialLocation, initialRadius },
   };
 }
