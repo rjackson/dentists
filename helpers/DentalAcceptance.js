@@ -52,18 +52,9 @@ export const ACCEPTANCE_TYPES = {
 };
 
 /**
- * @typedef AcceptanceObject
- * @property {string} AcceptingAdults
- * @property {string} AcceptingAdultsEntitled
- * @property {string} AcceptingChildren
- * @property {string} AcceptingUrgent
- * @property {string} AcceptingReferrals
- */
-
-/**
  *
  * @param {{Id: string, Name: string, AcceptingPatients: bool}} nhsDentalAcceptanceObj
- * @returns {AcceptanceObject}
+ * @returns {AcceptingPatientsBlock}
  */
 export const mapFromNhs = (nhsDentalAcceptanceObj) => {
   const entries = nhsDentalAcceptanceObj.map(({ Id, Name, AcceptingPatients }) => {

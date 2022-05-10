@@ -1,3 +1,11 @@
+/**
+ * Fetch all Dentist organisations from the NHS Service Search API and save them
+ * into two files:
+ * - data/dentists.json: The full list
+ * - data/small-dentists.json: The same list, reduced to only the properties our
+ * application needs
+ */
+
 import nextEnv from "@next/env";
 
 import path from "path";

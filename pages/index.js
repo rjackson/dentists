@@ -1,24 +1,23 @@
 import Footer from "@components/Footer";
 import Header from "@components/Header";
-import { Anchor, DescriptionList, DescriptionListItem, H2, Panel, Section, usePrefersDark } from "@rjackson/rjds";
-import { ACCEPTANCE_TYPES, mapFromNhs } from "@helpers/DentalAcceptance";
+import { Anchor, DescriptionList, DescriptionListItem, H2, Panel, Section } from "@rjackson/rjds";
+import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
-import dentistJson from "../data/small-dentists.json";
 import DentistInfo from "@components/DentistInfo";
 import GeonamesAutosuggest from "@components/GeonamesAutosuggest";
-import { useState } from "react";
+import { useEffect, useReducer, useRef, useState } from "react";
+import { loadDentists as loadDentistsServer } from "lib/dentists/server";
+import { loadDentists as loadDentistsClient } from "lib/dentists/client";
 
 const Map = dynamic(() => import("@components/Map"), { ssr: false });
 
-export default function Home({ dentists }) {
+export default function Home({ initialDentists, defaultLocation, defaultRadius }) {
   // TODO: One day we will apply this as a filter too
-  const [searchLocation, setSearchLocation] = useState({
-    lng: "-2.23743",
-    lat: "53.48095",
-    name: "Manchester",
-  });
+  const [searchLocation, setSearchLocation] = useState(defaultLocation);
+  const [searchRadius, setSearchRadius] = useState(defaultRadius);
+  const [dentists, setDentists] = useState(initialDentists);
 
   const [acceptanceStates, setAcceptanceStates] = useState(
     Object.fromEntries(Object.entries(ACCEPTANCE_TYPES).map(([property, _value]) => [property, false]))
@@ -40,6 +39,27 @@ export default function Home({ dentists }) {
       : dentists.filter(({ AcceptingPatients }) => {
           return activeAcceptanceFilters.map((property) => AcceptingPatients[property]).every((v) => v);
         });
+
+  const { lat: searchLat, lng: searchLng } = searchLocation;
+
+  const isFirstRun = useRef(true);
+  useEffect(() => {
+    let mounted = true;
+
+    if (mounted) {
+      // First run will be seeded by server. Skip it
+      if (isFirstRun.current) {
+        isFirstRun.current = false;
+      } else {
+        console.log("Arse");
+        loadDentistsClient(searchLat, searchLng, searchRadius).then((dentists) => setDentists(dentists));
+      }
+    }
+
+    return () => {
+      mounted = false;
+    };
+  }, [searchLat, searchLng, searchRadius]);
 
   return (
     <>
@@ -126,27 +146,18 @@ export default function Home({ dentists }) {
 }
 
 export async function getStaticProps() {
-  const dentists = dentistJson.map(
-    ({
-      ODSCode = null,
-      OrganisationName,
-      Latitude,
-      Longitude,
-      AcceptingPatients: { Dentist: nhsAcceptingDentalPatients = [] },
-      DentistsAcceptingPatientsLastUpdatedDate
-    } = {}) => ({
-      ODSCode,
-      OrganisationName,
-      Latitude,
-      Longitude,
-      AcceptingPatients: mapFromNhs(nhsAcceptingDentalPatients),
-      DentistsAcceptingPatientsLastUpdatedDate
-    })
-  );
-
   const maxDentists = process.env.NODE_ENV == "development" ? process.env.MAX_DENTISTS ?? false : false;
 
+  const defaultLocation = {
+    lng: "-2.23743",
+    lat: "53.48095",
+    name: "Manchester",
+  };
+  const defaultRadius = 15; // km
+
+  const dentists = loadDentistsServer(defaultLocation.lat, defaultLocation.lng, defaultRadius);
+
   return {
-    props: { dentists: maxDentists ? dentists.slice(0, maxDentists) : dentists },
+    props: { initialDentists: maxDentists ? dentists.slice(0, maxDentists) : dentists, defaultLocation, defaultRadius },
   };
 }

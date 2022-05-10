@@ -7,11 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "refresh-data": "NODE_OPTIONS='--experimental-json-modules' node scripts/refreshDentists.mjs"
+    "refresh-data": "NODE_OPTIONS='--experimental-json-modules' node scripts/refreshDentists.mjs",
+    "index-data": "NODE_OPTIONS='--experimental-json-modules' node scripts/indexDentists.mjs",
+    "prebuild": "npm run index-data"
   },
   "dependencies": {
     "@rjackson/rjds": "^0.3.0",
     "geonames.js": "^3.0.6",
+    "h3-js": "^3.7.2",
     "leaflet": "^1.8.0",
     "next": "^12.1.5",
     "node-fetch": "^3.2.4",
