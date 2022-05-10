@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 import DentistInfo from "./DentistInfo";
 import { useDentistsState } from "contexts/Dentists";
 
-const Map = ({ dentists }) => {
+const Map = () => {
   const { dentists } = useDentistsState();
 
   // Geographic centre of GB - https://en.wikipedia.org/wiki/Centre_points_of_the_United_Kingdom#Great_Britain
