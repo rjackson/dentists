@@ -1,7 +1,7 @@
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import { DescriptionList, DescriptionListItem, H2, Panel, Section } from "@rjackson/rjds";
 import { useDentistsState, useDentistsUpdate } from "contexts/Dentists";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import GeonamesAutosuggest from "./GeonamesAutosuggest";
 import Input from "./Input";
 
@@ -20,16 +20,18 @@ const SearchFilters = () => {
       [property]: !acceptanceStates[property],
     });
 
-  const acceptanceFilters = Object.entries(acceptanceStates)
-    .filter(([, active]) => active)
-    .map(
-      ([property]) =>
-        ({ AcceptingPatients }) =>
-          AcceptingPatients[property] == true
-    );
+  const acceptanceFilters = useMemo(() => {
+    return Object.entries(acceptanceStates)
+      .filter(([, active]) => active)
+      .map(
+        ([property]) =>
+          ({ AcceptingPatients }) =>
+            AcceptingPatients[property] == true
+      );
+  }, [acceptanceStates]);
 
-  // Apply filters 1s after any changes have been applied
-  // TODO: Add visual indicator that changes are pending / loading
+  // Sync search params with dentist provider after a short debounce (prevent expensive renders elsewhere, if user is
+  //  actively setting filters or changing controlled inputs)
   const changeTimeout = useRef(null);
   useEffect(() => {
     let mounted = true;
@@ -38,30 +40,14 @@ const SearchFilters = () => {
     changeTimeout.current = setTimeout(() => {
       if (mounted) {
         setFilters(acceptanceFilters);
-      }
-    }, 1000);
-
-    return () => {
-      mounted = false;
-    };
-  }, [acceptanceFilters, setFilters]);
-
-  // Sync up any changes to controlled inputs after a short delay (prevent thrashing during input)
-  const syncTimeout = useRef(null);
-  useEffect(() => {
-    let mounted = true;
-
-    clearTimeout(syncTimeout.current);
-    syncTimeout.current = setTimeout(() => {
-      if (mounted) {
         setUpstreamSearchRadius(searchRadius);
       }
-    }, 1000);
+    }, 300);
 
     return () => {
       mounted = false;
     };
-  }, [searchRadius, setUpstreamSearchRadius]);
+  }, [acceptanceFilters, setFilters, searchRadius, setUpstreamSearchRadius]);
 
   return (
     <Section className="space-y-4">
