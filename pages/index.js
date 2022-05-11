@@ -32,19 +32,10 @@ export default function Home({ initialDentists, initialLocation, initialRadius, 
       >
         <div className="flex flex-col h-2/3 lg:h-full lg:w-full lg:max-w-lg">
           <Header />
-          <div className="flex flex-col space-y-6 overflow-auto">
-            <Section as="main">
-              <Panel>
-                <H2 className="sr-only">About</H2>
-                <p>
-                  The NHS lists numerous dental practises through the{" "}
-                  <Link href="https://www.nhs.uk/service-search/find-a-dentist" passHref>
-                    <Anchor target="_blank">Find a Dentist</Anchor>
-                  </Link>{" "}
-                  service. This web page adds additional tools for searching and visualising dental practises, such as
-                  finding dentists that are accepting NHS patients.
-                </p>
-              </Panel>
+          <div className="flex flex-col space-y-4 overflow-auto">
+            <Section as="main" className="text-center">
+              <H2 className="sr-only">About</H2>
+              <p>Use the filters below to find NHS Dental Clinics near you that are accepting patients.</p>
             </Section>
             <SearchFilters />
             <DentistsList />

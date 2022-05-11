@@ -1,11 +1,13 @@
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import { DescriptionList, DescriptionListItem, H2, Panel, Section } from "@rjackson/rjds";
 import { useDentistsState, useDentistsUpdate } from "contexts/Dentists";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import Button from "./Button";
 import GeonamesAutosuggest from "./GeonamesAutosuggest";
 import Input, { inputClasses } from "./Input";
 
 const SearchFilters = () => {
+  const [collapsed, setCollapsed] = useState(false);
   const { searchLocation, searchRadius: upstreamSearchRadius } = useDentistsState();
   const { setSearchLocation, setFilters, setSearchRadius: setUpstreamSearchRadius } = useDentistsUpdate();
   const [searchRadius, setSearchRadius] = useState(upstreamSearchRadius);
@@ -69,8 +71,11 @@ const SearchFilters = () => {
   return (
     <Section className="space-y-4">
       <Panel>
-        <H2>Search parameters</H2>
-        <DescriptionList>
+        <div className="flex items-center justify-between">
+          <H2>Search parameters</H2>
+          <Button onClick={() => setCollapsed((v) => !v)}>{collapsed ? "Hide" : "Show"}</Button>
+        </div>
+        <DescriptionList className={`${collapsed ? "hidden" : ""}`}>
           <DescriptionListItem className="space-y-1" title={<label htmlFor="search-location">Location</label>}>
             <GeonamesAutosuggest
               value={searchLocation}

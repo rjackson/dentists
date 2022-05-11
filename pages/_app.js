@@ -10,7 +10,11 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="shortcut icon" href="/favicon.svg" />
         <title>{`dentists on a map`}</title>
-        <meta name="description" content="NHS UK Dentists, on a map. Filterable and all." key="description" />
+        <meta
+          name="description"
+          content="A map of NHS Dental Clinics near you that are accepting patients"
+          key="description"
+        />
       </Head>
       <Component {...pageProps} />
     </div>
