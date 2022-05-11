@@ -1,5 +1,6 @@
 import { Anchor } from "@rjackson/rjds";
 import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
 import DentistAcceptingPatientsTable from "./DentistAcceptingPatientsTable";
 
 const DentistInfo = ({
@@ -8,11 +9,20 @@ const DentistInfo = ({
   dentist: { ODSCode, OrganisationName, AcceptingPatients, DentistsAcceptingPatientsLastUpdatedDate },
   ...props
 }) => {
-  const lastUpdatedDate = new Date(DentistsAcceptingPatientsLastUpdatedDate);
-  const diffTime = lastUpdatedDate - new Date();
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-  const rtf1 = new Intl.RelativeTimeFormat("en", { style: "narrow" });
-  const relativeTimeLabel = rtf1.format(diffDays, "days");
+  const [lastUpdatedTimeLabel, setLastUpdatedTimeLabel] = useState(DentistsAcceptingPatientsLastUpdatedDate);
+  const lastUpdatedDate = useMemo(
+    () => new Date(DentistsAcceptingPatientsLastUpdatedDate),
+    [DentistsAcceptingPatientsLastUpdatedDate]
+  );
+
+  useEffect(() => {
+    const diffTime = lastUpdatedDate - new Date();
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const rtf1 = new Intl.RelativeTimeFormat("en", { style: "narrow" });
+    const relativeTimeLabel = rtf1.format(diffDays, "days");
+
+    setLastUpdatedTimeLabel(relativeTimeLabel);
+  }, [lastUpdatedDate, setLastUpdatedTimeLabel]);
 
   return (
     <Component className={`space-y-4 text-center ${className}`} {...props}>
@@ -23,7 +33,7 @@ const DentistInfo = ({
       </Link>
       <DentistAcceptingPatientsTable className="text-left" acceptingPatients={AcceptingPatients} />
       <p className="text-sm before:content-['('] after:content-[')']">
-        Acceptance information updated <time dateTime={lastUpdatedDate.toISOString()}>{relativeTimeLabel}</time>
+        Acceptance information updated <time dateTime={lastUpdatedDate.toISOString()}>{lastUpdatedTimeLabel}</time>
       </p>
       <Link href={`https://www.nhs.uk/services/dentist/blah/${ODSCode}`} passHref>
         <Anchor target="_blank">
