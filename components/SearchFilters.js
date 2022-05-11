@@ -1,7 +1,7 @@
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import { DescriptionList, DescriptionListItem, H2, Panel, Section } from "@rjackson/rjds";
 import { useDentistsState, useDentistsUpdate } from "contexts/Dentists";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useReducer, useRef, useState } from "react";
 import Button from "./Button";
 import GeonamesAutosuggest from "./GeonamesAutosuggest";
 import Input, { inputClasses } from "./Input";
@@ -11,7 +11,7 @@ const SearchFilters = () => {
   const { searchLocation, searchRadius: upstreamSearchRadius } = useDentistsState();
   const { setSearchLocation, setFilters, setSearchRadius: setUpstreamSearchRadius } = useDentistsUpdate();
   const [searchRadius, setSearchRadius] = useState(upstreamSearchRadius);
-  const [updatedInLast, setUpdatedInLast] = useState(0);
+  const [updatedInLast, setUpdatedInLast] = useReducer((_, value) => parseInt(value), 0);
 
   const [acceptanceStates, setAcceptanceStates] = useState(
     Object.fromEntries(Object.entries(ACCEPTANCE_TYPES).map(([property, _value]) => [property, false]))
@@ -44,7 +44,7 @@ const SearchFilters = () => {
         const diffTime = new Date() - lastUpdatedDate;
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-        return diffDays <= parseInt(updatedInLast);
+        return diffDays <= updatedInLast;
       },
     [updatedInLast]
   );
