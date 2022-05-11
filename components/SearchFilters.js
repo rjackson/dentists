@@ -1,14 +1,15 @@
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import { DescriptionList, DescriptionListItem, H2, Panel, Section } from "@rjackson/rjds";
 import { useDentistsState, useDentistsUpdate } from "contexts/Dentists";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import GeonamesAutosuggest from "./GeonamesAutosuggest";
-import Input from "./Input";
+import Input, { inputClasses } from "./Input";
 
 const SearchFilters = () => {
   const { searchLocation, searchRadius: upstreamSearchRadius } = useDentistsState();
   const { setSearchLocation, setFilters, setSearchRadius: setUpstreamSearchRadius } = useDentistsUpdate();
   const [searchRadius, setSearchRadius] = useState(upstreamSearchRadius);
+  const [updatedInLast, setUpdatedInLast] = useState(0);
 
   const [acceptanceStates, setAcceptanceStates] = useState(
     Object.fromEntries(Object.entries(ACCEPTANCE_TYPES).map(([property, _value]) => [property, false]))
@@ -30,6 +31,22 @@ const SearchFilters = () => {
       );
   }, [acceptanceStates]);
 
+  const updatedFilter = useMemo(
+    () =>
+      ({ DentistsAcceptingPatientsLastUpdatedDate }) => {
+        if (!updatedInLast) {
+          return true;
+        }
+
+        const lastUpdatedDate = new Date(DentistsAcceptingPatientsLastUpdatedDate);
+        const diffTime = new Date() - lastUpdatedDate;
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        return diffDays <= parseInt(updatedInLast);
+      },
+    [updatedInLast]
+  );
+
   // Sync search params with dentist provider after a short debounce (prevent expensive renders elsewhere, if user is
   //  actively setting filters or changing controlled inputs)
   const changeTimeout = useRef(null);
@@ -39,7 +56,7 @@ const SearchFilters = () => {
     clearTimeout(changeTimeout.current);
     changeTimeout.current = setTimeout(() => {
       if (mounted) {
-        setFilters(acceptanceFilters);
+        setFilters([...acceptanceFilters, updatedFilter]);
         setUpstreamSearchRadius(searchRadius);
       }
     }, 300);
@@ -47,7 +64,7 @@ const SearchFilters = () => {
     return () => {
       mounted = false;
     };
-  }, [acceptanceFilters, setFilters, searchRadius, setUpstreamSearchRadius]);
+  }, [acceptanceFilters, updatedFilter, setFilters, searchRadius, setUpstreamSearchRadius]);
 
   return (
     <Section className="space-y-4">
@@ -84,6 +101,14 @@ const SearchFilters = () => {
                 <span>{label}</span>
               </label>
             ))}
+          </DescriptionListItem>
+          <DescriptionListItem className="space-y-1" title={<label htmlFor="updated-since">Updated within</label>}>
+            <select className={inputClasses} value={updatedInLast} onChange={(e) => setUpdatedInLast(e.target.value)}>
+              <option value="0">Any time</option>
+              <option value="90">90 days</option>
+              <option value="30">30 days</option>
+              <option value="7">7 days</option>
+            </select>
           </DescriptionListItem>
         </DescriptionList>
       </Panel>
