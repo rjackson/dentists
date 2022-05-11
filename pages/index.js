@@ -3,15 +3,14 @@ import Header from "@components/Header";
 import { Anchor, H2, Panel, Section } from "@rjackson/rjds";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-
-import { loadDentists as loadDentistsServer } from "lib/dentists/server";
+import { loadDentists as loadDentistsServer, loadManifest as loadManifestServer } from "lib/dentists/server";
 import SearchFilters from "@components/SearchFilters";
 import DentistsList from "@components/DentistsList";
 import { DentistsProvider } from "contexts/Dentists";
 
 const DentistsMap = dynamic(() => import("@components/DentistsMap"), { ssr: false });
 
-export default function Home({ initialDentists, initialLocation, initialRadius }) {
+export default function Home({ initialDentists, initialLocation, initialRadius, resolution, showCells }) {
   return (
     <DentistsProvider initialDentists={initialDentists} initialLocation={initialLocation} initialRadius={initialRadius}>
       <div
@@ -53,7 +52,7 @@ export default function Home({ initialDentists, initialLocation, initialRadius }
           <Footer />
         </div>
         <section className="flex-shrink-0 h-1/3 lg:h-full lg:w-full lg:flex-1">
-          <DentistsMap />
+          <DentistsMap showCells={showCells} resolution={resolution} />
         </section>
       </div>
     </DentistsProvider>
@@ -62,6 +61,7 @@ export default function Home({ initialDentists, initialLocation, initialRadius }
 
 export async function getStaticProps() {
   const maxDentists = process.env.NODE_ENV == "development" ? process.env.MAX_DENTISTS ?? false : false;
+  const showCells = process.env.NODE_ENV == "development" ? process.env.SHOW_CELLS == "true" : false;
 
   const initialLocation = {
     lng: "-2.23743",
@@ -70,9 +70,16 @@ export async function getStaticProps() {
   };
   const initialRadius = 15; // km
 
+  const { resolution } = loadManifestServer();
   const dentists = loadDentistsServer(initialLocation.lat, initialLocation.lng, initialRadius);
 
   return {
-    props: { initialDentists: maxDentists ? dentists.slice(0, maxDentists) : dentists, initialLocation, initialRadius },
+    props: {
+      initialDentists: maxDentists ? dentists.slice(0, maxDentists) : dentists,
+      initialLocation,
+      initialRadius,
+      resolution,
+      showCells,
+    },
   };
 }

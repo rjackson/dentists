@@ -1,10 +1,7 @@
 /**
  * Split our dentist data files into smaller geographically chunked files, which
  * we can load on-demand depending on a user's search parameters.
- *
- * We will index dentists using H3, at resolution 5 (roughly 8.544km chunks,
- * by average edge length): https://h3geo.org/docs/core-library/restable
- *
+ * *
  * This is intended to be ran as a pre-build step, and will output files
  * directly into the public folder.
  */
@@ -13,7 +10,8 @@ import process from "process";
 import { readFileSync, writeFileSync } from "fs";
 import { geoToH3 } from "h3-js";
 
-const H3_RESOLUTION = 5; // 252.9033645km3,	8.544408276km edges
+// https://h3geo.org/docs/core-library/restable
+const H3_RESOLUTION = 7;
 
 // const INPUT_FILE = path.join(process.cwd(), "data/dentists.json");
 const INPUT_FILE = path.join(process.cwd(), "data/small-dentists.json");
