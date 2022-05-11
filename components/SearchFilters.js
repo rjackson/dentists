@@ -93,7 +93,7 @@ const SearchFilters = () => {
               onChange={(e) => setSearchRadius(e.target.value)}
             />
           </DescriptionListItem>
-          <DescriptionListItem className="space-y-1" title="Only show dentists that are">
+          <DescriptionListItem className="space-y-1" title="Patients being accepted">
             {Object.entries(ACCEPTANCE_TYPES).map(([property, label]) => (
               <label key={property} htmlFor={property} className="block space-x-2">
                 <input
@@ -107,7 +107,7 @@ const SearchFilters = () => {
               </label>
             ))}
           </DescriptionListItem>
-          <DescriptionListItem className="space-y-1" title={<label htmlFor="updated-since">Updated within</label>}>
+          <DescriptionListItem className="space-y-1" title={<label htmlFor="updated-since">Information updated within the past</label>}>
             <select className={inputClasses} value={updatedInLast} onChange={(e) => setUpdatedInLast(e.target.value)}>
               <option value="0">Any time</option>
               <option value="90">90 days</option>
