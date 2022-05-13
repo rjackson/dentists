@@ -1,4 +1,4 @@
-import { loadDentists } from "lib/dentists/client";
+import { loadDentists, loadManifest } from "lib/dentists/client";
 import { createContext, useContext, useState, useRef, useEffect } from "react";
 
 const DentistsStateContext = createContext();
@@ -7,6 +7,7 @@ const DentistsUpdateContext = createContext();
 export function DentistsProvider({ initialDentists, initialLocation, initialRadius, children }) {
   const [searchLocation, setSearchLocation] = useState(initialLocation);
   const [searchRadius, setSearchRadius] = useState(initialRadius);
+  const [resolutions, setResolutions] = useState({});
   const [rawDentists, setRawDentists] = useState(initialDentists);
   const [filters, setFilters] = useState([]);
 
@@ -26,6 +27,7 @@ export function DentistsProvider({ initialDentists, initialLocation, initialRadi
         isFirstRun.current = false;
       } else {
         loadDentists(searchLat, searchLng, searchRadius).then((dentists) => setRawDentists(dentists));
+        loadManifest().then(({ resolutions }) => setResolutions(resolutions));
       }
     }
 
@@ -34,7 +36,7 @@ export function DentistsProvider({ initialDentists, initialLocation, initialRadi
     };
   }, [searchLat, searchLng, searchRadius]);
 
-  const state = { searchLocation, searchRadius, dentists };
+  const state = { searchLocation, searchRadius, dentists, resolutions };
 
   const updateFns = { setSearchLocation, setFilters, setSearchRadius };
 

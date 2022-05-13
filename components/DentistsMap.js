@@ -3,11 +3,13 @@ import { Circle, CircleMarker, FeatureGroup, MapContainer, Polygon, Popup, TileL
 import "leaflet/dist/leaflet.css";
 import DentistInfo from "@components/DentistInfo";
 import { useDentistsState } from "@contexts/Dentists";
-import { getCellsWithinGeoRadius } from "lib/dentists/core";
+import { getCellsWithinGeoRadius, resolutionForRadius } from "lib/dentists/core";
 import { h3ToGeoBoundary } from "h3-js";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const MapZoomer = ({ searchLocation, searchRadius }) => {
+const MapZoomer = () => {
+  const { searchLocation, searchRadius } = useDentistsState();
+
   const map = useMap();
   const searchArea = useRef();
 
@@ -45,10 +47,25 @@ const DentistCircle = ({ dentist }) => {
   );
 };
 
-const Map = ({ showCells = false, resolution }) => {
-  const { dentists, searchLocation, searchRadius } = useDentistsState();
+const DebugCells = () => {
+  const { searchLocation, searchRadius, resolutions } = useDentistsState();
+
+  const resolution = Object.keys(resolutions).length > 0 ? resolutionForRadius(searchRadius, resolutions) : 0;
   const cells = getCellsWithinGeoRadius(searchLocation.lat, searchLocation.lng, searchRadius, resolution);
   const cellPolygons = cells.map((cell) => h3ToGeoBoundary(cell));
+
+  console.log(`Loading ${cells.length} cells for radius ${searchRadius} at resolution ${resolution}`);
+  return (
+    <>
+      {cellPolygons.map((poly, i) => (
+        <Polygon key={i} positions={poly} pathOptions={{ color: "red", fillOpacity: 0.25, opacity: 0.25 }} />
+      ))}
+    </>
+  );
+};
+
+const Map = ({ showCells = false }) => {
+  const { dentists, searchLocation, searchRadius } = useDentistsState();
 
   // Geographic centre of GB - https://en.wikipedia.org/wiki/Centre_points_of_the_United_Kingdom#Great_Britain
   const center = [54.01, -2.33];
@@ -60,11 +77,8 @@ const Map = ({ showCells = false, resolution }) => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <MapZoomer searchLocation={searchLocation} searchRadius={searchRadius} />
-        {showCells &&
-          cellPolygons.map((poly, i) => (
-            <Polygon key={i} positions={poly} pathOptions={{ color: "red", fillOpacity: 0.25, opacity: 0.25 }} />
-          ))}
+        <MapZoomer />
+        {showCells && <DebugCells />}
         {dentists.map(
           (dentist) =>
             dentist.Latitude && dentist.Longitude && <DentistCircle key={dentist.ODSCode} dentist={dentist} />
