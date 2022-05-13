@@ -1,7 +1,7 @@
 import Geonames from "geonames.js";
 import { useRef, useState } from "react";
 import Autosuggest from "react-autosuggest";
-import { inputClasses } from "./Input";
+import { inputClasses } from "@rjackson/rjds";
 
 const geonames = Geonames({
   username: process.env.NEXT_PUBLIC_GEONAMES_USERNAME,

@@ -1,8 +1,8 @@
 import { Circle, CircleMarker, FeatureGroup, MapContainer, Polygon, Popup, TileLayer, useMap } from "react-leaflet";
 
 import "leaflet/dist/leaflet.css";
-import DentistInfo from "./DentistInfo";
-import { useDentistsState } from "contexts/Dentists";
+import DentistInfo from "@components/DentistInfo";
+import { useDentistsState } from "@contexts/Dentists";
 import { getCellsWithinGeoRadius } from "lib/dentists/core";
 import { h3ToGeoBoundary } from "h3-js";
 import { useEffect, useRef } from "react";

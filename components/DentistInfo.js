@@ -1,7 +1,7 @@
-import { Anchor } from "@rjackson/rjds";
+import { Anchor, H3 } from "@rjackson/rjds";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import DentistAcceptingPatientsTable from "./DentistAcceptingPatientsTable";
+import DentistAcceptingPatientsTable from "@components/DentistAcceptingPatientsTable";
 
 const DentistInfo = ({
   as: Component = "div",
@@ -28,7 +28,7 @@ const DentistInfo = ({
     <Component className={`space-y-4 text-center ${className}`} {...props}>
       <Link href={`https://www.nhs.uk/services/dentist/blah/${ODSCode}`} passHref>
         <Anchor target="_blank" className="">
-          <h3 className="text-lg font-semibold text-center">{OrganisationName}</h3>
+          <H3 className="text-inherit">{OrganisationName}</H3>
         </Anchor>
       </Link>
       <DentistAcceptingPatientsTable className="text-left" acceptingPatients={AcceptingPatients} />

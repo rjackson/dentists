@@ -1,6 +1,6 @@
 import { H2, Panel, Section } from "@rjackson/rjds";
-import { useDentistsState } from "contexts/Dentists";
-import DentistInfo from "./DentistInfo";
+import { useDentistsState } from "@contexts/Dentists";
+import DentistInfo from "@components/DentistInfo";
 
 const DentistsList = () => {
   const { dentists } = useDentistsState();

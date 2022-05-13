@@ -1,12 +1,11 @@
 import Footer from "@components/Footer";
 import Header from "@components/Header";
-import { Anchor, H2, Panel, Section } from "@rjackson/rjds";
+import { H2, Section } from "@rjackson/rjds";
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import { loadDentists as loadDentistsServer, loadManifest as loadManifestServer } from "lib/dentists/server";
 import SearchFilters from "@components/SearchFilters";
 import DentistsList from "@components/DentistsList";
-import { DentistsProvider } from "contexts/Dentists";
+import { DentistsProvider } from "@contexts/Dentists";
 
 const DentistsMap = dynamic(() => import("@components/DentistsMap"), { ssr: false });
 

@@ -1,10 +1,8 @@
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
-import { DescriptionList, DescriptionListItem, H2, Panel, Section } from "@rjackson/rjds";
-import { useDentistsState, useDentistsUpdate } from "contexts/Dentists";
+import { DescriptionList, DescriptionListItem, H2, Panel, Section, Button, Input, inputClasses } from "@rjackson/rjds";
 import { useEffect, useMemo, useReducer, useRef, useState } from "react";
-import Button from "./Button";
-import GeonamesAutosuggest from "./GeonamesAutosuggest";
-import Input, { inputClasses } from "./Input";
+import GeonamesAutosuggest from "@components/GeonamesAutosuggest";
+import { useDentistsState, useDentistsUpdate } from "@contexts/Dentists";
 
 const SearchFilters = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -107,13 +105,21 @@ const SearchFilters = () => {
               </label>
             ))}
           </DescriptionListItem>
-          <DescriptionListItem className="space-y-1" title={<label htmlFor="updated-since">Information updated within the past</label>}>
-            <select className={inputClasses} value={updatedInLast} onChange={(e) => setUpdatedInLast(e.target.value)}>
+          <DescriptionListItem
+            className="space-y-1"
+            title={<label htmlFor="updated-since">Information updated within the past</label>}
+          >
+            <Input
+              as="select"
+              className={inputClasses}
+              value={updatedInLast}
+              onChange={(e) => setUpdatedInLast(e.target.value)}
+            >
               <option value="0">Any time</option>
               <option value="90">90 days</option>
               <option value="30">30 days</option>
               <option value="7">7 days</option>
-            </select>
+            </Input>
           </DescriptionListItem>
         </DescriptionList>
       </Panel>
