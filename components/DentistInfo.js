@@ -36,8 +36,8 @@ const DentistInfo = ({
         Acceptance information updated <time dateTime={lastUpdatedDate.toISOString()}>{lastUpdatedTimeLabel}</time>
       </p>
       <Link href={`https://www.nhs.uk/services/dentist/blah/${ODSCode}`} passHref>
-        <Anchor target="_blank">
-          See more details <span className="sr-only">about {OrganisationName}</span> on www.nhs.uk
+        <Anchor target="_blank" aria-label={`See more details about ${OrganisationName} on www.nhs.uk`}>
+          See more details on www.nhs.uk
         </Anchor>
       </Link>
     </Component>

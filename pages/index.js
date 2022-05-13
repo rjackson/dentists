@@ -32,7 +32,7 @@ export default function Home({ initialDentists, initialLocation, initialRadius, 
       >
         <div className="flex flex-col h-2/3 lg:h-full lg:w-full lg:max-w-lg">
           <Header />
-          <div className="flex flex-col space-y-4 overflow-auto">
+          <div className="flex flex-col space-y-4 overflow-y-scroll">
             <Section as="main" className="text-center">
               <H2 className="sr-only">About</H2>
               <p>Use the filters below to find NHS Dental Clinics near you that are accepting patients.</p>
