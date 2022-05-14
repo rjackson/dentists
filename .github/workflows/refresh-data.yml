@@ -33,6 +33,6 @@ jobs:
         run: |
           git config --global user.name 'Dentists (automated)'
           git config --global user.email 'rob@rjackson.me'
-          git add "${{ steps.verify-changed-files.outputs.changed_files }}"
+          git add ${{ steps.verify-changed-files.outputs.changed_files }}
           git commit -m "Regenerate data from NHS API"
           git push
