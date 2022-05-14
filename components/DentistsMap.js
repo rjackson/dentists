@@ -5,7 +5,7 @@ import DentistInfo from "@components/DentistInfo";
 import { useDentistsState } from "@contexts/Dentists";
 import { getCellsWithinGeoRadius, resolutionForRadius } from "lib/dentists/core";
 import { h3ToGeoBoundary } from "h3-js";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const MapZoomer = () => {
   const { searchLocation, searchRadius } = useDentistsState();
@@ -35,11 +35,16 @@ const MapZoomer = () => {
 
 const DentistCircle = ({ dentist }) => {
   const acceptingAnyPatients = Object.values(dentist.AcceptingPatients).some((v) => v);
+  const pathOptions = {
+    color: acceptingAnyPatients ? "blue" : "gray",
+    fillOpacity: 0.2,
+    opacity: acceptingAnyPatients ? 1 : 0.75,
+  };
+
+  const radius = acceptingAnyPatients ? 10 : 7;
+
   return (
-    <CircleMarker
-      center={[dentist.Latitude, dentist.Longitude]}
-      pathOptions={{ color: acceptingAnyPatients ? "blue" : "gray" }}
-    >
+    <CircleMarker center={[dentist.Latitude, dentist.Longitude]} pathOptions={pathOptions} radius={radius}>
       <Popup>
         <DentistInfo dentist={dentist} />
       </Popup>
@@ -66,6 +71,13 @@ const DebugCells = () => {
 
 const Map = ({ showCells = false }) => {
   const { dentists, searchLocation, searchRadius } = useDentistsState();
+  const [dentistsAcceptingPatients, dentistsNotAcceptingPatients] = dentists.reduce(
+    ([pass, fail], dentist) => {
+      const acceptingAnyPatients = Object.values(dentist.AcceptingPatients).some((v) => v);
+      return acceptingAnyPatients ? [[...pass, dentist], fail] : [pass, [...fail, dentist]];
+    },
+    [[], []]
+  );
 
   // Geographic centre of GB - https://en.wikipedia.org/wiki/Centre_points_of_the_United_Kingdom#Great_Britain
   const center = [54.01, -2.33];
@@ -79,10 +91,18 @@ const Map = ({ showCells = false }) => {
         />
         <MapZoomer />
         {showCells && <DebugCells />}
-        {dentists.map(
-          (dentist) =>
-            dentist.Latitude && dentist.Longitude && <DentistCircle key={dentist.ODSCode} dentist={dentist} />
-        )}
+        <FeatureGroup>
+          {dentistsNotAcceptingPatients.map(
+            (dentist) =>
+              dentist.Latitude && dentist.Longitude && <DentistCircle key={dentist.ODSCode} dentist={dentist} />
+          )}
+        </FeatureGroup>
+        <FeatureGroup>
+          {dentistsAcceptingPatients.map(
+            (dentist) =>
+              dentist.Latitude && dentist.Longitude && <DentistCircle key={dentist.ODSCode} dentist={dentist} />
+          )}
+        </FeatureGroup>
       </MapContainer>
       <style>
         {`
