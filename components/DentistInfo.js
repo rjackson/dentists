@@ -27,8 +27,8 @@ const DentistInfo = ({
   return (
     <Component className={`space-y-4 text-center ${className}`} {...props}>
       <Link href={`https://www.nhs.uk/services/dentist/blah/${ODSCode}`} passHref>
-        <Anchor target="_blank" className="">
-          <H3 className="text-inherit">{OrganisationName}</H3>
+        <Anchor target="_blank">
+          <H3 className="!text-inherit">{OrganisationName}</H3>
         </Anchor>
       </Link>
       <DentistAcceptingPatientsTable className="text-left" acceptingPatients={AcceptingPatients} />
