@@ -71,7 +71,7 @@ const SearchFilters = () => {
       <Panel>
         <div className="flex items-center justify-between">
           <H2>Search parameters</H2>
-          <Button onClick={() => setCollapsed((v) => !v)}>{collapsed ? "Hide" : "Show"}</Button>
+          <Button onClick={() => setCollapsed((v) => !v)}>{collapsed ? "Show" : "Hide"}</Button>
         </div>
         <DescriptionList className={`${collapsed ? "hidden" : ""}`}>
           <DescriptionListItem className="space-y-1" title={<label htmlFor="search-location">Location</label>}>
