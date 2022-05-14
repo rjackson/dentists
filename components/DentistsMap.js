@@ -6,6 +6,7 @@ import { useDentistsState } from "@contexts/Dentists";
 import { getCellsWithinGeoRadius, resolutionForRadius } from "lib/dentists/core";
 import { h3ToGeoBoundary } from "h3-js";
 import { useEffect, useRef } from "react";
+import useResizeObserver from "@react-hook/resize-observer";
 
 const MapZoomer = () => {
   const { searchLocation, searchRadius } = useDentistsState();
@@ -82,9 +83,17 @@ const Map = ({ showCells = false }) => {
   // Geographic centre of GB - https://en.wikipedia.org/wiki/Centre_points_of_the_United_Kingdom#Great_Britain
   const center = [54.01, -2.33];
   const zoom = 7;
+
+  const containerRef = useRef(null);
+  const mapRef = useRef(null);
+
+  useResizeObserver(containerRef, () => {
+    mapRef?.current?.invalidateSize();
+  });
+
   return (
-    <>
-      <MapContainer center={center} zoom={zoom} scrollWheelZoom={true} preferCanvas={true}>
+    <div ref={containerRef} className="w-full h-full">
+      <MapContainer ref={mapRef} center={center} zoom={zoom} scrollWheelZoom={true} preferCanvas={true}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -111,7 +120,7 @@ const Map = ({ showCells = false }) => {
           }
         `}
       </style>
-    </>
+    </div>
   );
 };
 

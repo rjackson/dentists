@@ -12,6 +12,7 @@
     "prebuild": "npm run index-data"
   },
   "dependencies": {
+    "@react-hook/resize-observer": "^1.2.5",
     "@rjackson/rjds": "^0.4.0",
     "@turf/circle": "^6.5.0",
     "geonames.js": "^3.0.6",
