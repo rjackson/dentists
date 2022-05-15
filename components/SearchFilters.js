@@ -12,7 +12,7 @@ const SearchFilters = () => {
   const [updatedInLast, setUpdatedInLast] = useReducer((_, value) => parseInt(value), 0);
 
   const [acceptanceStates, setAcceptanceStates] = useState(
-    Object.fromEntries(Object.entries(ACCEPTANCE_TYPES).map(([property, _value]) => [property, false]))
+    Object.fromEntries(Object.entries(ACCEPTANCE_TYPES).map(([property]) => [property, false]))
   );
 
   const toggleAcceptanceState = (property) =>

@@ -71,7 +71,7 @@ const DebugCells = () => {
 };
 
 const Map = ({ showCells = false }) => {
-  const { dentists, searchLocation, searchRadius } = useDentistsState();
+  const { dentists } = useDentistsState();
   const [dentistsAcceptingPatients, dentistsNotAcceptingPatients] = dentists.reduce(
     ([pass, fail], dentist) => {
       const acceptingAnyPatients = Object.values(dentist.AcceptingPatients).some((v) => v);

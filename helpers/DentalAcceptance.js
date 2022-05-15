@@ -57,7 +57,7 @@ export const ACCEPTANCE_TYPES = {
  * @returns {AcceptingPatientsBlock}
  */
 export const mapFromNhs = (nhsDentalAcceptanceObj) => {
-  const entries = nhsDentalAcceptanceObj.map(({ Id, Name, AcceptingPatients }) => {
+  const entries = nhsDentalAcceptanceObj.map(({ Id, AcceptingPatients }) => {
     return [
       ACCEPTANCE_MAPPING[Id], // Keyed by constant
       AcceptingPatients, // Value is the boolean of whether they're accepting patients
