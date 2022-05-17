@@ -3,10 +3,15 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import DentistAcceptingPatientsTable from "@components/DentistAcceptingPatientsTable";
 
+const formatAddress = ({ City, Postcode }) => {
+  return [City, Postcode].filter((v) => v).join(", ");
+};
+
 const DentistInfo = ({
   as: Component = "div",
   className,
   dentist: { ODSCode, OrganisationName, AcceptingPatients, DentistsAcceptingPatientsLastUpdatedDate },
+  dentist,
   ...props
 }) => {
   const [lastUpdatedTimeLabel, setLastUpdatedTimeLabel] = useState(DentistsAcceptingPatientsLastUpdatedDate);
@@ -26,11 +31,14 @@ const DentistInfo = ({
 
   return (
     <Component className={`space-y-4 text-center ${className}`} {...props}>
-      <Link href={`https://www.nhs.uk/services/dentist/blah/${ODSCode}`} passHref>
-        <Anchor target="_blank">
-          <H3 className="!text-inherit">{OrganisationName}</H3>
-        </Anchor>
-      </Link>
+      <div>
+        <Link href={`https://www.nhs.uk/services/dentist/blah/${ODSCode}`} passHref>
+          <Anchor target="_blank">
+            <H3 className="!text-inherit">{OrganisationName}</H3>
+          </Anchor>
+        </Link>
+        <p className="text-sm">{formatAddress(dentist)}</p>
+      </div>
       <DentistAcceptingPatientsTable className="text-left" acceptingPatients={AcceptingPatients} />
       <p className="text-sm before:content-['('] after:content-[')']">
         Acceptance information updated <time dateTime={lastUpdatedDate.toISOString()}>{lastUpdatedTimeLabel}</time>
