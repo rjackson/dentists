@@ -82,7 +82,14 @@ const SearchFilters = () => {
               inputProps={{ id: "search-location" }}
             />
           </DescriptionListItem>
-          <DescriptionListItem className="space-y-1" title={<label htmlFor="search-radius">Search radius</label>}>
+          <DescriptionListItem
+            className="space-y-1"
+            title={
+              <label htmlFor="search-radius">
+                Search radius (<abbr title="kilometers">km</abbr>)
+              </label>
+            }
+          >
             <Input
               type="number"
               step={5}
