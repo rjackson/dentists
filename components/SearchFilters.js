@@ -3,6 +3,7 @@ import { DescriptionList, DescriptionListItem, H2, Panel, Section, Button, Input
 import { useEffect, useMemo, useReducer, useRef, useState } from "react";
 import GeonamesAutosuggest from "@components/GeonamesAutosuggest";
 import { useDentistsState, useDentistsUpdate } from "@contexts/Dentists";
+import Checkbox from "./Checkbox";
 
 const SearchFilters = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -94,8 +95,7 @@ const SearchFilters = () => {
           <DescriptionListItem className="space-y-1" title="Patients being accepted">
             {Object.entries(ACCEPTANCE_TYPES).map(([property, label]) => (
               <label key={property} htmlFor={property} className="block space-x-2">
-                <input
-                  type="checkbox"
+                <Checkbox
                   id={property}
                   value={property}
                   checked={acceptanceStates[property]}
