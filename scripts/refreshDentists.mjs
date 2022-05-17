@@ -75,15 +75,8 @@ if (dentists) {
       Longitude,
       AcceptingPatients,
       LastUpdatedDates: { DentistsAcceptingPatients: DentistsAcceptingPatientsLastUpdatedDate },
-      Address1,
-      Address2,
-      Address4,
       City,
-      County,
       Postcode,
-      Phone,
-      Email,
-      Website,
     }) => ({
       ODSCode,
       OrganisationName,
@@ -91,15 +84,8 @@ if (dentists) {
       Longitude,
       AcceptingPatients,
       DentistsAcceptingPatientsLastUpdatedDate,
-      Address1,
-      Address2,
-      Address4,
       City,
-      County,
       Postcode,
-      Phone,
-      Email,
-      Website,
     })
   );
   writeFileSync(SMALL_DENTISTS_FILE, JSON.stringify(smallerDentists, null, 2));
