@@ -1,7 +1,8 @@
-const CheckboxLabel = ({ className, children, ...props }) => {
+const CheckboxLabel = ({ className = "", children, label, ...props }) => {
   return (
-    <label className={`block space-x-2 ${className}`} {...props}>
+    <label className={`flex items-center space-x-2 ${className}`} {...props}>
       {children}
+      <span>{label}</span>
     </label>
   );
 };

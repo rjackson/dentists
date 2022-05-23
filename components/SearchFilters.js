@@ -101,17 +101,18 @@ const SearchFilters = () => {
             />
           </DescriptionListItem>
           <DescriptionListItem className="space-y-1" title="Patients being accepted">
-            {Object.entries(ACCEPTANCE_TYPES).map(([property, label]) => (
-              <CheckboxLabel key={property} htmlFor={property}>
-                <Checkbox
-                  id={property}
-                  value={property}
-                  checked={acceptanceStates[property]}
-                  onChange={() => toggleAcceptanceState(property)}
-                />
-                <span>{label}</span>
-              </CheckboxLabel>
-            ))}
+            <div className="space-y-1">
+              {Object.entries(ACCEPTANCE_TYPES).map(([property, label]) => (
+                <CheckboxLabel key={property} htmlFor={property} label={label}>
+                  <Checkbox
+                    id={property}
+                    value={property}
+                    checked={acceptanceStates[property]}
+                    onChange={() => toggleAcceptanceState(property)}
+                  />
+                </CheckboxLabel>
+              ))}
+            </div>
           </DescriptionListItem>
           <DescriptionListItem
             className="space-y-1"
