@@ -15,12 +15,14 @@ This project relies on two third-party services:
 
 Please register with those two providers, and set the relevant credentials up in a `.env.local` file. `.env.example` has been provided as a template for expected settings.
 
-| Environmental variable            | Note                                                                                                                           |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| NHSDIGITAL_ODATA_ENDPOINT         | Preset to `https://api.nhs` in `.env`.uk/                                                                                      |
-| NHSDIGITAL_ODATA_SUBSCRIPTION_KEY | Your subscription key for the NHS API. You can retrieve this from your [My Account](https://developer.api.nhs.uk/profile) page |
-| NEXT_PUBLIC_GEONAMES_USERNAME     | Your username for the Geonames Web Services                                                                                    |
-| MAX_DENTISTS                      | Development setting to limit how many dentists are loaded on screen at any one time.                                           |
+| Environmental variable              | Note                                                                                                                           |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| NHSDIGITAL_ODATA_ENDPOINT           | Preset to `https://api.nhs` in `.env`.uk/                                                                                      |
+| NHSDIGITAL_ODATA_SUBSCRIPTION_KEY   | Your subscription key for the NHS API. You can retrieve this from your [My Account](https://developer.api.nhs.uk/profile) page |
+| NEXT_PUBLIC_GEONAMES_USERNAME       | Your username for the Geonames Web Services                                                                                    |
+| MAX_DENTISTS                        | Development setting to limit how many dentists are loaded on screen at any one time.                                           |
+| NEXT_PUBLIC_FATHOM_CUSTOM_DOMAIN    | Analytics via [Fathom](https://usefathom.com)                                                                                  |
+| NEXT_PUBLIC_FATHOM_TRACKING_CODE    | Analytics via [Fathom](https://usefathom.com)                                                                                  |
 
 ## Running the Next.js development server
 
