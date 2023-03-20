@@ -1,0 +1,82 @@
+import cloudflare from "cloudflare";
+import { randomUUID } from "crypto"
+import { constants } from "http2"
+import { AlertConfiguration, Subscription, isSubscription } from "./types";
+
+const apiToken = process.env.CLOUDFLARE_API_TOKEN;
+const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
+const kvNamespace = process.env.CLOUDFLARE_KV_NAMESPACE;
+
+const cf = new cloudflare({ token: apiToken });
+
+export async function loadSubscription(emailAddress: string): Promise<Subscription | null> {
+    try {
+
+        const subscriptionJson = await cf.enterpriseZoneWorkersKV.read(
+            accountId,
+            kvNamespace,
+            emailAddress
+        );
+
+        if (typeof subscriptionJson !== "string") {
+            return null;
+        }
+        const subscription = JSON.parse(subscriptionJson);
+
+        if (!isSubscription(subscription)) {
+            return null;
+        }
+
+        return subscription;
+    } catch (e: unknown) {
+        // Key doesn't exist in Cloudflare KV
+        if (typeof (e) === 'object' &&
+            'name' in e &&
+            e.name == 'HTTPError' &&
+            'statusCode' in e &&
+            e.statusCode == constants.HTTP_STATUS_NOT_FOUND
+        ) {
+            return null;
+        }
+
+        console.trace(e);
+        return null;
+    }
+}
+
+export async function addAlert(emailAddress: string, alertConfig: AlertConfiguration): Promise<boolean> {
+    try {
+        const existingSubscription = await loadSubscription(emailAddress)
+        const nowIsoString = (new Date).toISOString();
+
+        // TODO: deduplicate alerts somehow
+
+        const subscription: Subscription = {
+            emailAddress,
+            createdAt: existingSubscription?.createdAt ?? nowIsoString,
+            managementUuid: existingSubscription?.managementUuid ?? randomUUID(),
+            alerts: [
+                ...existingSubscription?.alerts ?? [],
+                {
+                    ...alertConfig,
+                    createdAt: nowIsoString
+                }
+            ]
+        }
+
+        await cf.enterpriseZoneWorkersKV.add(
+            accountId,
+            kvNamespace,
+            emailAddress,
+            JSON.stringify(subscription)
+        );
+
+        return true;
+    } catch (e: unknown) {
+        console.trace(e);
+    }
+}
+
+// export async function removeAlert(emailAddress: string, alertId: string): Promise<void> {}
+
+// export async function unsubscribe(emailAddress: string): Promise<void> {}
