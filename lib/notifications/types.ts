@@ -24,7 +24,7 @@ export type AlertConfiguration = {
     filters: AcceptanceFilters;
 }
 
-export type AlertConfigurationRecord = AlertConfiguration &  {
+export type AlertConfigurationRecord = AlertConfiguration & {
     createdAt: string;
 }
 

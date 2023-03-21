@@ -40,7 +40,7 @@ const CreateAlert = async (req: NextApiRequest, res: NextApiResponse) => {
 
   return res
     .status(constants.HTTP_STATUS_OK)
-    .json({ message: "Created alert" });
+    .json({ ok: true, message: "Created alert" });
 };
 
 export default CreateAlert;

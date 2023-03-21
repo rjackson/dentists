@@ -14,7 +14,7 @@ const Privacy = () => {
           <p>For the purpose of alerting customers when new dentists appear matching their filters, we collect:</p>
 
           <UnorderedList>
-            <li>E-mail address</li>
+            <li>Email address</li>
             <li>Geographic area from which you want alerts</li>
             <li>Any filters you have set up</li>
           </UnorderedList>
@@ -23,6 +23,8 @@ const Privacy = () => {
             This data is stored in Cloudflare KV, and is processed by Github Actions. This data will be irrevocably
             deleted when customers unsubcsribe from their alerts.
           </p>
+
+          {/* TODO: simplify references to Cloduflare, Github? nerd data not useful to general public */}
 
           {/* TODO: Auto-delete after period of time, unless customer opts to extend? */}
 

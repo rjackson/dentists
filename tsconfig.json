@@ -39,8 +39,10 @@
   },
   "include": [
     "next-env.d.ts",
+    "**/*.js",
+    "**/*.jsx",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
   ],
   "exclude": [
     "node_modules"
