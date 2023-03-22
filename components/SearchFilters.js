@@ -6,11 +6,15 @@ import { useDentistsState, useDentistsUpdate } from "@contexts/Dentists";
 import Checkbox from "./Checkbox";
 import CheckboxLabel from "./CheckboxLabel";
 import SecondaryButton from "./SecondaryButton";
+import { useFiltersUpdate } from "@contexts/Filters";
 
 const SearchFilters = () => {
   const [collapsed, setCollapsed] = useState(false);
   const { searchLocation, searchRadius: upstreamSearchRadius } = useDentistsState();
-  const { setSearchLocation, setFilters, setSearchRadius: setUpstreamSearchRadius } = useDentistsUpdate();
+  const { setSearchLocation, setSearchRadius: setUpstreamSearchRadius } = useDentistsUpdate();
+
+  const { setFilters } = useFiltersUpdate();
+
   const [searchRadius, setSearchRadius] = useState(upstreamSearchRadius);
   const [updatedInLast, setUpdatedInLast] = useReducer((_, value) => parseInt(value), 0);
 

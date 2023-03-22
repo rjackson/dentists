@@ -9,6 +9,7 @@ import { DentistsProvider } from "@contexts/Dentists";
 import { useReducer } from "react";
 import NotificationsCta from "@components/NotificationsCta";
 import SecondaryButton from "@components/SecondaryButton";
+import { FiltersProvider } from "@contexts/Filters";
 
 const DentistsMap = dynamic(() => import("@components/DentistsMap"), { ssr: false });
 
@@ -17,8 +18,9 @@ export default function Home({ initialDentists, initialLocation, initialRadius, 
 
   return (
     <DentistsProvider initialDentists={initialDentists} initialLocation={initialLocation} initialRadius={initialRadius}>
-      <div
-        className={`
+      <FiltersProvider>
+        <div
+          className={`
           flex
           flex-col-reverse
           w-screen
@@ -33,37 +35,38 @@ export default function Home({ initialDentists, initialLocation, initialRadius, 
           dark:text-gray-50
           dark:bg-gray-900
         `}
-      >
-        <div className={`flex flex-col lg:h-full lg:w-full lg:max-w-lg ${focusMap ? "h-1/3" : "h-2/3"}`}>
-          <div className="flex items-center justify-between px-6">
-            <Header />
-            <SecondaryButton
-              className="lg:hidden"
-              onClick={() => toggleFocusMap()}
-              aria-label={focusMap ? "Reduce size of map" : "Increase size of map"}
-            >
-              {focusMap ? "+" : "-"}
-            </SecondaryButton>
-          </div>
-          <div className="flex flex-col space-y-4 overflow-y-scroll">
-            <Section as="main" className="text-center">
-              <H2 className="sr-only">About</H2>
-              <p>
-                Find NHS dentists near you and set up e-mail alerts to find out when they&apos;re accepting patients.
-              </p>
-            </Section>
+        >
+          <div className={`flex flex-col lg:h-full lg:w-full lg:max-w-lg ${focusMap ? "h-1/3" : "h-2/3"}`}>
+            <div className="flex items-center justify-between px-6">
+              <Header />
+              <SecondaryButton
+                className="lg:hidden"
+                onClick={() => toggleFocusMap()}
+                aria-label={focusMap ? "Reduce size of map" : "Increase size of map"}
+              >
+                {focusMap ? "+" : "-"}
+              </SecondaryButton>
+            </div>
+            <div className="flex flex-col space-y-4 overflow-y-scroll">
+              <Section as="main" className="text-center">
+                <H2 className="sr-only">About</H2>
+                <p>
+                  Find NHS dentists near you and set up e-mail alerts to find out when they&apos;re accepting patients.
+                </p>
+              </Section>
 
-            <SearchFilters />
-            <NotificationsCta />
-            <DentistsList />
+              <SearchFilters />
+              <NotificationsCta />
+              <DentistsList />
+            </div>
+            <Footer />
           </div>
-          <Footer />
+          <section className="flex-1 flex-shrink-0 lg:h-full lg:w-full">
+            <DentistsMap showCells={showCells} />
+          </section>
         </div>
-        <section className="flex-1 flex-shrink-0 lg:h-full lg:w-full">
-          <DentistsMap showCells={showCells} />
-        </section>
-      </div>
-      )
+        )
+      </FiltersProvider>
     </DentistsProvider>
   );
 }

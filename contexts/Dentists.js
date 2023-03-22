@@ -8,12 +8,7 @@ export function DentistsProvider({ initialDentists, initialLocation, initialRadi
   const [searchLocation, setSearchLocation] = useState(initialLocation);
   const [searchRadius, setSearchRadius] = useState(initialRadius);
   const [resolutions, setResolutions] = useState({});
-  const [rawDentists, setRawDentists] = useState(initialDentists);
-  const [filters, setFilters] = useState([]);
-
-  const dentists = rawDentists.filter((dentist) =>
-    filters.length > 0 ? filters.every((filter) => filter(dentist)) : true
-  );
+  const [allDentists, setAllDentists] = useState(initialDentists);
 
   // Refetch dentists on change
   const { lat: searchLat, lng: searchLng } = searchLocation;
@@ -26,7 +21,7 @@ export function DentistsProvider({ initialDentists, initialLocation, initialRadi
       if (isFirstRun.current) {
         isFirstRun.current = false;
       } else {
-        loadDentists(searchLat, searchLng, searchRadius).then((dentists) => setRawDentists(dentists));
+        loadDentists(searchLat, searchLng, searchRadius).then((dentists) => setAllDentists(dentists));
         loadManifest().then(({ resolutions }) => setResolutions(resolutions));
       }
     }
@@ -36,9 +31,9 @@ export function DentistsProvider({ initialDentists, initialLocation, initialRadi
     };
   }, [searchLat, searchLng, searchRadius]);
 
-  const state = { searchLocation, searchRadius, dentists, resolutions };
+  const state = { searchLocation, searchRadius, allDentists, resolutions };
 
-  const updateFns = { setSearchLocation, setFilters, setSearchRadius };
+  const updateFns = { setSearchLocation, setSearchRadius };
 
   return (
     <DentistsStateContext.Provider value={state}>

@@ -1,9 +1,9 @@
 import { H2, Panel, Section } from "@rjackson/rjds";
-import { useDentistsState } from "@contexts/Dentists";
 import DentistInfo from "@components/DentistInfo";
+import { useFiltersState } from "@contexts/Filters";
 
 const DentistsList = () => {
-  const { dentists } = useDentistsState();
+  const { filteredDentists: dentists } = useFiltersState();
 
   return (
     <Section className="space-y-4 text-center">
