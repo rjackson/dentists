@@ -2,6 +2,7 @@ import cloudflare from "cloudflare";
 import { randomUUID } from "crypto"
 import { constants } from "http2"
 import { AlertConfiguration, Subscription, isSubscription } from "./types";
+import { isHTTPError } from "lib/cloudflare/HTTPError";
 
 const apiToken = process.env.CLOUDFLARE_API_TOKEN;
 const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
@@ -30,11 +31,7 @@ export async function loadSubscription(emailAddress: string): Promise<Subscripti
         return subscription;
     } catch (e: unknown) {
         // Key doesn't exist in Cloudflare KV
-        if (typeof (e) === 'object' &&
-            'name' in e &&
-            e.name == 'HTTPError' &&
-            'statusCode' in e &&
-            e.statusCode == constants.HTTP_STATUS_NOT_FOUND
+        if (isHTTPError(e) && e.statusCode == constants.HTTP_STATUS_NOT_FOUND
         ) {
             return null;
         }
