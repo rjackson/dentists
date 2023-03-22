@@ -6,6 +6,7 @@ import SecondaryButton from "./SecondaryButton";
 import { useDentistsState } from "@contexts/Dentists";
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import Link from "next/link";
+import { useFiltersState } from "@contexts/Filters";
 
 const STAGE_INIT = null;
 const STAGE_CREATE = "stage_create";
@@ -13,11 +14,15 @@ const STAGE_SAVED = "stage_saved";
 const STAGE_COMPLETE = "stage_complete";
 
 const NotificationsCta = () => {
-  // TODO: Tidy this component up. It's one big multi-transition, multi-loading state mess at the moment.
-
   const { searchLocation, searchRadius } = useDentistsState();
+  const { acceptanceStates } = useFiltersState();
+
   const [stage, setStage] = useState(STAGE_INIT);
   const [emailAddress, setEmailAddress] = useState("");
+
+  const activeAcceptanceStates = Object.entries(acceptanceStates)
+    .filter(([, value]) => !!value)
+    .map(([property]) => property);
 
   const formData = {
     emailAddress: emailAddress,
@@ -25,15 +30,7 @@ const NotificationsCta = () => {
     lat: parseFloat(searchLocation.lat),
     lng: parseFloat(searchLocation.lng),
     radius: parseInt(searchRadius),
-
-    // TODO: Pull values fron useDentistsState when available
-    filters: {
-      AcceptingAdults: true,
-      AcceptingAdultsEntitled: true,
-      AcceptingChildren: true,
-      AcceptingUrgent: true,
-      AcceptingReferrals: true,
-    },
+    filters: acceptanceStates,
   };
 
   const handleSubmit = async (event) => {
@@ -101,10 +98,11 @@ const NotificationsCta = () => {
                 </DescriptionListItem>
                 <DescriptionListItem className="space-y-1" title="Patients being accepted">
                   <UnorderedList className="space-y-1">
-                    {Object.entries(ACCEPTANCE_TYPES).map(([property, label]) => (
-                      <li key={property}>{label}</li>
-                    ))}
-                    {/* TODO: show actual acceptance types */}
+                    {activeAcceptanceStates.length === 0 ? (
+                      <li>Any types of patient</li>
+                    ) : (
+                      activeAcceptanceStates.map((property) => <li key={property}>{ACCEPTANCE_TYPES[property]}</li>)
+                    )}
                   </UnorderedList>
                 </DescriptionListItem>
               </DescriptionList>
