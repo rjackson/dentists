@@ -41,13 +41,15 @@ export const isAlertConfiguration = (data: unknown): data is AlertConfiguration 
 export type Subscription = {
     emailAddress: string;
     createdAt: string;
-    alerts: AlertConfigurationRecord[]
     managementUuid: string;
+    verifiedAt: string | null;
+    alerts: AlertConfigurationRecord[];
 }
 
 export const isSubscription = (data: unknown): data is Subscription => {
     return (
         typeof (data as Subscription).emailAddress === 'string' &&
+        typeof (data as Subscription).createdAt === 'string' &&
         typeof (data as Subscription).managementUuid === 'string' &&
         Array.isArray((data as Subscription).alerts)
     )

@@ -36,11 +36,16 @@ const CreateAlert = async (req: NextApiRequest, res: NextApiResponse) => {
     filters: formData.filters
   }
 
-  await addAlert(formData.emailAddress, alertConfig);
+  const subscription = await addAlert(formData.emailAddress, alertConfig);
+  const verificationRequired = subscription.verifiedAt === null;
+
+  if (verificationRequired) {
+    // todo: send verification email somehow via something??
+  }
 
   return res
     .status(constants.HTTP_STATUS_OK)
-    .json({ ok: true, message: "Created alert" });
+    .json({ ok: true, verificationRequired, message: "Updated subscription" });
 };
 
 export default CreateAlert;

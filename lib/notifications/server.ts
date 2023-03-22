@@ -4,15 +4,14 @@ import { constants } from "http2"
 import { AlertConfiguration, Subscription, isSubscription } from "./types";
 import { isHTTPError } from "lib/cloudflare/HTTPError";
 
-const apiToken = process.env.CLOUDFLARE_API_TOKEN;
-const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
-const kvNamespace = process.env.CLOUDFLARE_KV_NAMESPACE;
+const apiToken = process.env.CLOUDFLARE_API_TOKEN ?? '';
+const accountId = process.env.CLOUDFLARE_ACCOUNT_ID ?? '';
+const kvNamespace = process.env.CLOUDFLARE_KV_NAMESPACE ?? '';
 
 const cf = new cloudflare({ token: apiToken });
 
 export async function loadSubscription(emailAddress: string): Promise<Subscription | null> {
     try {
-
         const subscriptionJson = await cf.enterpriseZoneWorkersKV.read(
             accountId,
             kvNamespace,
@@ -41,7 +40,7 @@ export async function loadSubscription(emailAddress: string): Promise<Subscripti
     }
 }
 
-export async function addAlert(emailAddress: string, alertConfig: AlertConfiguration): Promise<boolean> {
+export async function addAlert(emailAddress: string, alertConfig: AlertConfiguration): Promise<Subscription> {
     try {
         const existingSubscription = await loadSubscription(emailAddress)
         const nowIsoString = (new Date).toISOString();
@@ -49,8 +48,10 @@ export async function addAlert(emailAddress: string, alertConfig: AlertConfigura
         // TODO: deduplicate alerts somehow
 
         const subscription: Subscription = {
+            ...existingSubscription,
             emailAddress,
             createdAt: existingSubscription?.createdAt ?? nowIsoString,
+            verifiedAt: existingSubscription?.verifiedAt ?? null,
             managementUuid: existingSubscription?.managementUuid ?? randomUUID(),
             alerts: [
                 ...existingSubscription?.alerts ?? [],
@@ -68,9 +69,47 @@ export async function addAlert(emailAddress: string, alertConfig: AlertConfigura
             JSON.stringify(subscription)
         );
 
-        return true;
+        return subscription;
     } catch (e: unknown) {
         console.trace(e);
+        throw e;
+    }
+}
+
+export async function verifySubscription(emailAddress: string, managementUuid: string): Promise<Subscription> {
+    try {
+        const existingSubscription = await loadSubscription(emailAddress)
+        if (!existingSubscription) {
+            throw Error("Not found");
+        }
+
+        const nowIsoString = (new Date).toISOString();
+
+        if (managementUuid !== existingSubscription.managementUuid) {
+            throw Error("Forbidden");
+        }
+
+        // no change required
+        if (typeof existingSubscription.verifiedAt === "string") {
+            return existingSubscription;
+        }
+
+        const subscription = {
+            ...existingSubscription,
+            verifiedAt: nowIsoString
+        }
+
+        await cf.enterpriseZoneWorkersKV.add(
+            accountId,
+            kvNamespace,
+            emailAddress,
+            JSON.stringify(subscription)
+        );
+
+        return subscription;
+    } catch (e: unknown) {
+        console.trace(e);
+        throw e;
     }
 }
 

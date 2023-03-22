@@ -17,21 +17,13 @@ const NotificationsCta = () => {
   const { searchLocation, searchRadius } = useDentistsState();
   const { acceptanceStates } = useFiltersState();
 
+  // TODO: useReducer states, or xstate?
   const [stage, setStage] = useState(STAGE_INIT);
-  const [emailAddress, setEmailAddress] = useState("");
+  const [verificationRequired, setVerificationRequired] = useState(false);
 
   const activeAcceptanceStates = Object.entries(acceptanceStates)
     .filter(([, value]) => !!value)
     .map(([property]) => property);
-
-  const formData = {
-    emailAddress: emailAddress,
-    locationName: searchLocation.name,
-    lat: parseFloat(searchLocation.lat),
-    lng: parseFloat(searchLocation.lng),
-    radius: parseInt(searchRadius),
-    filters: acceptanceStates,
-  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -41,12 +33,20 @@ const NotificationsCta = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify({
+        emailAddress: event.target.emailAddress.value,
+        locationName: searchLocation.name,
+        lat: parseFloat(searchLocation.lat),
+        lng: parseFloat(searchLocation.lng),
+        radius: parseInt(searchRadius),
+        filters: acceptanceStates,
+      }),
     });
 
     const result = await response.json();
     if (result?.ok) {
       setStage(STAGE_SAVED);
+      setVerificationRequired(result.verificationRequired);
     }
 
     // TODO: handle errors?
@@ -112,14 +112,7 @@ const NotificationsCta = () => {
                   className="space-y-1"
                   title={<label htmlFor="notification-email-address">Email address</label>}
                 >
-                  <Input
-                    id="notification-email-address"
-                    name="emailAddress"
-                    type="email"
-                    value={emailAddress}
-                    onChange={(e) => setEmailAddress(e.target.value)}
-                    required
-                  />
+                  <Input id="notification-email-address" name="emailAddress" type="email" required />
                 </DescriptionListItem>
               </DescriptionList>
 
@@ -161,7 +154,14 @@ const NotificationsCta = () => {
                 <H2>Your alert has been set up</H2>
               </Dialog.Title>
 
-              <p>We&apos;ll e-mail you the moment any more dentists match your search.</p>
+              {verificationRequired ? (
+                <p>
+                  We&apos;ve sent you an e-mail to verify you&apos;re happy to receive alerts from us. Click the link in
+                  that email, and we&apos;ll let you know the moment any more dentists match your search.
+                </p>
+              ) : (
+                <p>We&apos;ll let you know the moment any more dentists match your search.</p>
+              )}
 
               <p>
                 You can manage your alerts or unsubscribe at any time on our
