@@ -13,6 +13,8 @@ const STAGE_SAVED = "stage_saved";
 const STAGE_COMPLETE = "stage_complete";
 
 const NotificationsCta = () => {
+  // TODO: Tidy this component up. It's one big multi-transition, multi-loading state mess at the moment.
+
   const { searchLocation, searchRadius } = useDentistsState();
   const [stage, setStage] = useState(STAGE_INIT);
   const [emailAddress, setEmailAddress] = useState("");
