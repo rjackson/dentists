@@ -1,77 +1,23 @@
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import { DescriptionList, DescriptionListItem, H2, Panel, Section, Input, inputClasses } from "@rjackson/rjds";
-import { useEffect, useMemo, useReducer, useRef, useState } from "react";
+import { useState } from "react";
 import GeonamesAutosuggest from "@components/GeonamesAutosuggest";
 import { useDentistsState, useDentistsUpdate } from "@contexts/Dentists";
 import Checkbox from "./Checkbox";
 import CheckboxLabel from "./CheckboxLabel";
 import SecondaryButton from "./SecondaryButton";
-import { useFiltersUpdate } from "@contexts/Filters";
+import { useFiltersState, useFiltersUpdate } from "@contexts/Filters";
 
 const SearchFilters = () => {
   const [collapsed, setCollapsed] = useState(false);
-  const { searchLocation, searchRadius: upstreamSearchRadius } = useDentistsState();
-  const { setSearchLocation, setSearchRadius: setUpstreamSearchRadius } = useDentistsUpdate();
+  const { searchLocation, searchRadius } = useDentistsState();
+  const { setSearchLocation, setSearchRadius } = useDentistsUpdate();
+  const { updatedInLast, acceptanceStates } = useFiltersState();
+  const { setUpdatedInLast, toggleAcceptanceState } = useFiltersUpdate();
 
-  const { setFilters } = useFiltersUpdate();
-
-  const [searchRadius, setSearchRadius] = useState(upstreamSearchRadius);
-  const [updatedInLast, setUpdatedInLast] = useReducer((_, value) => parseInt(value), 0);
-
-  const [acceptanceStates, setAcceptanceStates] = useState(
-    Object.fromEntries(Object.entries(ACCEPTANCE_TYPES).map(([property]) => [property, false]))
-  );
-
-  const toggleAcceptanceState = (property) =>
-    setAcceptanceStates({
-      ...acceptanceStates,
-      [property]: !acceptanceStates[property],
-    });
-
-  const acceptanceFilters = useMemo(() => {
-    return Object.entries(acceptanceStates)
-      .filter(([, active]) => active)
-      .map(
-        ([property]) =>
-          ({ AcceptingPatients }) =>
-            AcceptingPatients[property] == true
-      );
-  }, [acceptanceStates]);
-
-  const updatedFilter = useMemo(
-    () =>
-      ({ DentistsAcceptingPatientsLastUpdatedDate }) => {
-        if (!updatedInLast) {
-          return true;
-        }
-
-        const lastUpdatedDate = new Date(DentistsAcceptingPatientsLastUpdatedDate);
-        const diffTime = new Date() - lastUpdatedDate;
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-        return diffDays <= updatedInLast;
-      },
-    [updatedInLast]
-  );
-
-  // Sync search params with dentist provider after a short debounce (prevent expensive renders elsewhere, if user is
-  //  actively setting filters or changing controlled inputs)
-  const changeTimeout = useRef(null);
-  useEffect(() => {
-    let mounted = true;
-
-    clearTimeout(changeTimeout.current);
-    changeTimeout.current = setTimeout(() => {
-      if (mounted) {
-        setFilters([...acceptanceFilters, updatedFilter]);
-        setUpstreamSearchRadius(searchRadius);
-      }
-    }, 300);
-
-    return () => {
-      mounted = false;
-    };
-  }, [acceptanceFilters, updatedFilter, setFilters, searchRadius, setUpstreamSearchRadius]);
+  const activeAcceptanceStates = Object.entries(acceptanceStates)
+    .filter(([, value]) => !!value)
+    .map(([property]) => ACCEPTANCE_TYPES[property]);
 
   return (
     <Section className="space-y-4">
@@ -82,9 +28,9 @@ const SearchFilters = () => {
         </div>
         {collapsed ? (
           <p>
-            {acceptanceFilters.length === 0 ? "All dentists" : "Dentists"} within {searchRadius}{" "}
+            {activeAcceptanceStates.length > 0 ? "Dentists" : "All dentists"} within {searchRadius}{" "}
             <abbr title="kilometers">km</abbr> of {searchLocation.name}{" "}
-            {acceptanceFilters.length > 0 && `accepting certain types of patients`}
+            {activeAcceptanceStates.length > 0 && `accepting certain types of patients`}
           </p>
         ) : (
           <DescriptionList>
