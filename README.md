@@ -11,6 +11,7 @@ This project relies on third-party services:
 - [Geonames Web Services](https://www.geonames.org/export/web-services.html) for autocompletion of place names
 - [NHS APIs](https://developer.api.nhs.uk/) for the underlying list of Dental services
 - [Cloudflare](https://cloudflare.com) for the storage of user data to send notifications (using [Cloudflare KV](https://www.cloudflare.com/en-gb/products/workers-kv/))
+- [Sendgrid](https://sendgrid.com) to send email alerts to users who've signed up for them
 - [Fathom](https://usefathom.com) (optional) for privacy-conscious web analytics
 
 Configure `.env.local` with credentials for these providers. `.env.example` has been provided as a template for expected settings.
@@ -23,7 +24,10 @@ Configure `.env.local` with credentials for these providers. `.env.example` has 
 | CLOUDFLARE_API_TOKEN              | Your credentials for the Cloudflare API. Needs read and edit access to "Workers KV Storage"                                    |
 | CLOUDFLARE_ACCOUNT_ID             | The ID of the Cloudflare account under which the Cloudflare KV namespace is set up                                             |
 | CLOUDFLARE_KV_NAMESPACE           | The ID for the Cloudflare KV namespace under which notification data will be saved                                             |
+| SENDGRID_API_KEY                  | The API Key for Sendgrid, to send email alerts for new dentists                                                                |
+| EMAIL_FROM_ADDRESS                | What address any e-mails we send should come from                                                                              |
 | MAX_DENTISTS                      | Development setting to limit how many dentists are loaded on screen at any one time.                                           |
+| NEXT_PUBLIC_FALLBACK_SITE_URL     | The public site URL to fall back upon if we cannot automatically derive the current site URL (e.g. in Github Actions)          |
 | NEXT_PUBLIC_FATHOM_CUSTOM_DOMAIN  | Analytics via [Fathom](https://usefathom.com)                                                                                  |
 | NEXT_PUBLIC_FATHOM_TRACKING_CODE  | Analytics via [Fathom](https://usefathom.com)                                                                                  |
 

@@ -4,9 +4,9 @@ import { constants } from "http2"
 import { AlertConfiguration, Subscription, isSubscription } from "./types";
 import { isHTTPError } from "lib/cloudflare/HTTPError";
 
-const apiToken = process.env.CLOUDFLARE_API_TOKEN ?? '';
-const accountId = process.env.CLOUDFLARE_ACCOUNT_ID ?? '';
-const kvNamespace = process.env.CLOUDFLARE_KV_NAMESPACE ?? '';
+const apiToken = process.env.CLOUDFLARE_API_TOKEN;
+const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
+const kvNamespace = process.env.CLOUDFLARE_KV_NAMESPACE;
 
 const cf = new cloudflare({ token: apiToken });
 

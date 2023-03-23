@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { constants } from "http2";
 import { AlertConfiguration, isAlertConfiguration } from "lib/notifications/types";
 import { addAlert } from "lib/notifications/server";
+import sendVerificationEmail from "lib/notifications/emails/send-verification-email";
 
 type FormData = AlertConfiguration & {
   emailAddress: string;
@@ -40,7 +41,11 @@ const CreateAlert = async (req: NextApiRequest, res: NextApiResponse) => {
   const verificationRequired = subscription.verifiedAt === null;
 
   if (verificationRequired) {
-    // todo: send verification email somehow via something??
+    await sendVerificationEmail(
+      subscription.emailAddress,
+      subscription.managementUuid,
+      alertConfig
+    )
   }
 
   return res
