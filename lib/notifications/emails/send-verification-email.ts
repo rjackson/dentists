@@ -3,7 +3,7 @@ import sendgrid from "@sendgrid/mail"
 import { AlertConfiguration } from "../types";
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 
-const VERIFICATION_PATH = '/api/verify-subscription';
+const VERIFICATION_PATH = '/notifications/verify-subscription';
 const MANAGE_NOTIFICATIONS_PATH = '/notifications'
 
 const { SENDGRID_API_KEY, EMAIL_FROM_ADDRESS } = process.env

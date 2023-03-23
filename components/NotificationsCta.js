@@ -156,7 +156,7 @@ const NotificationsCta = () => {
 
               {verificationRequired ? (
                 <p>
-                  We&apos;ve sent you an e-mail to verify you&apos;re happy to receive alerts from us. Click the link in
+                  We&apos;ve sent you an email to verify you&apos;re happy to receive alerts from us. Click the link in
                   that email, and we&apos;ll let you know the moment any more dentists match your search.
                 </p>
               ) : (
