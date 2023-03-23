@@ -86,7 +86,7 @@ const NotificationsManagerLookup = () => {
 
               {success ? (
                 <div className="bg-green-100 text-green-900 rounded-md px-4 py-2">
-                  <p className="font-semibold">New link requested</p>
+                  <p className="font-semibold">New link sent</p>
                   <p>
                     If we have any notifications set up under your email address, you&apos;ll receive an email shortly
                     with a new manage notifications link
