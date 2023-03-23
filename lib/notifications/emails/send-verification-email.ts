@@ -1,10 +1,8 @@
-import getBaseUrl from "@helpers/getBaseUrl";
 import sendgrid from "@sendgrid/mail"
-import { AlertConfiguration } from "../types";
+import { AlertConfiguration, Subscription } from "../types";
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
+import { generateManageLink, generateVerificationLink } from "../links";
 
-const VERIFICATION_PATH = '/notifications/verify-subscription';
-const MANAGE_NOTIFICATIONS_PATH = '/notifications'
 
 const { SENDGRID_API_KEY, EMAIL_FROM_ADDRESS } = process.env
 
@@ -19,16 +17,11 @@ const summariseAcceptanceFilters = (alertConfig: AlertConfiguration): string | u
 ${activeFilters.join('\n')}`
 }
 
-const renderTextContent = (emailAddress: string, managementUuid: string, alertConfig: AlertConfiguration): string => {
-    const baseUrl = getBaseUrl();
-    const authSearchParams = new URLSearchParams({
-        emailAddress,
-        managementUuid
-    })
-
+const renderTextContent = (subscription: Subscription, alertConfig: AlertConfiguration): string => {
     const acceptanceFiltersSummary = summariseAcceptanceFilters(alertConfig) ?? 'All dentists in area';
-    const verificationLink = new URL(`${VERIFICATION_PATH}?${authSearchParams}`, baseUrl);
-    const manageNotificationsLink = new URL(`${MANAGE_NOTIFICATIONS_PATH}?${authSearchParams}`, baseUrl);
+
+    const verificationLink = generateVerificationLink(subscription);
+    const manageNotificationsLink = generateManageLink(subscription);
 
     return `We're almost ready to set up your dentists alert for the following search:
 
@@ -48,14 +41,14 @@ ${manageNotificationsLink}`;
 }
 
 
-const sendVerificationEmail = async (emailAddress: string, managementUuid: string, alertConfig: AlertConfiguration): Promise<boolean> => {
+const sendVerificationEmail = async (subscription: Subscription, alertConfig: AlertConfiguration): Promise<boolean> => {
     sendgrid.setApiKey(SENDGRID_API_KEY);
     try {
         await sendgrid.send({
-            to: emailAddress,
+            to: subscription.emailAddress,
             from: EMAIL_FROM_ADDRESS,
             subject: "Verify your dentists alert subscription",
-            text: renderTextContent(emailAddress, managementUuid, alertConfig),
+            text: renderTextContent(subscription, alertConfig),
             trackingSettings: {
                 clickTracking: {
                     enable: false

@@ -6,11 +6,11 @@ const Footer = ({ className = "" }) => {
     <Section as="footer" className={`space-y-2 pt-3 ${className}`}>
       <nav>
         <ul className={`flex space-x-4 justify-center text-sm lg:text-base lg:flex-row`}>
-          {/* <li>
+          <li>
             <Link href="/notifications" passHref>
               <Anchor>manage notifications</Anchor>
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link href="/privacy" passHref>
               <Anchor>privacy policy</Anchor>

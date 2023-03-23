@@ -2,27 +2,22 @@ import Footer from "@components/Footer";
 import Header from "@components/Header";
 import { H2, Panel, Section, SingleColumnLayout } from "@rjackson/rjds";
 import { decodeAuthToken } from "lib/notifications/links";
-import { verifySubscription } from "lib/notifications/server";
+import { loadSubscription } from "lib/notifications/server";
+import { Subscription } from "lib/notifications/types";
 import { GetServerSideProps, InferGetStaticPropsType } from "next";
 
-type VerifySubscriptionProps = {
-  ok: boolean;
+type NotificationsManagerProps = {
+  subscription: Subscription;
 };
 
-const VerifySubscription = ({ ok }: InferGetStaticPropsType<VerifySubscriptionProps>) => {
+const NotificationsManager = ({ subscription }: InferGetStaticPropsType<NotificationsManagerProps>) => {
   return (
     <SingleColumnLayout header={<Header />} footer={<Footer />}>
       <Section as="main">
         <div className="space-y-4">
-          <H2>Verify your email address</H2>
+          <H2>Manage notifications</H2>
           <Panel>
-            <div className="space-y-4 text-center">
-              {ok ? (
-                <p>Thank you, we&apos;ve verified your email address and your alert is all set up!</p>
-              ) : (
-                <p>We could not verify your email address. Please try again later.</p>
-              )}
-            </div>
+            <pre>{JSON.stringify(subscription, null, 2)}</pre>
           </Panel>
         </div>
       </Section>
@@ -30,11 +25,10 @@ const VerifySubscription = ({ ok }: InferGetStaticPropsType<VerifySubscriptionPr
   );
 };
 
-export default VerifySubscription;
+export default NotificationsManager;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { authToken } = context.query;
-  let ok = false;
 
   try {
     if (typeof authToken !== "string") {
@@ -45,16 +39,28 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     if (!authPayload) {
       throw Error("Could not decode auth payload");
     }
-    const { emailAddress, managementUuid } = authPayload;
-    await verifySubscription(emailAddress, managementUuid);
-    ok = true;
-  } catch (error: unknown) {
-    // Intentionally empty. We'll render a soft 404
-  }
 
-  return {
-    props: {
-      ok,
-    },
-  };
+    const { emailAddress, managementUuid } = authPayload;
+
+    const subscription = await loadSubscription(emailAddress);
+
+    if (!subscription) {
+      throw Error("Not found");
+    }
+
+    if (subscription.managementUuid !== managementUuid) {
+      throw Error("Forbidden");
+    }
+
+    return {
+      props: {
+        subscription,
+      },
+    };
+  } catch (error: unknown) {
+    // 404 on any errors
+    return {
+      notFound: true,
+    };
+  }
 };

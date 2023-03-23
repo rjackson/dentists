@@ -42,8 +42,7 @@ const CreateAlert = async (req: NextApiRequest, res: NextApiResponse) => {
 
   if (verificationRequired) {
     await sendVerificationEmail(
-      subscription.emailAddress,
-      subscription.managementUuid,
+      subscription,
       alertConfig
     )
   }
