@@ -13,7 +13,7 @@ const Footer = ({ className = "" }) => {
           </li>
           <li>
             <Link href="/privacy" passHref>
-              <Anchor>privacy policy</Anchor>
+              <Anchor>privacy notice</Anchor>
             </Link>
           </li>
         </ul>

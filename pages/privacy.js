@@ -7,24 +7,24 @@ const Privacy = () => {
   return (
     <SingleColumnLayout header={<Header />} footer={<Footer />}>
       <Section as="main" className="space-y-4">
-        <H2>Privacy policy</H2>
+        <H2>Privacy Notice</H2>
         <Panel className="space-y-4">
-          <p>We avoid collecting and using personal information through the website as much as possible.</p>
+          <p>We only collect and use personal data when we need to.</p>
 
-          <p>For the purpose of alerting customers when new dentists appear matching their filters, we collect:</p>
+          <p>For general usage of the website, no data is collected or stored.</p>
+
+          <p>For users who have set up email alerts, we save and use:</p>
 
           <UnorderedList>
             <li>Email address</li>
-            <li>Geographic area from which you want alerts</li>
-            <li>Any filters you have set up</li>
+            <li>Location (latitude, longitude, search radius)</li>
+            <li>&quot;Patients being accepted&quot; preferences</li>
           </UnorderedList>
 
           <p>
-            This data is stored in Cloudflare KV, and is processed by Github Actions. This data will be irrevocably
-            deleted when customers unsubcsribe from their alerts.
+            When users unsubscribe from alerts we immediately remove their data. Some references may remain in log files
+            for up to 37 days after deletion.
           </p>
-
-          {/* TODO: simplify references to Cloduflare, Github? nerd data not useful to general public */}
 
           {/* TODO: Auto-delete after period of time, unless customer opts to extend? */}
 

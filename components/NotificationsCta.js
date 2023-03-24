@@ -119,7 +119,7 @@ const NotificationsCta = () => {
               <p>
                 The above information will be saved for the purposes of sending you alerts. See our{" "}
                 <Link href="/privacy" passHref>
-                  <Anchor target="_blank">privacy policy</Anchor>
+                  <Anchor target="_blank">privacy notice</Anchor>
                 </Link>{" "}
                 for full details.
               </p>
