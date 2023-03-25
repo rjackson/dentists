@@ -72,7 +72,7 @@ const NotificationsManagerLookup = () => {
     <SingleColumnLayout header={<Header />} footer={<Footer />}>
       <Section as="main">
         <div className="space-y-4">
-          <H2>Manage notifications</H2>
+          <H2>Manage your alerts</H2>
           <Panel>
             <div className="space-y-4">
               <p>

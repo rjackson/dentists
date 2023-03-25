@@ -51,7 +51,7 @@ export default function Home({ initialDentists, initialLocation, initialRadius, 
               <Section as="main" className="text-center">
                 <H2 className="sr-only">About</H2>
                 <p>
-                  Find NHS dentists near you and set up email alerts to find out when they&apos;re accepting patients.
+                  Find NHS Dentists near you and filter them by the patients they&apos;re currently accepting.
                 </p>
               </Section>
 

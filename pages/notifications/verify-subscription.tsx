@@ -1,6 +1,6 @@
 import Footer from "@components/Footer";
 import Header from "@components/Header";
-import { H2, Panel, Section, SingleColumnLayout } from "@rjackson/rjds";
+import { Panel, Section, SingleColumnLayout } from "@rjackson/rjds";
 import { decodeAuthToken } from "lib/notifications/links";
 import { verifySubscription } from "lib/notifications/server";
 import { GetServerSideProps, InferGetStaticPropsType } from "next";
@@ -14,7 +14,7 @@ const VerifySubscription = ({ ok }: InferGetStaticPropsType<VerifySubscriptionPr
     <SingleColumnLayout header={<Header />} footer={<Footer />}>
       <Section as="main">
         <div className="space-y-4">
-          <H2>Verify your email address</H2>
+          {/* <H2>Email verification</H2> */}
           <Panel>
             <div className="space-y-4 text-center">
               {ok ? (

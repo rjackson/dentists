@@ -1,10 +1,9 @@
 import { Dialog } from "@headlessui/react";
-import { Anchor, DescriptionList, DescriptionListItem, H2, Input, Panel, Section, UnorderedList } from "@rjackson/rjds";
+import { Anchor, DescriptionList, DescriptionListItem, H2, Input, Panel, Section } from "@rjackson/rjds";
 import PrimaryButton from "@components/PrimaryButton";
 import { useState } from "react";
 import SecondaryButton from "./SecondaryButton";
 import { useDentistsState } from "@contexts/Dentists";
-import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import Link from "next/link";
 import { useFiltersState } from "@contexts/Filters";
 
@@ -84,28 +83,17 @@ const NotificationsCta = () => {
                 <H2>Set up an email alert for this search</H2>
               </Dialog.Title>
 
-              <p>
-                Our information on dentists updates daily. Set up an email alert to find out when more dentists match
-                your search:
-              </p>
+              <p>Our information on what patients dentists are accepting updates every day.</p>
 
-              <DescriptionList>
-                <DescriptionListItem className="flex space-x-4" title="Location">
-                  {searchLocation.name}
-                </DescriptionListItem>
-                <DescriptionListItem className="flex  space-x-4" title="Search radius">
-                  {searchRadius} <abbr title="kilometers">km</abbr>
-                </DescriptionListItem>
-                <DescriptionListItem className="space-y-1" title="Patients being accepted">
-                  <UnorderedList className="space-y-1">
-                    {activeAcceptanceStates.length === 0 ? (
-                      <li>Any types of patient</li>
-                    ) : (
-                      activeAcceptanceStates.map((property) => <li key={property}>{ACCEPTANCE_TYPES[property]}</li>)
-                    )}
-                  </UnorderedList>
-                </DescriptionListItem>
-              </DescriptionList>
+              <p>
+                We can let you know when any more dentists match your search:{" "}
+                <em>
+                  {activeAcceptanceStates.length === 0
+                    ? "All dentists"
+                    : `${activeAcceptanceStates.length} types of patient`}{" "}
+                  within {searchRadius} <abbr title="kilometers">km</abbr> of {searchLocation.name}
+                </em>
+              </p>
 
               <DescriptionList>
                 <DescriptionListItem
@@ -116,6 +104,15 @@ const NotificationsCta = () => {
                 </DescriptionListItem>
               </DescriptionList>
 
+              <div className="flex flex-row space-x-4">
+                <PrimaryButton className="flex-1" type="submit">
+                  Set up alert
+                </PrimaryButton>
+                <SecondaryButton className="flex-1" onClick={() => setStage(STAGE_INIT)}>
+                  Cancel
+                </SecondaryButton>
+              </div>
+
               <p>
                 The above information will be saved for the purposes of sending you alerts. See our{" "}
                 <Link href="/privacy" passHref>
@@ -123,15 +120,6 @@ const NotificationsCta = () => {
                 </Link>{" "}
                 for full details.
               </p>
-
-              <div className="flex flex-row space-x-4">
-                <PrimaryButton className="flex-1" type="submit">
-                  Save alert
-                </PrimaryButton>
-                <SecondaryButton className="flex-1" onClick={() => setStage(STAGE_INIT)}>
-                  Cancel
-                </SecondaryButton>
-              </div>
             </Panel>
           </Dialog.Panel>
         </form>
@@ -155,10 +143,7 @@ const NotificationsCta = () => {
               </Dialog.Title>
 
               {verificationRequired ? (
-                <p>
-                  We&apos;ve sent you an email to verify you&apos;re happy to receive alerts from us. Click the link in
-                  that email, and we&apos;ll let you know the moment any more dentists match your search.
-                </p>
+                <p>We&apos;ve sent you an email to verify you&apos;re happy to receive alerts from us.</p>
               ) : (
                 <p>We&apos;ll let you know the moment any more dentists match your search.</p>
               )}
