@@ -7,6 +7,7 @@ namespace NodeJS {
         CLOUDFLARE_ACCOUNT_ID: string;
         CLOUDFLARE_KV_NAMESPACE: string;
         SENDGRID_API_KEY: string;
+        EMAIL_FROM_NAME: string;
         EMAIL_FROM_ADDRESS: string;
         MAX_DENTISTS: string;
         NEXT_PUBLIC_FALLBACK_SITE_URL: string;

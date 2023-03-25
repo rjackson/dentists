@@ -4,7 +4,7 @@ import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import { generateManageLink, generateVerificationLink } from "../links";
 
 
-const { SENDGRID_API_KEY, EMAIL_FROM_ADDRESS } = process.env
+const { SENDGRID_API_KEY, EMAIL_FROM_NAME, EMAIL_FROM_ADDRESS } = process.env
 
 const summariseAcceptanceFilters = (alertConfig: AlertConfiguration): string | undefined => {
     const activeFilters = Object.entries(alertConfig.filters).filter(([, value]) => value === true).map(([property]) => `\t${ACCEPTANCE_TYPES[property as keyof typeof ACCEPTANCE_TYPES]}`);
@@ -46,7 +46,7 @@ const sendVerificationEmail = async (subscription: Subscription, alertConfig: Al
     try {
         await sendgrid.send({
             to: subscription.emailAddress,
-            from: EMAIL_FROM_ADDRESS,
+            from: { name: EMAIL_FROM_NAME, email: EMAIL_FROM_ADDRESS },
             subject: "Verify your dentists alert subscription",
             text: renderTextContent(subscription, alertConfig),
             trackingSettings: {

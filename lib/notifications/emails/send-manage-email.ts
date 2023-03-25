@@ -2,8 +2,7 @@ import sendgrid from "@sendgrid/mail"
 import { Subscription } from "../types";
 import { generateManageLink } from "../links";
 
-const { SENDGRID_API_KEY, EMAIL_FROM_ADDRESS } = process.env
-
+const { SENDGRID_API_KEY, EMAIL_FROM_NAME, EMAIL_FROM_ADDRESS } = process.env
 
 const renderTextContent = (subscription: Subscription): string => {
     const manageNotificationsLink = generateManageLink(subscription);
@@ -21,7 +20,7 @@ const sendManageEmail = async (subscription: Subscription): Promise<boolean> => 
     try {
         await sendgrid.send({
             to: subscription.emailAddress,
-            from: EMAIL_FROM_ADDRESS,
+            from: { name: EMAIL_FROM_NAME, email: EMAIL_FROM_ADDRESS },
             subject: "Manage your Dentists on a Map notifications",
             text: renderTextContent(subscription),
             trackingSettings: {
