@@ -18,5 +18,16 @@
   "rules": {
     // This rule is deprecated and is 'off' in the latest definition of the strict config, which is currently unreleased
     "jsx-a11y/label-has-for": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "rules": {
+        "no-undef": 0
+      }
+    }
+  ]
 }

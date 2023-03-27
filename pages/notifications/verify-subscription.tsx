@@ -3,13 +3,13 @@ import Header from "@components/Header";
 import { Panel, Section, SingleColumnLayout } from "@rjackson/rjds";
 import { decodeAuthToken } from "lib/notifications/links";
 import { verifySubscription } from "lib/notifications/server";
-import { GetServerSideProps, InferGetStaticPropsType } from "next";
+import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 
 type VerifySubscriptionProps = {
   ok: boolean;
 };
 
-const VerifySubscription = ({ ok }: InferGetStaticPropsType<VerifySubscriptionProps>) => {
+const VerifySubscription = ({ ok }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <SingleColumnLayout header={<Header />} footer={<Footer />}>
       <Section as="main">
@@ -32,9 +32,8 @@ const VerifySubscription = ({ ok }: InferGetStaticPropsType<VerifySubscriptionPr
 
 export default VerifySubscription;
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getServerSideProps: GetServerSideProps<VerifySubscriptionProps> = async (context) => {
   const { authToken } = context.query;
-  let ok = false;
 
   try {
     if (typeof authToken !== "string") {
@@ -47,14 +46,15 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     }
     const { emailAddress, managementUuid } = authPayload;
     await verifySubscription(emailAddress, managementUuid);
-    ok = true;
-  } catch (error: unknown) {
-    // Intentionally empty. We'll render a soft 404
-  }
 
-  return {
-    props: {
-      ok,
-    },
-  };
+    return {
+      props: {
+        ok: true,
+      },
+    };
+  } catch (error: unknown) {
+    return {
+      notFound: true,
+    };
+  }
 };
