@@ -32,16 +32,10 @@ const DeleteAlert = async (req: NextApiRequest, res: NextApiResponse) => {
 
   const subscription = await loadSubscription(formData.emailAddress);
 
-  if (!subscription) {
+  if (!subscription || formData.managementUuid !== subscription.managementUuid) {
     return res
       .status(constants.HTTP_STATUS_NOT_FOUND)
       .json({ message: "Subscription not found" });
-  }
-
-  if (formData.managementUuid !== subscription.managementUuid) {
-    return res
-      .status(constants.HTTP_STATUS_FORBIDDEN)
-      .json({ message: 'Forbidden' });
   }
 
   await deleteAlert(
