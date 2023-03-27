@@ -15,12 +15,18 @@ const MapZoomer = () => {
   const map = useMap();
   const searchArea = useRef();
 
+  const debounceTimeout = useRef(null);
+
   // Zoom the map on search location / radius
   useEffect(() => {
-    const bounds = searchArea.current.getBounds();
-    if (bounds.isValid()) {
-      map.fitBounds(bounds);
-    }
+    clearTimeout(debounceTimeout.current);
+
+    debounceTimeout.current = setTimeout(() => {
+      const bounds = searchArea.current.getBounds();
+      if (bounds.isValid()) {
+        map.fitBounds(bounds);
+      }
+    }, 300);
   }, [map, searchLocation, searchRadius]);
 
   return (
