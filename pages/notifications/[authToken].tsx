@@ -1,6 +1,7 @@
 import Footer from "@components/Footer";
 import Header from "@components/Header";
 import AlertsTable from "@components/notifications/AlertsTable";
+import UnsubscribeFromAll from "@components/notifications/UnsubscribeFromAll";
 import VerificationWarning from "@components/notifications/VerificationWarning";
 import { H2, H3, Panel, Section, SingleColumnLayout } from "@rjackson/rjds";
 import { decodeAuthToken } from "lib/notifications/links";
@@ -33,6 +34,7 @@ const NotificationsManager = ({ subscription }: InferGetServerSidePropsType<type
           </Panel>
         </div>
       </Section>
+      <UnsubscribeFromAll subscription={subscription} />
     </SingleColumnLayout>
   );
 };

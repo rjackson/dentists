@@ -152,4 +152,21 @@ export async function deleteAlert(emailAddress: string, managementUuid: string, 
     }
 }
 
-// export async function unsubscribe(emailAddress: string): Promise<void> {}
+export async function unsubscribe(emailAddress: string, managementUuid: string): Promise<true | void> {
+    try {
+        const existingSubscription = await loadSubscription(emailAddress)
+        if (!existingSubscription) {
+            throw Error("Not found");
+        }
+
+        if (managementUuid !== existingSubscription.managementUuid) {
+            throw Error("Forbidden");
+        }
+
+        await cf.enterpriseZoneWorkersKV.del(accountId, kvNamespace, emailAddress);
+        return true;
+    } catch (e: unknown) {
+        console.trace(e);
+        throw e;
+    }
+}
