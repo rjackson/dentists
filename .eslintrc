@@ -13,21 +13,12 @@
     "next",
     "next/core-web-vitals",
     "prettier",
-    "plugin:jsx-a11y/strict"
+    "plugin:jsx-a11y/strict",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     // This rule is deprecated and is 'off' in the latest definition of the strict config, which is currently unreleased
     "jsx-a11y/label-has-for": "off"
-  },
-  "overrides": [
-    {
-      "files": [
-        "*.ts",
-        "*.tsx"
-      ],
-      "rules": {
-        "no-undef": 0
-      }
-    }
-  ]
+  }
 }

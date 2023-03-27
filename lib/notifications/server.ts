@@ -57,6 +57,7 @@ export async function addAlert(emailAddress: string, alertConfig: AlertConfigura
                 ...existingSubscription?.alerts ?? [],
                 {
                     ...alertConfig,
+                    uuid: randomUUID(),
                     createdAt: nowIsoString
                 }
             ]
@@ -113,6 +114,42 @@ export async function verifySubscription(emailAddress: string, managementUuid: s
     }
 }
 
-// export async function removeAlert(emailAddress: string, alertId: string): Promise<void> {}
+export async function deleteAlert(emailAddress: string, managementUuid: string, alertUuid: string): Promise<Subscription | undefined> {
+    try {
+        const existingSubscription = await loadSubscription(emailAddress)
+        if (!existingSubscription) {
+            throw Error("Not found");
+        }
+
+        if (managementUuid !== existingSubscription.managementUuid) {
+            throw Error("Forbidden");
+        }
+
+        const remainingAlerts = existingSubscription.alerts.filter(alert => alert.uuid !== alertUuid);
+
+        // No longer have a need to hold any personal details
+        if (remainingAlerts.length === 0) {
+            await cf.enterpriseZoneWorkersKV.del(accountId, kvNamespace, emailAddress);
+            return undefined;
+        }
+
+        const subscription = {
+            ...existingSubscription,
+            alerts: remainingAlerts
+        }
+
+        await cf.enterpriseZoneWorkersKV.add(
+            accountId,
+            kvNamespace,
+            emailAddress,
+            JSON.stringify(subscription)
+        );
+
+        return subscription;
+    } catch (e: unknown) {
+        console.trace(e);
+        throw e;
+    }
+}
 
 // export async function unsubscribe(emailAddress: string): Promise<void> {}

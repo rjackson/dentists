@@ -25,6 +25,7 @@ export type AlertConfiguration = {
 }
 
 export type AlertConfigurationRecord = AlertConfiguration & {
+    uuid: string;
     createdAt: string;
 }
 

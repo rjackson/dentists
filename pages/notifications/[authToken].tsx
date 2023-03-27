@@ -1,5 +1,6 @@
 import Footer from "@components/Footer";
 import Header from "@components/Header";
+import AlertsTable from "@components/notifications/AlertsTable";
 import VerificationWarning from "@components/notifications/VerificationWarning";
 import { H2, H3, Panel, Section, SingleColumnLayout } from "@rjackson/rjds";
 import { decodeAuthToken } from "lib/notifications/links";
@@ -25,9 +26,9 @@ const NotificationsManager = ({ subscription }: InferGetServerSidePropsType<type
             <div className="space-y-4">
               <H3>Your alerts</H3>
 
-              <p>These are all the alerts we currently have set up for your email address.</p>
+              <p>These are all the alerts we have set up for your email address.</p>
 
-              <p>todo</p>
+              <AlertsTable subscription={subscription} />
             </div>
           </Panel>
         </div>

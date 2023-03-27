@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
+// todo: properly fix typescript hating className on styled components without this weird hack
 export const primaryButtonClasses = `
+${''}
+
 px-2
 py-1
 rounded
