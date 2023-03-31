@@ -1,6 +1,5 @@
 import { SyntheticEvent, useReducer } from "react";
-import SecondaryButton from "../SecondaryButton";
-import { H3 } from "@rjackson/rjds";
+import { Alert, Button, H3 } from "@rjackson/rjds";
 import { Subscription } from "lib/notifications/types";
 
 type VerificationWarningProps = {
@@ -68,28 +67,28 @@ const VerificationWarning = ({ subscription }: VerificationWarningProps): JSX.El
   };
 
   return (
-    <div className="bg-yellow-100 text-yellow-900 rounded-md px-4 pt-2 pb-4 space-y-4 text-center">
+    <Alert variant="warning" className="pb-4 space-y-4 text-center">
       <H3>Your email address has not been verified</H3>
       <div>
         <p>You won&apos;t receive any alerts until you verify your email address.</p>
         <p>Please check your email inbox for a verification link.</p>
       </div>
       {error && (
-        <div className="bg-red-100 text-red-900 rounded-md px-4 py-2">
+        <Alert variant="error">
           <p>{error}</p>
-        </div>
+        </Alert>
       )}
       {success ? (
         <p>
           <em>Sent a new verification link</em>
         </p>
       ) : (
-        <SecondaryButton onClick={handleButtonClick} disabled={isLoading || success}>
+        <Button onClick={handleButtonClick} disabled={isLoading || success}>
           {" "}
           {isLoading ? "Loading..." : "Resend verification link"}
-        </SecondaryButton>
+        </Button>
       )}
-    </div>
+    </Alert>
   );
 };
 

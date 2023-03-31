@@ -1,8 +1,6 @@
 import { Dialog } from "@headlessui/react";
-import { Anchor, DescriptionList, DescriptionListItem, H2, Input, Panel, Section } from "@rjackson/rjds";
-import PrimaryButton from "@components/PrimaryButton";
+import { Anchor, Button, DescriptionList, DescriptionListItem, H2, Input, Panel, Section } from "@rjackson/rjds";
 import { useState } from "react";
-import SecondaryButton from "./SecondaryButton";
 import { useDentistsState } from "@contexts/Dentists";
 import Link from "next/link";
 import { useFiltersState } from "@contexts/Filters";
@@ -56,9 +54,9 @@ const NotificationsCta = () => {
       <H2 className="sr-only">Notifications</H2>
 
       <div className="space-y-4">
-        <SecondaryButton className="w-full" onClick={() => setStage(STAGE_CREATE)}>
+        <Button className="w-full" onClick={() => setStage(STAGE_CREATE)}>
           {stage === STAGE_COMPLETE ? "Alert saved. Set up another?" : "Set up an email alert for this search"}
-        </SecondaryButton>
+        </Button>
       </div>
 
       <Dialog
@@ -105,12 +103,12 @@ const NotificationsCta = () => {
               </DescriptionList>
 
               <div className="flex flex-row space-x-4">
-                <PrimaryButton className="flex-1" type="submit">
+                <Button variant="primary" className="flex-1" type="submit">
                   Set up alert
-                </PrimaryButton>
-                <SecondaryButton className="flex-1" onClick={() => setStage(STAGE_INIT)}>
+                </Button>
+                <Button className="flex-1" onClick={() => setStage(STAGE_INIT)}>
                   Cancel
-                </SecondaryButton>
+                </Button>
               </div>
 
               <p>
@@ -157,9 +155,9 @@ const NotificationsCta = () => {
               </p>
 
               <div className="flex flex-row space-x-4">
-                <PrimaryButton className="flex-1" onClick={() => setStage(STAGE_COMPLETE)}>
+                <Button variant="primary" className="flex-1" onClick={() => setStage(STAGE_COMPLETE)}>
                   OK
-                </PrimaryButton>
+                </Button>
               </div>
             </Panel>
           </Dialog.Panel>

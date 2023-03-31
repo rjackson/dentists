@@ -1,11 +1,10 @@
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
-import { DescriptionList, DescriptionListItem, H2, Panel, Section, Input, inputClasses } from "@rjackson/rjds";
+import { DescriptionList, DescriptionListItem, H2, Panel, Section, Input, Select, Button } from "@rjackson/rjds";
 import { useState } from "react";
 import GeonamesAutosuggest from "@components/GeonamesAutosuggest";
 import { useDentistsState, useDentistsUpdate } from "@contexts/Dentists";
 import Checkbox from "./Checkbox";
 import CheckboxLabel from "./CheckboxLabel";
-import SecondaryButton from "./SecondaryButton";
 import { useFiltersState, useFiltersUpdate } from "@contexts/Filters";
 
 const SearchFilters = () => {
@@ -24,7 +23,7 @@ const SearchFilters = () => {
       <Panel className="space-y-2 pt-4">
         <div className="flex items-center justify-between">
           <H2>Search parameters</H2>
-          <SecondaryButton onClick={() => setCollapsed((v) => !v)}>{collapsed ? "Expand" : "Collapse"}</SecondaryButton>
+          <Button onClick={() => setCollapsed((v) => !v)}>{collapsed ? "Expand" : "Collapse"}</Button>
         </div>
         {collapsed ? (
           <p>
@@ -76,17 +75,12 @@ const SearchFilters = () => {
               className="space-y-1"
               title={<label htmlFor="updated-since">Information updated within the past</label>}
             >
-              <Input
-                as="select"
-                className={inputClasses}
-                value={updatedInLast}
-                onChange={(e) => setUpdatedInLast(e.target.value)}
-              >
+              <Select value={updatedInLast} onChange={(e) => setUpdatedInLast(e.target.value)}>
                 <option value="0">Any time</option>
                 <option value="90">90 days</option>
                 <option value="30">30 days</option>
                 <option value="7">7 days</option>
-              </Input>
+              </Select>
             </DescriptionListItem>
           </DescriptionList>
         )}

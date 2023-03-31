@@ -1,7 +1,6 @@
 import Footer from "@components/Footer";
 import Header from "@components/Header";
-import PrimaryButton from "@components/PrimaryButton";
-import { H2, Input, Panel, Section, SingleColumnLayout } from "@rjackson/rjds";
+import { Alert, Button, H2, Input, Panel, Section, SingleColumnLayout } from "@rjackson/rjds";
 import { SyntheticEvent, useReducer } from "react";
 
 type LookupState = {
@@ -85,19 +84,19 @@ const NotificationsManagerLookup = () => {
               <hr />
 
               {success ? (
-                <div className="bg-green-100 text-green-900 rounded-md px-4 py-2">
+                <Alert variant="success">
                   <p className="font-semibold">New link sent</p>
                   <p>
                     If we have any notifications set up under your email address, you&apos;ll receive an email shortly
                     with a new manage notifications link
                   </p>
-                </div>
+                </Alert>
               ) : (
                 <form action="/api/send-manage-link" method="post" className="space-y-4" onSubmit={handleSubmit}>
                   {error && (
-                    <div className="bg-red-100 text-red-900 rounded-md px-4 py-2">
+                    <Alert variant="error">
                       <p>{error}</p>
-                    </div>
+                    </Alert>
                   )}
 
                   {/* TODO: Replace with DescriptionList when @rjackson/rjds types are not dumb */}
@@ -112,9 +111,9 @@ const NotificationsManagerLookup = () => {
                     </div>
                   </dl>
 
-                  <PrimaryButton type="submit" disabled={isLoading}>
+                  <Button variant="primary" type="submit" disabled={isLoading}>
                     {isLoading ? "Loading..." : "Send a new manage notifications link"}
-                  </PrimaryButton>
+                  </Button>
                 </form>
               )}
             </div>

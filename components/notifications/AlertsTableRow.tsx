@@ -1,7 +1,6 @@
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
-import { UnorderedList } from "@rjackson/rjds";
+import { Button, UnorderedList } from "@rjackson/rjds";
 import { AlertConfigurationRecord, Subscription } from "lib/notifications/types";
-import SecondaryButton from "../SecondaryButton";
 import { useState } from "react";
 import DeleteAlertPopup from "./DeleteAlertPopup";
 
@@ -48,7 +47,7 @@ const AlertsTableRow = ({ subscription, alert, ...props }: AlertsTableRowProps):
           <p>Deleted</p>
         ) : (
           <>
-            <SecondaryButton onClick={() => setIsDeleteDialogOpen(true)}>Remove alert</SecondaryButton>
+            <Button onClick={() => setIsDeleteDialogOpen(true)}>Remove alert</Button>
             <DeleteAlertPopup
               subscription={subscription}
               alert={alert}

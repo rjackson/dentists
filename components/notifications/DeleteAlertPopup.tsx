@@ -1,8 +1,6 @@
-import PrimaryButton from "@components/PrimaryButton";
-import SecondaryButton from "@components/SecondaryButton";
 import { Dialog } from "@headlessui/react";
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
-import { Anchor, H2, Panel, UnorderedList } from "@rjackson/rjds";
+import { Alert, Anchor, Button, H2, Panel, UnorderedList } from "@rjackson/rjds";
 import { AlertConfigurationRecord, Subscription } from "lib/notifications/types";
 import Link from "next/link";
 import { SetStateAction, SyntheticEvent, useReducer } from "react";
@@ -91,9 +89,9 @@ const DeleteAlertPopup = ({
                 <>
                   <p>Your alert has been deleted.</p>
                   <div className="flex flex-row space-x-4">
-                    <PrimaryButton className="flex-1" onClick={closeDialog}>
+                    <Button variant="primary" className="flex-1" onClick={closeDialog}>
                       Close
-                    </PrimaryButton>
+                    </Button>
                   </div>
                 </>
               ) : (
@@ -137,7 +135,7 @@ const DeleteAlertPopup = ({
                   </table>
 
                   {allAlerts.length === 1 && allAlerts[0].uuid == alertUuid && (
-                    <div className="bg-yellow-100 text-yellow-900 rounded-md px-4 py-2">
+                    <Alert variant="warning">
                       <p>
                         <strong>Your personal data will be removed from our systems.</strong>
                       </p>
@@ -149,21 +147,21 @@ const DeleteAlertPopup = ({
                         </Link>
                         .
                       </p>
-                    </div>
+                    </Alert>
                   )}
 
                   {error && (
-                    <div className="bg-red-100 text-red-900 rounded-md px-4 py-2">
+                    <Alert variant="error">
                       <p>{error}</p>
-                    </div>
+                    </Alert>
                   )}
                   <div className="flex flex-row space-x-4">
-                    <PrimaryButton className="flex-1" onClick={handleButtonClick} disabled={isLoading}>
+                    <Button variant="primary" className="flex-1" onClick={handleButtonClick} disabled={isLoading}>
                       {isLoading ? "Loading..." : "Remove alert"}
-                    </PrimaryButton>
-                    <SecondaryButton className="flex-1" onClick={closeDialog} disabled={isLoading}>
+                    </Button>
+                    <Button className="flex-1" onClick={closeDialog} disabled={isLoading}>
                       Cancel
-                    </SecondaryButton>
+                    </Button>
                   </div>
                 </>
               )}
