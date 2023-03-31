@@ -77,9 +77,7 @@ const NotificationsCta = () => {
         >
           <Dialog.Panel className="max-w-lg">
             <Panel className="space-y-4">
-              <Dialog.Title>
-                <H2>Set up an email alert for this search</H2>
-              </Dialog.Title>
+              <Dialog.Title as={H2}>Set up an email alert for this search</Dialog.Title>
 
               <p>Our information on what patients dentists are accepting updates every day.</p>
 
@@ -136,9 +134,7 @@ const NotificationsCta = () => {
         <div className="fixed inset-0 flex items-center justify-center p-4">
           <Dialog.Panel className="max-w-lg">
             <Panel className="space-y-4">
-              <Dialog.Title>
-                <H2>Your alert has been set up</H2>
-              </Dialog.Title>
+              <Dialog.Title as={H2}>Your alert has been set up</Dialog.Title>
 
               {verificationRequired ? (
                 <p>We&apos;ve sent you an email to verify you&apos;re happy to receive alerts from us.</p>
