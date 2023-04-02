@@ -1,6 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { constants } from "http2";
-import { unsubscribe, loadSubscription } from "lib/notifications/server";
+import loadConfig from "lib/notifications/helpers/loadConfig";
+import { loadSubscription } from "lib/notifications/actions/loadSubscription";
+import { unsubscribe } from "lib/notifications/actions/unsubscribe";
 
 type FormData = {
   emailAddress: string;
@@ -15,6 +17,8 @@ const isFormData = (data: unknown): data is FormData => {
 }
 
 const Unsubscribe = async (req: NextApiRequest, res: NextApiResponse) => {
+  const config = loadConfig();
+
   if (req.method !== 'POST') {
     return res
       .status(constants.HTTP_STATUS_METHOD_NOT_ALLOWED)
@@ -28,7 +32,7 @@ const Unsubscribe = async (req: NextApiRequest, res: NextApiResponse) => {
       .json({ message: 'Incomplete unsubscribe request' });
   }
 
-  const subscription = await loadSubscription(formData.emailAddress);
+  const subscription = await loadSubscription(config, formData.emailAddress);
 
   if (!subscription || formData.managementUuid !== subscription.managementUuid) {
     return res
@@ -37,6 +41,7 @@ const Unsubscribe = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   await unsubscribe(
+    config,
     formData.emailAddress,
     formData.managementUuid
   );

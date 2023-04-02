@@ -1,6 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { constants } from "http2";
-import { deleteAlert, loadSubscription } from "lib/notifications/server";
+import loadConfig from "lib/notifications/helpers/loadConfig";
+import { loadSubscription } from "lib/notifications/actions/loadSubscription";
+import { deleteAlert } from "lib/notifications/actions/deleteAlert";
 
 type FormData = {
   emailAddress: string;
@@ -17,6 +19,8 @@ const isFormData = (data: unknown): data is FormData => {
 }
 
 const DeleteAlert = async (req: NextApiRequest, res: NextApiResponse) => {
+  const config = loadConfig();
+
   if (req.method !== 'POST') {
     return res
       .status(constants.HTTP_STATUS_METHOD_NOT_ALLOWED)
@@ -30,7 +34,7 @@ const DeleteAlert = async (req: NextApiRequest, res: NextApiResponse) => {
       .json({ message: 'Incomplete delete alert request' });
   }
 
-  const subscription = await loadSubscription(formData.emailAddress);
+  const subscription = await loadSubscription(config, formData.emailAddress);
 
   if (!subscription || formData.managementUuid !== subscription.managementUuid) {
     return res
@@ -39,6 +43,7 @@ const DeleteAlert = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 
   await deleteAlert(
+    config,
     formData.emailAddress,
     formData.managementUuid,
     formData.alertUuid

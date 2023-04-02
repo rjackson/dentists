@@ -1,8 +1,9 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { constants } from "http2";
-import { addAlert } from "lib/notifications/server";
 import sendVerificationEmail from "lib/notifications/emails/send-verification-email";
 import { AlertConfiguration, isAlertConfiguration } from "lib/notifications/types/AlertConfiguration";
+import { addAlert } from "lib/notifications/actions/addAlert";
+import loadConfig from "lib/notifications/helpers/loadConfig";
 
 type FormData = AlertConfiguration & {
   emailAddress: string;
@@ -16,6 +17,8 @@ const isFormData = (data: unknown): data is FormData => {
 }
 
 const CreateAlert = async (req: NextApiRequest, res: NextApiResponse) => {
+  const config = loadConfig();
+
   if (req.method !== 'POST') {
     return res
       .status(constants.HTTP_STATUS_METHOD_NOT_ALLOWED)
@@ -37,7 +40,7 @@ const CreateAlert = async (req: NextApiRequest, res: NextApiResponse) => {
     filters: formData.filters
   }
 
-  const subscription = await addAlert(formData.emailAddress, alertConfig);
+  const subscription = await addAlert(config, formData.emailAddress, alertConfig);
   const verificationRequired = subscription.verifiedAt === null;
 
   if (verificationRequired) {

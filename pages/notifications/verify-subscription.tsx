@@ -1,8 +1,9 @@
 import Footer from "@components/Footer";
 import Header from "@components/Header";
 import { Panel, Section, SingleColumnLayout } from "@rjackson/rjds";
+import { verifySubscription } from "lib/notifications/actions/verifySubscription";
+import loadConfig from "lib/notifications/helpers/loadConfig";
 import { decodeAuthToken } from "lib/notifications/links";
-import { verifySubscription } from "lib/notifications/server";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 
 type VerifySubscriptionProps = {
@@ -34,6 +35,7 @@ export default VerifySubscription;
 
 export const getServerSideProps: GetServerSideProps<VerifySubscriptionProps> = async (context) => {
   const { authToken } = context.query;
+  const config = loadConfig();
 
   try {
     if (typeof authToken !== "string") {
@@ -45,7 +47,7 @@ export const getServerSideProps: GetServerSideProps<VerifySubscriptionProps> = a
       throw Error("Could not decode auth payload");
     }
     const { emailAddress, managementUuid } = authPayload;
-    await verifySubscription(emailAddress, managementUuid);
+    await verifySubscription(config, emailAddress, managementUuid);
 
     return {
       props: {

@@ -4,8 +4,9 @@ import AlertsTable from "@components/notifications/AlertsTable";
 import UnsubscribeFromAll from "@components/notifications/UnsubscribeFromAll";
 import VerificationWarning from "@components/notifications/VerificationWarning";
 import { H2, H3, Panel, Section, SingleColumnLayout } from "@rjackson/rjds";
+import { loadSubscription } from "lib/notifications/actions/loadSubscription";
+import loadConfig from "lib/notifications/helpers/loadConfig";
 import { decodeAuthToken } from "lib/notifications/links";
-import { loadSubscription } from "lib/notifications/server";
 import { Subscription } from "lib/notifications/types/Subscription";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 
@@ -43,6 +44,7 @@ export default NotificationsManager;
 
 export const getServerSideProps: GetServerSideProps<NotificationsManagerProps> = async (context) => {
   const { authToken } = context.query;
+  const config = loadConfig();
 
   try {
     if (typeof authToken !== "string") {
@@ -56,7 +58,7 @@ export const getServerSideProps: GetServerSideProps<NotificationsManagerProps> =
 
     const { emailAddress, managementUuid } = authPayload;
 
-    const subscription = await loadSubscription(emailAddress);
+    const subscription = await loadSubscription(config, emailAddress);
 
     if (!subscription) {
       throw Error("Not found");
