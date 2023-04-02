@@ -1,8 +1,9 @@
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
-import { Button, UnorderedList } from "@rjackson/rjds";
-import { AlertConfigurationRecord, Subscription } from "lib/notifications/types";
 import { useState } from "react";
 import DeleteAlertPopup from "./DeleteAlertPopup";
+import { Subscription } from "lib/notifications/types/Subscription";
+import { AlertConfigurationRecord } from "lib/notifications/types/AlertConfigurationRecord";
+import { Button, UnorderedList } from "@rjackson/rjds";
 
 type AlertsTableRowProps = {
   subscription: Subscription;

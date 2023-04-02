@@ -6,7 +6,7 @@ import VerificationWarning from "@components/notifications/VerificationWarning";
 import { H2, H3, Panel, Section, SingleColumnLayout } from "@rjackson/rjds";
 import { decodeAuthToken } from "lib/notifications/links";
 import { loadSubscription } from "lib/notifications/server";
-import { Subscription } from "lib/notifications/types";
+import { Subscription } from "lib/notifications/types/Subscription";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 
 type NotificationsManagerProps = {

@@ -1,6 +1,6 @@
-import { SyntheticEvent, useReducer } from "react";
 import { Alert, Button, H3 } from "@rjackson/rjds";
-import { Subscription } from "lib/notifications/types";
+import { Subscription } from "lib/notifications/types/Subscription";
+import { SyntheticEvent, useReducer } from "react";
 
 type VerificationWarningProps = {
   subscription: Subscription;

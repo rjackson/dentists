@@ -1,4 +1,4 @@
-import { Subscription } from "lib/notifications/types";
+import { Subscription } from "lib/notifications/types/Subscription";
 import AlertsTableRow from "./AlertsTableRow";
 
 type AlertsTableProps = {

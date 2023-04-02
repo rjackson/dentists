@@ -1,5 +1,5 @@
 import getBaseUrl from "@helpers/getBaseUrl";
-import { Subscription } from "./types";
+import { Subscription } from "./types/Subscription";
 
 type AuthPayload = {
     emailAddress: string;

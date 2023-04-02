@@ -1,8 +1,9 @@
 import cloudflare from "cloudflare";
 import { randomUUID } from "crypto"
 import { constants } from "http2"
-import { AlertConfiguration, Subscription, isSubscription } from "./types";
 import { isHTTPError } from "lib/cloudflare/HTTPError";
+import { Subscription, isSubscription } from "./types/Subscription";
+import { AlertConfiguration } from "./types/AlertConfiguration";
 
 const apiToken = process.env.CLOUDFLARE_API_TOKEN;
 const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;

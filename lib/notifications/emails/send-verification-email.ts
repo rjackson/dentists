@@ -1,7 +1,8 @@
 import sendgrid from "@sendgrid/mail"
-import { AlertConfiguration, Subscription } from "../types";
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import { generateManageLink, generateVerificationLink } from "../links";
+import { AlertConfiguration } from "../types/AlertConfiguration";
+import { Subscription } from "../types/Subscription";
 
 
 const { SENDGRID_API_KEY, EMAIL_FROM_NAME, EMAIL_FROM_ADDRESS } = process.env

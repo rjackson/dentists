@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { constants } from "http2";
-import { AlertConfiguration, isAlertConfiguration } from "lib/notifications/types";
 import { addAlert } from "lib/notifications/server";
 import sendVerificationEmail from "lib/notifications/emails/send-verification-email";
+import { AlertConfiguration, isAlertConfiguration } from "lib/notifications/types/AlertConfiguration";
 
 type FormData = AlertConfiguration & {
   emailAddress: string;

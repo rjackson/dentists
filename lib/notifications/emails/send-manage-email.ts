@@ -1,6 +1,6 @@
 import sendgrid from "@sendgrid/mail"
-import { Subscription } from "../types";
 import { generateManageLink } from "../links";
+import { Subscription } from "../types/Subscription";
 
 const { SENDGRID_API_KEY, EMAIL_FROM_NAME, EMAIL_FROM_ADDRESS } = process.env
 

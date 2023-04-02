@@ -1,6 +1,6 @@
 import { Dialog } from "@headlessui/react";
 import { Alert, Anchor, Button, H2, H3, Panel, Section } from "@rjackson/rjds";
-import { Subscription } from "lib/notifications/types";
+import { Subscription } from "lib/notifications/types/Subscription";
 import Link from "next/link";
 import { SyntheticEvent, useReducer, useState } from "react";
 

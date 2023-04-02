@@ -1,7 +1,8 @@
 import { Dialog } from "@headlessui/react";
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import { Alert, Anchor, Button, H2, Panel, UnorderedList } from "@rjackson/rjds";
-import { AlertConfigurationRecord, Subscription } from "lib/notifications/types";
+import { AlertConfigurationRecord } from "lib/notifications/types/AlertConfigurationRecord";
+import { Subscription } from "lib/notifications/types/Subscription";
 import Link from "next/link";
 import { SetStateAction, SyntheticEvent, useReducer } from "react";
 
