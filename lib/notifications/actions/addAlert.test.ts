@@ -129,8 +129,7 @@ describe("addAlert", () => {
         expect(mockKvAdd).toHaveBeenCalledWith(config.accountId, config.kvNamespace, emailAddress, expect.any(String));
     });
 
-    // TODO
-    test.skip("should return an the original subscription when adding a duplicate alert", async () => {
+    test("should return an the original subscription when adding a duplicate alert", async () => {
         const emailAddress = "test@example.com";
         const existingSubscription: Subscription = {
             emailAddress,
@@ -172,7 +171,7 @@ describe("addAlert", () => {
         mockKvRead.mockReturnValue(JSON.stringify(existingSubscription));
         const result = await addAlert(config, emailAddress, alertConfig);
         expect(result).toEqual(existingSubscription);
-        expect(mockKvAdd).toHaveBeenCalledWith(config.accountId, config.kvNamespace, emailAddress, expect.any(String));
+        expect(mockKvAdd).not.toHaveBeenCalled();
     });
 
     test("should re-throw any errors encountered", async () => {
