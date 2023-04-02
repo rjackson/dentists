@@ -1,9 +1,9 @@
 import cloudflare from "cloudflare";
 import { Subscription } from "../types/Subscription";
 import { Config } from "../types/Config";
-import { loadSubscription } from "./loadSubscription";
 import { verifySubscription } from "./verifySubscription";
 import { mockKvAdd, mockKvRead } from "../__mocks__/cloudflare";
+import Cloudflare from "cloudflare";
 
 const config: Config = {
     apiToken: "test-api-token",
@@ -14,11 +14,19 @@ const config: Config = {
 jest.mock("cloudflare");
 
 describe("verifySubscription", () => {
+    beforeAll(() => {
+        jest.useFakeTimers();
+    });
+
     beforeEach(() => {
-        cloudflare.mockClear();
+        (cloudflare as jest.Mock<Cloudflare>).mockClear();
 
         mockKvRead.mockClear();
         mockKvAdd.mockClear();
+    });
+
+    afterAll(() => {
+        jest.useRealTimers();
     });
 
     test("should throw an error when subscription does not exist", async () => {
@@ -82,6 +90,7 @@ describe("verifySubscription", () => {
             verifiedAt: null,
             alerts: [],
         };
+
         const nowIsoString = new Date().toISOString();
         const expectedSubscription: Subscription = {
             ...existingSubscription,

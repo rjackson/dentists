@@ -2,6 +2,7 @@ import cloudflare from 'cloudflare'
 import { mockKvRead } from '../__mocks__/cloudflare';
 import { loadSubscription } from './loadSubscription';
 import { Subscription } from '../types/Subscription';
+import Cloudflare from 'cloudflare';
 
 const config = {
   apiToken: 'test-api-token',
@@ -13,8 +14,7 @@ jest.mock("cloudflare");
 
 describe("loadSubscription", () => {
   beforeEach(() => {
-    // TODO: How to fix type here?
-    cloudflare.mockClear();
+    (cloudflare as jest.Mock<Cloudflare>).mockClear();
 
     mockKvRead.mockClear();
   });
