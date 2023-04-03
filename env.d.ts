@@ -10,6 +10,7 @@ namespace NodeJS {
         EMAIL_FROM_NAME: string;
         EMAIL_FROM_ADDRESS: string;
         MAX_DENTISTS: string;
+        CRON_API_KEY: string;
         NEXT_PUBLIC_FALLBACK_SITE_URL: string;
         NEXT_PUBLIC_FATHOM_CUSTOM_DOMAIN: string;
         NEXT_PUBLIC_FATHOM_TRACKING_CODE: string;

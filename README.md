@@ -28,6 +28,7 @@ Configure `.env.local` with credentials for these providers. `.env.example` has 
 | EMAIL_FROM_NAME                   | What name any e-mails we send should come from                                                                                 |
 | EMAIL_FROM_ADDRESS                | What address any e-mails we send should come from                                                                              |
 | MAX_DENTISTS                      | Development setting to limit how many dentists are loaded on screen at any one time.                                           |
+| CRON_API_KEY                      | Shared secret to authorise a scheduling system to prod API routes for cron jobs.                                               |
 | NEXT_PUBLIC_FALLBACK_SITE_URL     | The public site URL to fall back upon if we cannot automatically derive the current site URL (e.g. in Github Actions)          |
 | NEXT_PUBLIC_FATHOM_CUSTOM_DOMAIN  | Analytics via [Fathom](https://usefathom.com)                                                                                  |
 | NEXT_PUBLIC_FATHOM_TRACKING_CODE  | Analytics via [Fathom](https://usefathom.com)                                                                                  |

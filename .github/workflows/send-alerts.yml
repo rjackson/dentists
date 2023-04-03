@@ -1,0 +1,13 @@
+name: Send alerts cron job
+on:
+  schedule:
+    - cron: 0 7 * * *
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send alerts cron job
+        run: |
+          curl --request POST \
+            --url 'https://${{ env.NEXT_PUBLIC_FALLBACK_SITE_URL }}.com/api/send-alerts' \
+            --header 'Authorization: Bearer ${{ secrets.CRON_API_KEY }}'
