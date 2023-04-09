@@ -1,6 +1,6 @@
 import cloudflare from "cloudflare";
 import { constants } from "http2"
-import { isHTTPError } from "lib/cloudflare/HTTPError";
+import { isHTTPError } from "lib/cloudflare/types/HTTPError";
 import { Subscription, isSubscription } from "../types/Subscription";
 import { Config } from "../types/Config";
 

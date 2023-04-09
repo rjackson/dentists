@@ -6,11 +6,11 @@ const loadConfig = (): Config => {
     const accountId = process.env.CLOUDFLARE_ACCOUNT_ID;
     const kvNamespace = process.env.CLOUDFLARE_KV_NAMESPACE;
 
-    const maybeConfig = ({
+    const maybeConfig = {
         apiToken,
         accountId,
         kvNamespace,
-    })
+    }
 
     if (!isConfig(maybeConfig)) {
         throw new Error('Missing parameters for notifications config')

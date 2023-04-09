@@ -14,12 +14,12 @@ type HTTPError = {
 
 export const isHTTPError = (data: unknown): data is HTTPError => {
     return (
-        typeof (data as HTTPError).message === 'string' &&
-        typeof (data as HTTPError).host === 'string' &&
-        typeof (data as HTTPError).hostname === 'string' &&
-        typeof (data as HTTPError).method === 'string' &&
-        typeof (data as HTTPError).path === 'string' &&
-        typeof (data as HTTPError).statusCode === 'number' &&
-        typeof (data as HTTPError).statusMessage === 'string'
+        typeof (data as HTTPError)?.message === 'string' &&
+        typeof (data as HTTPError)?.host === 'string' &&
+        typeof (data as HTTPError)?.hostname === 'string' &&
+        typeof (data as HTTPError)?.method === 'string' &&
+        typeof (data as HTTPError)?.path === 'string' &&
+        typeof (data as HTTPError)?.statusCode === 'number' &&
+        typeof (data as HTTPError)?.statusMessage === 'string'
     )
 }

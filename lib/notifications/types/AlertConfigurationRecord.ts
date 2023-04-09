@@ -7,8 +7,8 @@ export type AlertConfigurationRecord = AlertConfiguration & {
 
 export const isAlertConfigurationRecord = (data: unknown): data is AlertConfiguration => {
     return (
-        typeof (data as AlertConfigurationRecord).uuid === 'string' &&
-        typeof (data as AlertConfigurationRecord).createdAt === 'string' &&
+        typeof (data as AlertConfigurationRecord)?.uuid === 'string' &&
+        typeof (data as AlertConfigurationRecord)?.createdAt === 'string' &&
         isAlertConfiguration((data as AlertConfigurationRecord))
     )
 }

@@ -10,10 +10,10 @@ export type Subscription = {
 
 export const isSubscription = (data: unknown): data is Subscription => {
     return (
-        typeof (data as Subscription).emailAddress === 'string' &&
-        typeof (data as Subscription).createdAt === 'string' &&
-        typeof (data as Subscription).managementUuid === 'string' &&
-        Array.isArray((data as Subscription).alerts) &&
-        (data as Subscription).alerts.every(alert => isAlertConfigurationRecord(alert))
+        typeof (data as Subscription)?.emailAddress === 'string' &&
+        typeof (data as Subscription)?.createdAt === 'string' &&
+        typeof (data as Subscription)?.managementUuid === 'string' &&
+        Array.isArray((data as Subscription)?.alerts) &&
+        (data as Subscription)?.alerts.every(alert => isAlertConfigurationRecord(alert))
     )
 }
