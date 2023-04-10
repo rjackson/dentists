@@ -53,7 +53,7 @@ export const ACCEPTANCE_TYPES = {
 
 /**
  *
- * @param {{Id: string, Name: string, AcceptingPatients: bool}} nhsDentalAcceptanceObj
+ * @param {{Id: string, Name: string, AcceptingPatients: bool}[]} nhsDentalAcceptanceObj
  * @returns {AcceptingPatientsBlock}
  */
 export const mapFromNhs = (nhsDentalAcceptanceObj) => {

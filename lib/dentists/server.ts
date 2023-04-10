@@ -2,33 +2,22 @@ import path from "path";
 import { readFileSync } from "fs";
 
 import { CHUNKS_FOLDER_PATH, getCellsWithinGeoRadius, MANIFEST_PATH, mapDentists, resolutionForRadius } from "./core";
+import { RawDentist } from "./types/RawDentist";
+import { IndexManifest } from "./types/IndexManifest";
+import { Dentist } from "./types/Dentist";
 
 export const CHUNKS_FOLDER = path.join(process.cwd(), `public/${CHUNKS_FOLDER_PATH}`);
 export const MANIFEST = path.join(process.cwd(), `public/${MANIFEST_PATH}`);
 
-/**
- * @returns {IndexManifest}
- */
-export const loadManifest = () => {
-  return JSON.parse(readFileSync(MANIFEST));
+export const loadManifest = (): IndexManifest => {
+  return JSON.parse(readFileSync(MANIFEST).toString());
 };
 
-/**
- *
- * @param {string} cell
- * @returns {RawDentist[]}
- */
-export const loadCell = (cell) => {
-  return JSON.parse(readFileSync(path.join(CHUNKS_FOLDER, `${cell}.json`)));
+export const loadCell = (cell: string): RawDentist[] => {
+  return JSON.parse(readFileSync(path.join(CHUNKS_FOLDER, `${cell}.json`)).toString());
 };
 
-/**
- * @param {number} lat
- * @param {number} lng
- * @param {number} radius
- * @returns {Dentist[]}
- */
-export const loadDentists = (lat, lng, radius) => {
+export const loadDentists = (lat: number, lng: number, radius: number): Dentist[] => {
   const { resolutions, chunks } = loadManifest();
   const resolution = resolutionForRadius(radius, resolutions);
   const cells = getCellsWithinGeoRadius(lat, lng, radius, resolution);
