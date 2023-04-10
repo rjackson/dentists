@@ -1,7 +1,7 @@
 export type AcceptingPatientsBlock = {
-    AcceptingAdults: string;
-    AcceptingAdultsEntitled: string;
-    AcceptingChildren: string;
-    AcceptingUrgent: string;
-    AcceptingReferrals: string;
+    AcceptingAdults: boolean;
+    AcceptingAdultsEntitled: boolean;
+    AcceptingChildren: boolean;
+    AcceptingUrgent: boolean;
+    AcceptingReferrals: boolean;
 };

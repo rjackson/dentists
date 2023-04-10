@@ -1,5 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { constants } from "http2";
+import sendAlerts from "lib/notifications/jobs/sendAlerts";
+import loadConfig from "lib/notifications/helpers/loadConfig";
 
 const SendAlerts = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== 'POST') {
@@ -13,11 +15,9 @@ const SendAlerts = async (req: NextApiRequest, res: NextApiResponse) => {
     return res.status(constants.HTTP_STATUS_UNAUTHORIZED).json({ message: 'Unauthorized' });
   }
 
-  // TODO
+  await sendAlerts(loadConfig())
 
-  return res
-    .status(constants.HTTP_STATUS_NOT_IMPLEMENTED)
-    .json({ message: "Not implemented yet :(" });
+  return res.status(constants.HTTP_STATUS_OK).json({ message: "Processed sendAlerts job" });
 };
 
 export default SendAlerts;

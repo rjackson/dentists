@@ -5,7 +5,9 @@ import { CHUNKS_FOLDER_PATH, getCellsWithinGeoRadius, MANIFEST_PATH, mapDentists
 import { RawDentist } from "./types/RawDentist";
 import { IndexManifest } from "./types/IndexManifest";
 import { Dentist } from "./types/Dentist";
+import { ChangedDentist } from "./types/ChangedDentist";
 
+export const DATA_FOLDER = path.join(process.cwd(), `data`);
 export const CHUNKS_FOLDER = path.join(process.cwd(), `public/${CHUNKS_FOLDER_PATH}`);
 export const MANIFEST = path.join(process.cwd(), `public/${MANIFEST_PATH}`);
 
@@ -26,4 +28,9 @@ export const loadDentists = (lat: number, lng: number, radius: number): Dentist[
     .filter((cell) => chunks.includes(cell))
     .flatMap(loadCell)
     .map(mapDentists);
+};
+
+
+export const loadChangedDentists = (): { [key: string]: ChangedDentist } => {
+  return JSON.parse(readFileSync(path.join(DATA_FOLDER, "changed-dentists.json")).toString());
 };

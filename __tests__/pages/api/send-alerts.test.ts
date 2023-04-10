@@ -1,5 +1,13 @@
 import { createMocks } from 'node-mocks-http';
 import SendAlerts from "../../../pages/api/send-alerts";
+import loadConfig from "lib/notifications/helpers/loadConfig";
+import sendAlerts from 'lib/notifications/jobs/sendAlerts';
+
+jest.mock('lib/notifications/helpers/loadConfig');
+jest.mock('lib/notifications/jobs/sendAlerts');
+
+const mockedLoadConfig = loadConfig as jest.MockedFunction<typeof loadConfig>
+const mockedSendAlerts = sendAlerts as jest.MockedFunction<typeof sendAlerts>
 
 const ORIGINAL_CRON_API_KEY = process.env.CRON_API_KEY;
 
@@ -30,7 +38,7 @@ describe("SendAlerts API route", () => {
     );
   });
 
-  test.skip("should return 'ok' when called with a valid authorization token", async () => {
+  test("should return 'ok' when called with a valid authorization token", async () => {
     const { req, res } = createMocks({
       method: "POST",
       headers: {
@@ -43,9 +51,11 @@ describe("SendAlerts API route", () => {
     expect(res._getStatusCode()).toBe(200);
     expect(res._getJSONData()).toEqual(
       expect.objectContaining({
-        ok: true
+        message: "Processed sendAlerts job"
       }),
     );
+    expect(mockedLoadConfig).toHaveBeenCalledTimes(1);
+    expect(mockedSendAlerts).toHaveBeenCalledTimes(1);
   });
 
   test("should return 'unauthorized' when called with an invalid authorization token", async () => {

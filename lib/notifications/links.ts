@@ -1,5 +1,6 @@
 import getBaseUrl from "@helpers/getBaseUrl";
 import { Subscription } from "./types/Subscription";
+import { Dentist } from "lib/dentists/types/Dentist";
 
 type AuthPayload = {
     emailAddress: string;
@@ -49,4 +50,13 @@ export const generateVerificationLink = (subscription: Subscription): URL => {
     const authToken = generateAuthToken(subscription);
 
     return new URL(`/notifications/verify-subscription?authToken=${authToken}`, baseUrl);
+}
+
+export const generateDentistLink = (dentist: Dentist): URL => {
+    const { OrganisationName, ODSCode } = dentist;
+    const nonFunctionalSlug = OrganisationName.toLowerCase()
+        .replace(/ /g, '-')
+        .replace(/[^\w-]+/g, '');
+
+    return new URL(`https://www.nhs.uk/services/dentist/${nonFunctionalSlug}/${ODSCode}`)
 }

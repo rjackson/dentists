@@ -17,11 +17,11 @@ const config = {
   moduleDirectories: ["node_modules", "<rootDir>"],
 
   moduleNameMapper: {
-    "^@/components/(.*)$": "<rootDir>/components/$1",
-    "^@/context/(.*)$": "<rootDir>/context/$1",
-    "^@/helpers/(.*)$": "<rootDir>/helpers/$1",
-    "^@/hooks/(.*)$": "<rootDir>/components/hooks/$1",
-    "^@/public/(.*)$": "<rootDir>/public/$1",
+    "^@components/(.*)$": "<rootDir>/components/$1",
+    "^@context/(.*)$": "<rootDir>/context/$1",
+    "^@helpers/(.*)$": "<rootDir>/helpers/$1",
+    "^@hooks/(.*)$": "<rootDir>/components/hooks/$1",
+    "^@public/(.*)$": "<rootDir>/public/$1",
   },
 };
 
