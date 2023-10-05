@@ -15,7 +15,7 @@ const summariseAcceptanceFilters = (alertConfig: AlertConfigurationRecord): stri
     }
 
     return `Patients being accepted:
-${activeFilters.join('\n')}`
+${activeFilters.join('\t\n')}`
 }
 
 const summariseNewChangedDentists = (newChangedDentists: ChangedDentist[]) => newChangedDentists.map(({ currentDentist }) => {
@@ -33,9 +33,9 @@ const renderTextContent = (subscription: Subscription, alertConfig: AlertConfigu
 
     return `We've found ${newChangedDentists.length} dentists matching your search:
 
-Location: ${alertConfig.locationName}
-Radius: ${alertConfig.radius} km
-${acceptanceFiltersSummary}
+\tLocation: ${alertConfig.locationName}
+\tRadius: ${alertConfig.radius} km
+\t${acceptanceFiltersSummary}
 
 Those dentists are:
 

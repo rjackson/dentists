@@ -9,5 +9,5 @@ jobs:
       - name: Send alerts cron job
         run: |
           curl --request POST \
-            --url 'https://${{ env.NEXT_PUBLIC_FALLBACK_SITE_URL }}.com/api/send-alerts' \
+            --url 'https://${{ env.NEXT_PUBLIC_FALLBACK_SITE_URL }}/api/send-alerts' \
             --header 'Authorization: Bearer ${{ secrets.CRON_API_KEY }}'
