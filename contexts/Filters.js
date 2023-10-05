@@ -1,6 +1,7 @@
-import { createContext, useContext, useMemo, useReducer, useState } from "react";
+import { createContext, useContext, useMemo } from "react";
 import { useDentistsState } from "./Dentists";
 import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
+import { queryTypes, useQueryState } from "next-usequerystate";
 
 const FiltersStateContext = createContext();
 const FiltersUpdateContext = createContext();
@@ -9,15 +10,45 @@ export function FiltersProvider({ children }) {
   const { allDentists } = useDentistsState();
 
   // Managed inputs for filters
-  const [updatedInLast, setUpdatedInLast] = useReducer((_, value) => parseInt(value), 0);
-  const [acceptanceStates, setAcceptanceStates] = useState(
-    Object.fromEntries(Object.entries(ACCEPTANCE_TYPES).map(([property]) => [property, false]))
+  const [updatedInLast, setUpdatedInLast] = useQueryState("updatedInLast", queryTypes.int);
+
+  const defaultAcceptanceStates = Object.fromEntries(
+    Object.entries(ACCEPTANCE_TYPES).map(([property]) => [property, false])
   );
-  const toggleAcceptanceState = (property) =>
-    setAcceptanceStates({
+  const [acceptanceStates, setAcceptanceStates] = useQueryState(
+    "accepting",
+    {
+      parse: (query) => {
+        const checkedAcceptanceStates = Object.fromEntries(
+          query
+            .split(",")
+            .map((key) => [decodeURIComponent(key), true])
+            .filter(([key]) => key in ACCEPTANCE_TYPES)
+        );
+        return {
+          ...defaultAcceptanceStates,
+          ...checkedAcceptanceStates,
+        };
+      },
+      serialize: (values) => {
+        const checkedAcceptanceStates = Object.entries(values)
+          .filter(([, checked]) => checked)
+          .map(([key]) => key);
+
+        const encoded = checkedAcceptanceStates.map(encodeURIComponent).join(",");
+        return encoded;
+      },
+      defaultValue: defaultAcceptanceStates,
+    }
+  );
+
+  const toggleAcceptanceState = (property) => {
+    const newStates = {
       ...acceptanceStates,
       [property]: !acceptanceStates[property],
-    });
+    };
+    setAcceptanceStates(newStates);
+  };
 
   // Individual Filter functions
   const acceptanceFilters = useMemo(() => {
@@ -34,7 +65,7 @@ export function FiltersProvider({ children }) {
   const updatedFilter = useMemo(
     () =>
       ({ DentistsAcceptingPatientsLastUpdatedDate }) => {
-        if (!updatedInLast) {
+        if (!updatedInLast || updatedInLast <= 0) {
           return true;
         }
 

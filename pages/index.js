@@ -2,7 +2,6 @@ import Footer from "@components/Footer";
 import Header from "@components/Header";
 import { Button, H2, Section } from "@rjackson/rjds";
 import dynamic from "next/dynamic";
-import { loadDentists as loadDentistsServer } from "lib/dentists/server";
 import SearchFilters from "@components/SearchFilters";
 import DentistsList from "@components/DentistsList";
 import { DentistsProvider } from "@contexts/Dentists";
@@ -12,11 +11,11 @@ import { FiltersProvider } from "@contexts/Filters";
 
 const DentistsMap = dynamic(() => import("@components/DentistsMap"), { ssr: false });
 
-export default function Home({ initialDentists, initialLocation, initialRadius, showCells }) {
+export default function Home({ initialLocation, initialRadius, showCells }) {
   const [focusMap, toggleFocusMap] = useReducer((value) => !value, false);
 
   return (
-    <DentistsProvider initialDentists={initialDentists} initialLocation={initialLocation} initialRadius={initialRadius}>
+    <DentistsProvider initialLocation={initialLocation} initialRadius={initialRadius}>
       <FiltersProvider>
         <div
           className={`
@@ -69,7 +68,6 @@ export default function Home({ initialDentists, initialLocation, initialRadius, 
 }
 
 export async function getStaticProps() {
-  const maxDentists = process.env.NODE_ENV == "development" ? process.env.MAX_DENTISTS ?? false : false;
   const showCells = process.env.NODE_ENV == "development" ? process.env.SHOW_CELLS == "true" : false;
 
   const initialLocation = {
@@ -79,11 +77,8 @@ export async function getStaticProps() {
   };
   const initialRadius = 15; // km
 
-  const dentists = loadDentistsServer(initialLocation.lat, initialLocation.lng, initialRadius);
-
   return {
     props: {
-      initialDentists: maxDentists ? dentists.slice(0, maxDentists) : dentists,
       initialLocation,
       initialRadius,
       showCells,
