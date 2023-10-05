@@ -1,6 +1,7 @@
 import getBaseUrl from "@helpers/getBaseUrl";
 import { Subscription } from "./types/Subscription";
 import { Dentist } from "lib/dentists/types/Dentist";
+import { AlertConfigurationRecord } from "./types/AlertConfigurationRecord";
 
 type AuthPayload = {
     emailAddress: string;
@@ -59,4 +60,23 @@ export const generateDentistLink = (dentist: Dentist): URL => {
         .replace(/[^\w-]+/g, '');
 
     return new URL(`https://www.nhs.uk/services/dentist/${nonFunctionalSlug}/${ODSCode}`)
+}
+
+export const generateMapLink = (alertConfig: AlertConfigurationRecord): URL => {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const mapUrl = getBaseUrl()!;
+
+    mapUrl.searchParams.append("name", alertConfig.locationName)
+    mapUrl.searchParams.append("lat", alertConfig.lat.toString())
+    mapUrl.searchParams.append("lng", alertConfig.lng.toString())
+    mapUrl.searchParams.append("radius", alertConfig.radius.toString())
+
+    const checkedAcceptanceStates = Object.entries(alertConfig.filters)
+        .filter(([, checked]) => checked)
+        .map(([key]) => key);
+
+    const encodedAcceptanceStates = checkedAcceptanceStates.map(encodeURIComponent).join(",");
+    mapUrl.searchParams.append("accepting", encodedAcceptanceStates);
+
+    return mapUrl;
 }

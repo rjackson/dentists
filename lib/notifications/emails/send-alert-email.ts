@@ -1,5 +1,5 @@
 import sendgrid from "@sendgrid/mail"
-import { generateDentistLink, generateManageLink } from "../links";
+import { generateDentistLink, generateManageLink, generateMapLink } from "../links";
 import { Subscription } from "../types/Subscription";
 import { AlertConfigurationRecord } from "../types/AlertConfigurationRecord";
 import { ChangedDentist } from "lib/dentists/types/ChangedDentist";
@@ -24,12 +24,11 @@ const summariseNewChangedDentists = (newChangedDentists: ChangedDentist[]) => ne
 }).join('\n')
 
 const renderTextContent = (subscription: Subscription, alertConfig: AlertConfigurationRecord, newChangedDentists: ChangedDentist[]): string => {
-    // TODO: Add links to previous searches (update frontend to store/load search and filter state from URL params?)
-
     const acceptanceFiltersSummary = summariseAcceptanceFilters(alertConfig) ?? 'All dentists in area';
     const newDentistsSummary = summariseNewChangedDentists(newChangedDentists);
 
     const manageNotificationsLink = generateManageLink(subscription);
+    const mapLink = generateMapLink(alertConfig);
 
     return `We've found ${newChangedDentists.length} dentists matching your search:
 
@@ -40,6 +39,11 @@ const renderTextContent = (subscription: Subscription, alertConfig: AlertConfigu
 Those dentists are:
 
 ${newDentistsSummary}
+
+
+Reopen your search on the map:
+
+\t${mapLink}
 
 You can update or unsubscribe from alerts at any time on our manage notifications page:
 
