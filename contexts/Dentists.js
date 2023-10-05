@@ -1,18 +1,36 @@
+import { useQueryState, queryTypes } from "next-usequerystate";
+
 import { loadDentists, loadManifest } from "lib/dentists/client";
-import { createContext, useContext, useState, useRef, useEffect } from "react";
+import { createContext, useContext, useState, useRef, useEffect, useCallback } from "react";
 
 const DentistsStateContext = createContext();
 const DentistsUpdateContext = createContext();
 
-export function DentistsProvider({ initialDentists, initialLocation, initialRadius, children }) {
-  const [searchLocation, setSearchLocation] = useState(initialLocation);
-  const [searchRadius, setSearchRadius] = useState(initialRadius);
-  const [resolutions, setResolutions] = useState({});
-  const [rawDentists, setRawDentists] = useState(initialDentists);
-  const [filters, setFilters] = useState([]);
+export function DentistsProvider({ initialLocation, initialRadius, children }) {
+  const [name, setName] = useQueryState("name", queryTypes.string.withDefault(initialLocation.name));
+  const [lat, setLat] = useQueryState("lat", queryTypes.float.withDefault(initialLocation.lat));
+  const [lng, setLng] = useQueryState("lng", queryTypes.float.withDefault(initialLocation.lng));
 
-  const dentists = rawDentists.filter((dentist) =>
-    filters.length > 0 ? filters.every((filter) => filter(dentist)) : true
+  // const [searchLocation, setSearchLocation] = useQueryState("location", queryTypes.json().withDefault(initialLocation));
+  const [searchRadius, setSearchRadius] = useQueryState("radius", { defaultValue: initialRadius });
+  const [resolutions, setResolutions] = useState({});
+  const [allDentists, setAllDentists] = useState([]);
+
+  // bit silly but useQueryState as json seems fiddly a.f. actually it isn't now I've figured it out, but incoming
+  // location obj has too much data in it so this will do for now.
+  const searchLocation = {
+    name,
+    lat,
+    lng,
+  };
+
+  const setSearchLocation = useCallback(
+    async ({ name, lat, lng }) => {
+      await setName(name);
+      await setLat(lat);
+      await setLng(lng);
+    },
+    [setName, setLat, setLng]
   );
 
   // Refetch dentists on change
@@ -26,7 +44,7 @@ export function DentistsProvider({ initialDentists, initialLocation, initialRadi
       if (isFirstRun.current) {
         isFirstRun.current = false;
       } else {
-        loadDentists(searchLat, searchLng, searchRadius).then((dentists) => setRawDentists(dentists));
+        loadDentists(searchLat, searchLng, searchRadius).then((dentists) => setAllDentists(dentists));
         loadManifest().then(({ resolutions }) => setResolutions(resolutions));
       }
     }
@@ -36,9 +54,9 @@ export function DentistsProvider({ initialDentists, initialLocation, initialRadi
     };
   }, [searchLat, searchLng, searchRadius]);
 
-  const state = { searchLocation, searchRadius, dentists, resolutions };
+  const state = { searchLocation, searchRadius, allDentists, resolutions };
 
-  const updateFns = { setSearchLocation, setFilters, setSearchRadius };
+  const updateFns = { setSearchLocation, setSearchRadius };
 
   return (
     <DentistsStateContext.Provider value={state}>

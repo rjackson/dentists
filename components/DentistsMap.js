@@ -7,6 +7,7 @@ import { getCellsWithinGeoRadius, resolutionForRadius } from "lib/dentists/core"
 import { h3ToGeoBoundary } from "h3-js";
 import { useEffect, useRef } from "react";
 import useResizeObserver from "@react-hook/resize-observer";
+import { useFiltersState } from "@contexts/Filters";
 
 const MapZoomer = () => {
   const { searchLocation, searchRadius } = useDentistsState();
@@ -14,12 +15,18 @@ const MapZoomer = () => {
   const map = useMap();
   const searchArea = useRef();
 
+  const debounceTimeout = useRef(null);
+
   // Zoom the map on search location / radius
   useEffect(() => {
-    const bounds = searchArea.current.getBounds();
-    if (bounds.isValid()) {
-      map.fitBounds(bounds);
-    }
+    clearTimeout(debounceTimeout.current);
+
+    debounceTimeout.current = setTimeout(() => {
+      const bounds = searchArea.current.getBounds();
+      if (bounds.isValid()) {
+        map.fitBounds(bounds);
+      }
+    }, 300);
   }, [map, searchLocation, searchRadius]);
 
   return (
@@ -71,7 +78,7 @@ const DebugCells = () => {
 };
 
 const Map = ({ showCells = false }) => {
-  const { dentists } = useDentistsState();
+  const { filteredDentists: dentists } = useFiltersState();
   const [dentistsAcceptingPatients, dentistsNotAcceptingPatients] = dentists.reduce(
     ([pass, fail], dentist) => {
       const acceptingAnyPatients = Object.values(dentist.AcceptingPatients).some((v) => v);
