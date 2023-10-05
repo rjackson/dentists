@@ -1,7 +1,6 @@
 import { Dentist } from "lib/dentists/types/Dentist";
 import { AcceptanceFilters } from "../types/AcceptanceFilters";
 import doesChangedDentistMatchAcceptanceFilters from "./doesChangedDentistMatchAcceptanceFilters";
-import testDentist from "../__fixtures__/dentists/testDentist";
 
 describe('doesChangedDentistMatchAcceptanceFilters', () => {
     const previousDentist: Dentist = {

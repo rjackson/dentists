@@ -1,4 +1,3 @@
-import { ChangedDentist } from "lib/dentists/types/ChangedDentist";
 import { Dentist } from "lib/dentists/types/Dentist";
 
 const testDentist: Dentist = {
