@@ -35,18 +35,13 @@ export function DentistsProvider({ initialLocation, initialRadius, children }) {
 
   // Refetch dentists on change
   const { lat: searchLat, lng: searchLng } = searchLocation;
-  const isFirstRun = useRef(true);
   useEffect(() => {
     let mounted = true;
 
     if (mounted) {
       // First run will be seeded by server. Skip it
-      if (isFirstRun.current) {
-        isFirstRun.current = false;
-      } else {
-        loadDentists(searchLat, searchLng, searchRadius).then((dentists) => setAllDentists(dentists));
-        loadManifest().then(({ resolutions }) => setResolutions(resolutions));
-      }
+      loadDentists(searchLat, searchLng, searchRadius).then((dentists) => setAllDentists(dentists));
+      loadManifest().then(({ resolutions }) => setResolutions(resolutions));
     }
 
     return () => {
