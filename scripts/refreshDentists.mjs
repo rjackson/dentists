@@ -103,7 +103,7 @@ const changedDentistsByODSCode = Object.fromEntries(
     })
     .filter(
       ([, { previousDentist, currentDentist }]) =>
-        previousDentist.DentistsAcceptingPatientsLastUpdatedDate !==
+        previousDentist?.DentistsAcceptingPatientsLastUpdatedDate !==
         currentDentist.DentistsAcceptingPatientsLastUpdatedDate
     )
 );
