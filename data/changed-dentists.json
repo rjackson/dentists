@@ -1,27 +1,27 @@
 {
-  "V000636": {
+  "V003100": {
     "previousDentist": {
-      "ODSCode": "V000636",
-      "OrganisationName": "Blue Dental Care - Brixton",
-      "Latitude": 51.46515655517578,
-      "Longitude": -0.11563295125961304,
+      "ODSCode": "V003100",
+      "OrganisationName": "Newham Family Dental Care ",
+      "Latitude": 51.53861618041992,
+      "Longitude": 0.05415571480989456,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -35,32 +35,32 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-04-07T10:21:35.953Z",
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-07-10T22:28:20.26Z",
       "City": "London",
-      "Postcode": "SW9 9SU"
+      "Postcode": "E6 2BH"
     },
     "currentDentist": {
-      "ODSCode": "V000636",
-      "OrganisationName": "Blue Dental Care - Brixton",
-      "Latitude": 51.46515655517578,
-      "Longitude": -0.11563295125961304,
+      "ODSCode": "V003100",
+      "OrganisationName": "Newham Family Dental Care ",
+      "Latitude": 51.53861618041992,
+      "Longitude": 0.05415571480989456,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -74,17 +74,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-16T14:31:50.513Z",
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-17T05:28:33.867Z",
       "City": "London",
-      "Postcode": "SW9 9SU"
+      "Postcode": "E6 2BH"
     }
   },
-  "V030698": {
+  "V005687": {
     "previousDentist": {
-      "ODSCode": "V030698",
-      "OrganisationName": "MR S SRI RANGANATHAN",
-      "Latitude": 51.47016525268555,
-      "Longitude": -0.17307789623737335,
+      "ODSCode": "V005687",
+      "OrganisationName": "Watlington Dental Centre",
+      "Latitude": 51.64562225341797,
+      "Longitude": -1.0039199590682983,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -101,7 +101,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -115,15 +115,136 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-02-17T10:36:48.05Z",
-      "City": "",
-      "Postcode": "SW11 3QA"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-06-23T17:48:46.98Z",
+      "City": "Oxfordshire",
+      "Postcode": "OX49 5BU"
     },
     "currentDentist": {
-      "ODSCode": "V030698",
-      "OrganisationName": "MR S SRI RANGANATHAN",
-      "Latitude": 51.47016525268555,
-      "Longitude": -0.17307789623737335,
+      "ODSCode": "V005687",
+      "OrganisationName": "Watlington Dental Centre",
+      "Latitude": 51.64562225341797,
+      "Longitude": -1.0039199590682983,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-17T10:42:53.73Z",
+      "City": "Oxfordshire",
+      "Postcode": "OX49 5BU"
+    }
+  },
+  "V007495": {
+    "previousDentist": {
+      "ODSCode": "V007495",
+      "OrganisationName": "Saving Smiles Weedon",
+      "Latitude": 52.22774887084961,
+      "Longitude": -1.076582670211792,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-14T17:37:13.287Z",
+      "City": "Northampton",
+      "Postcode": "NN7 4PL"
+    },
+    "currentDentist": {
+      "ODSCode": "V007495",
+      "OrganisationName": "Saving Smiles Weedon",
+      "Latitude": 52.22774887084961,
+      "Longitude": -1.076582670211792,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-17T18:27:03.343Z",
+      "City": "Northampton",
+      "Postcode": "NN7 4PL"
+    }
+  },
+  "V012505": {
+    "previousDentist": {
+      "ODSCode": "V012505",
+      "OrganisationName": "Collier Row Dental Clinic",
+      "Latitude": 51.598609924316406,
+      "Longitude": 0.16150549054145813,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -154,9 +275,128 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-16T14:29:30.707Z",
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-06-24T07:42:31.543Z",
+      "City": "Essex",
+      "Postcode": "RM5 3NR"
+    },
+    "currentDentist": {
+      "ODSCode": "V012505",
+      "OrganisationName": "Collier Row Dental Clinic",
+      "Latitude": 51.598609924316406,
+      "Longitude": 0.16150549054145813,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-17T05:31:16.383Z",
+      "City": "Essex",
+      "Postcode": "RM5 3NR"
+    }
+  },
+  "V017978": {
+    "previousDentist": {
+      "ODSCode": "V017978",
+      "OrganisationName": "NEWHAM FAMILY DENTAL CARE LTD",
+      "Latitude": 51.52247619628906,
+      "Longitude": -0.09739671647548676,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-06-22T19:35:49.34Z",
       "City": "",
-      "Postcode": "SW11 3QA"
+      "Postcode": "EC1M 7AA"
+    },
+    "currentDentist": {
+      "ODSCode": "V017978",
+      "OrganisationName": "NEWHAM FAMILY DENTAL CARE LTD",
+      "Latitude": 51.52247619628906,
+      "Longitude": -0.09739671647548676,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-17T05:32:45.097Z",
+      "City": "",
+      "Postcode": "EC1M 7AA"
     }
   }
 }
