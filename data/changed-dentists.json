@@ -1,27 +1,27 @@
 {
-  "V002654": {
+  "V001045": {
     "previousDentist": {
-      "ODSCode": "V002654",
-      "OrganisationName": "Abney Dental",
-      "Latitude": 51.56290817260742,
-      "Longitude": -0.07321465015411377,
+      "ODSCode": "V001045",
+      "OrganisationName": "Fitzwilliam Street Dental Care",
+      "Latitude": 53.500736236572266,
+      "Longitude": -1.3466659784317017,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -35,15 +35,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-22T10:22:09.963Z",
-      "City": "London",
-      "Postcode": "N16 7HU"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-03-17T08:54:30.147Z",
+      "City": "Rotherham",
+      "Postcode": "S63 7HF"
     },
     "currentDentist": {
-      "ODSCode": "V002654",
-      "OrganisationName": "Abney Dental",
-      "Latitude": 51.56290817260742,
-      "Longitude": -0.07321465015411377,
+      "ODSCode": "V001045",
+      "OrganisationName": "Fitzwilliam Street Dental Care",
+      "Latitude": 53.500736236572266,
+      "Longitude": -1.3466659784317017,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -74,17 +74,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-18T07:06:01.253Z",
-      "City": "London",
-      "Postcode": "N16 7HU"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-19T12:09:56.827Z",
+      "City": "Rotherham",
+      "Postcode": "S63 7HF"
     }
   },
-  "V004982": {
+  "V005388": {
     "previousDentist": {
-      "ODSCode": "V004982",
-      "OrganisationName": "Dental Surgery",
-      "Latitude": 51.58845520019531,
-      "Longitude": -0.2518470585346222,
+      "ODSCode": "V005388",
+      "OrganisationName": "Russell & Badrock",
+      "Latitude": 53.44147491455078,
+      "Longitude": -2.0977396965026855,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -115,15 +115,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-07-11T11:41:09.93Z",
-      "City": "",
-      "Postcode": "NW9 6SH"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-05-30T08:45:21.92Z",
+      "City": "Lancs",
+      "Postcode": "M34 7GR"
     },
     "currentDentist": {
-      "ODSCode": "V004982",
-      "OrganisationName": "Dental Surgery",
-      "Latitude": 51.58845520019531,
-      "Longitude": -0.2518470585346222,
+      "ODSCode": "V005388",
+      "OrganisationName": "Russell & Badrock",
+      "Latitude": 53.44147491455078,
+      "Longitude": -2.0977396965026855,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -154,9 +154,89 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-18T15:03:39.18Z",
-      "City": "",
-      "Postcode": "NW9 6SH"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-19T21:15:29.123Z",
+      "City": "Lancs",
+      "Postcode": "M34 7GR"
+    }
+  },
+  "V006045": {
+    "previousDentist": {
+      "ODSCode": "V006045",
+      "OrganisationName": "Rugby Dental Care - Ms S Rahimi & Associates",
+      "Latitude": 52.37238311767578,
+      "Longitude": -1.2509359121322632,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-16T11:58:49.637Z",
+      "City": "Rugby",
+      "Postcode": "CV21 3QH"
+    },
+    "currentDentist": {
+      "ODSCode": "V006045",
+      "OrganisationName": "Rugby Dental Care - Ms S Rahimi & Associates",
+      "Latitude": 52.37238311767578,
+      "Longitude": -1.2509359121322632,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-19T18:44:51.72Z",
+      "City": "Rugby",
+      "Postcode": "CV21 3QH"
     }
   }
 }
