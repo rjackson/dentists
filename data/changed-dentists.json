@@ -1,22 +1,22 @@
 {
-  "V000016": {
+  "V000337": {
     "previousDentist": {
-      "ODSCode": "V000016",
-      "OrganisationName": "Bupa Dental Care, Bognor Regis",
-      "Latitude": 50.78342056274414,
-      "Longitude": -0.6713303327560425,
+      "ODSCode": "V000337",
+      "OrganisationName": "West End Manse",
+      "Latitude": 52.08514404296875,
+      "Longitude": 0.4355506896972656,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
@@ -35,32 +35,32 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-05T16:24:10.283Z",
-      "City": "Bognor Regis",
-      "Postcode": "PO21 1LG"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-20T12:59:30.993Z",
+      "City": "Haverhill",
+      "Postcode": "CB9 9LA"
     },
     "currentDentist": {
-      "ODSCode": "V000016",
-      "OrganisationName": "Bupa Dental Care, Bognor Regis",
-      "Latitude": 50.78342056274414,
-      "Longitude": -0.6713303327560425,
+      "ODSCode": "V000337",
+      "OrganisationName": "West End Manse",
+      "Latitude": 52.08514404296875,
+      "Longitude": 0.4355506896972656,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -74,20 +74,45 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T09:34:03.51Z",
-      "City": "Bognor Regis",
-      "Postcode": "PO21 1LG"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T11:46:59.633Z",
+      "City": "Haverhill",
+      "Postcode": "CB9 9LA"
     }
   },
-  "V000266": {
+  "V000353_1": {
+    "currentDentist": {
+      "ODSCode": "V000353_1",
+      "OrganisationName": "Orthoactive Ltd",
+      "Latitude": 52.061824798583984,
+      "Longitude": 1.1497093439102173,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "Suffolk",
+      "Postcode": "IP1 3LU"
+    }
+  },
+  "V000360": {
     "previousDentist": {
-      "ODSCode": "V000266",
-      "OrganisationName": "Framlingham Dental Practice",
-      "Latitude": 52.22218322753906,
-      "Longitude": 1.3428062200546265,
+      "ODSCode": "V000360",
+      "OrganisationName": "Lighthouse Dental Practice",
+      "Latitude": 52.06025314331055,
+      "Longitude": 1.1512476205825806,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
@@ -99,31 +124,21 @@
             "AcceptingPatients": false
           },
           {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
             "Id": 4,
             "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-22T14:16:44.96Z",
-      "City": "Framlingham",
-      "Postcode": "IP13 9AH"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2022-02-03T12:57:33Z",
+      "City": "Ipswich",
+      "Postcode": "IP1 3QJ"
     },
     "currentDentist": {
-      "ODSCode": "V000266",
-      "OrganisationName": "Framlingham Dental Practice",
-      "Latitude": 52.22218322753906,
-      "Longitude": 1.3428062200546265,
+      "ODSCode": "V000360",
+      "OrganisationName": "Lighthouse Dental Practice",
+      "Latitude": 52.06025314331055,
+      "Longitude": 1.1512476205825806,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -140,7 +155,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -150,21 +165,21 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:53:24.413Z",
-      "City": "Framlingham",
-      "Postcode": "IP13 9AH"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T09:18:39.907Z",
+      "City": "Ipswich",
+      "Postcode": "IP1 3QJ"
     }
   },
-  "V000271": {
+  "V000491": {
     "previousDentist": {
-      "ODSCode": "V000271",
-      "OrganisationName": "Aldeburgh Dental Practice",
-      "Latitude": 52.15093231201172,
-      "Longitude": 1.600978136062622,
+      "ODSCode": "V000491",
+      "OrganisationName": "Brunswick Practice Ltd",
+      "Latitude": 50.82622146606445,
+      "Longitude": -0.15642787516117096,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -195,27 +210,27 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-22T14:17:27.717Z",
-      "City": "Aldeburgh",
-      "Postcode": "IP15 5AN"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-27T16:06:04.01Z",
+      "City": "Hove",
+      "Postcode": "BN3 1DG"
     },
     "currentDentist": {
-      "ODSCode": "V000271",
-      "OrganisationName": "Aldeburgh Dental Practice",
-      "Latitude": 52.15093231201172,
-      "Longitude": 1.600978136062622,
+      "ODSCode": "V000491",
+      "OrganisationName": "Brunswick Practice Ltd",
+      "Latitude": 50.82622146606445,
+      "Longitude": -0.15642787516117096,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
@@ -234,17 +249,97 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:59:54.9Z",
-      "City": "Aldeburgh",
-      "Postcode": "IP15 5AN"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T10:20:35.393Z",
+      "City": "Hove",
+      "Postcode": "BN3 1DG"
     }
   },
-  "V000636": {
+  "V000630_1": {
     "previousDentist": {
-      "ODSCode": "V000636",
-      "OrganisationName": "Blue Dental Care - Brixton",
-      "Latitude": 51.46515655517578,
-      "Longitude": -0.11563295125961304,
+      "ODSCode": "V000630_1",
+      "OrganisationName": "iDental Care Limited",
+      "Latitude": 50.8280029296875,
+      "Longitude": -0.13380837440490723,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": true
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-08T14:39:39.2Z",
+      "City": "Brighton",
+      "Postcode": "BN2 9NE"
+    },
+    "currentDentist": {
+      "ODSCode": "V000630_1",
+      "OrganisationName": "iDental Care Limited",
+      "Latitude": 50.8280029296875,
+      "Longitude": -0.13380837440490723,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": true
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T16:31:33.74Z",
+      "City": "Brighton",
+      "Postcode": "BN2 9NE"
+    }
+  },
+  "V000780": {
+    "previousDentist": {
+      "ODSCode": "V000780",
+      "OrganisationName": "The Butts Dental Practice",
+      "Latitude": 51.48577499389648,
+      "Longitude": -0.307757705450058,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -275,27 +370,27 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-16T14:31:50.513Z",
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-07T11:52:04.003Z",
       "City": "London",
-      "Postcode": "SW9 9SU"
+      "Postcode": "TW8 8DL"
     },
     "currentDentist": {
-      "ODSCode": "V000636",
-      "OrganisationName": "Blue Dental Care - Brixton",
-      "Latitude": 51.46515655517578,
-      "Longitude": -0.11563295125961304,
+      "ODSCode": "V000780",
+      "OrganisationName": "The Butts Dental Practice",
+      "Latitude": 51.48577499389648,
+      "Longitude": -0.307757705450058,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
@@ -314,17 +409,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T21:19:14.467Z",
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T09:55:30.363Z",
       "City": "London",
-      "Postcode": "SW9 9SU"
+      "Postcode": "TW8 8DL"
     }
   },
-  "V000651": {
+  "V000819": {
     "previousDentist": {
-      "ODSCode": "V000651",
-      "OrganisationName": "Marway & Patel",
-      "Latitude": 51.498146057128906,
-      "Longitude": -0.06198819726705551,
+      "ODSCode": "V000819",
+      "OrganisationName": "Jim Peirson Dental Health Care",
+      "Latitude": 52.6456298828125,
+      "Longitude": 1.2836848497390747,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -341,7 +436,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -355,15 +450,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-25T09:01:00.507Z",
-      "City": "London",
-      "Postcode": "SE16 4RT"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-27T15:22:54.23Z",
+      "City": "Norwich",
+      "Postcode": "NR3 2HD"
     },
     "currentDentist": {
-      "ODSCode": "V000651",
-      "OrganisationName": "Marway & Patel",
-      "Latitude": 51.498146057128906,
-      "Longitude": -0.06198819726705551,
+      "ODSCode": "V000819",
+      "OrganisationName": "Jim Peirson Dental Health Care",
+      "Latitude": 52.6456298828125,
+      "Longitude": 1.2836848497390747,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -380,7 +475,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -394,17 +489,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T08:15:20.04Z",
-      "City": "London",
-      "Postcode": "SE16 4RT"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T20:31:10.21Z",
+      "City": "Norwich",
+      "Postcode": "NR3 2HD"
     }
   },
-  "V000887": {
+  "V001231": {
     "previousDentist": {
-      "ODSCode": "V000887",
-      "OrganisationName": "Woburn Sands Dental Practice",
-      "Latitude": 52.01365661621094,
-      "Longitude": -0.6501097679138184,
+      "ODSCode": "V001231",
+      "OrganisationName": "Colin Bunce Ltd",
+      "Latitude": 50.835052490234375,
+      "Longitude": -0.23735733330249784,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -435,15 +530,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-20T12:58:59.193Z",
-      "City": "Milton Keynes",
-      "Postcode": "MK17 8PL"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-24T10:31:29.727Z",
+      "City": "Southwick",
+      "Postcode": "BN42 4FR"
     },
     "currentDentist": {
-      "ODSCode": "V000887",
-      "OrganisationName": "Woburn Sands Dental Practice",
-      "Latitude": 52.01365661621094,
-      "Longitude": -0.6501097679138184,
+      "ODSCode": "V001231",
+      "OrganisationName": "Colin Bunce Ltd",
+      "Latitude": 50.835052490234375,
+      "Longitude": -0.23735733330249784,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -474,17 +569,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:42:41.29Z",
-      "City": "Milton Keynes",
-      "Postcode": "MK17 8PL"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T09:53:18.603Z",
+      "City": "Southwick",
+      "Postcode": "BN42 4FR"
     }
   },
-  "V001090": {
+  "V001251": {
     "previousDentist": {
-      "ODSCode": "V001090",
-      "OrganisationName": "Truro Dental Health",
-      "Latitude": 50.26057434082031,
-      "Longitude": -5.053223133087158,
+      "ODSCode": "V001251",
+      "OrganisationName": "Chapel Dental",
+      "Latitude": 50.21299743652344,
+      "Longitude": -5.299705505371094,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -515,15 +610,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-23T08:39:18.43Z",
-      "City": "Cornwall",
-      "Postcode": "TR1 2NS"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-17T09:53:27.213Z",
+      "City": "Camborne",
+      "Postcode": "TR14 8EF"
     },
     "currentDentist": {
-      "ODSCode": "V001090",
-      "OrganisationName": "Truro Dental Health",
-      "Latitude": 50.26057434082031,
-      "Longitude": -5.053223133087158,
+      "ODSCode": "V001251",
+      "OrganisationName": "Chapel Dental",
+      "Latitude": 50.21299743652344,
+      "Longitude": -5.299705505371094,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -554,29 +649,29 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T11:45:11.963Z",
-      "City": "Cornwall",
-      "Postcode": "TR1 2NS"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T11:58:50.49Z",
+      "City": "Camborne",
+      "Postcode": "TR14 8EF"
     }
   },
-  "V001477": {
+  "V001381": {
     "previousDentist": {
-      "ODSCode": "V001477",
-      "OrganisationName": "Hall Green Dental Practice (Birmingham)",
-      "Latitude": 52.442344665527344,
-      "Longitude": -1.8489863872528076,
+      "ODSCode": "V001381",
+      "OrganisationName": "Shoreham Oral Care Ltd.",
+      "Latitude": 50.832786560058594,
+      "Longitude": -0.27367329597473145,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
@@ -595,15 +690,56 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-22T10:24:34.107Z",
-      "City": "Birmingham",
-      "Postcode": "B28 8TD"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-01T09:12:12.057Z",
+      "City": "Shoreham By Sea",
+      "Postcode": "BN43 5ZD"
     },
     "currentDentist": {
-      "ODSCode": "V001477",
-      "OrganisationName": "Hall Green Dental Practice (Birmingham)",
-      "Latitude": 52.442344665527344,
-      "Longitude": -1.8489863872528076,
+      "ODSCode": "V001381",
+      "OrganisationName": "Shoreham Oral Care Ltd.",
+      "Latitude": 50.832786560058594,
+      "Longitude": -0.27367329597473145,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T17:55:29.24Z",
+      "City": "Shoreham By Sea",
+      "Postcode": "BN43 5ZD"
+    }
+  },
+  "V001404": {
+    "previousDentist": {
+      "ODSCode": "V001404",
+      "OrganisationName": "Poynters Road Dental Practice",
+      "Latitude": 51.89677810668945,
+      "Longitude": -0.4979874789714813,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -634,56 +770,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T16:07:28.86Z",
-      "City": "Birmingham",
-      "Postcode": "B28 8TD"
-    }
-  },
-  "V001480": {
-    "previousDentist": {
-      "ODSCode": "V001480",
-      "OrganisationName": "Pearl Dental Studios Limited",
-      "Latitude": 50.83067321777344,
-      "Longitude": -0.3921930193901062,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-27T08:44:29.817Z",
-      "City": "Worthing",
-      "Postcode": "BN14 9RY"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-13T09:46:45.45Z",
+      "City": "Dunstable",
+      "Postcode": "LU5 4SJ"
     },
     "currentDentist": {
-      "ODSCode": "V001480",
-      "OrganisationName": "Pearl Dental Studios Limited",
-      "Latitude": 50.83067321777344,
-      "Longitude": -0.3921930193901062,
+      "ODSCode": "V001404",
+      "OrganisationName": "Poynters Road Dental Practice",
+      "Latitude": 51.89677810668945,
+      "Longitude": -0.4979874789714813,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -700,7 +795,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -714,17 +809,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T16:19:11.57Z",
-      "City": "Worthing",
-      "Postcode": "BN14 9RY"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T15:45:34.753Z",
+      "City": "Dunstable",
+      "Postcode": "LU5 4SJ"
     }
   },
-  "V001515": {
+  "V001661": {
     "previousDentist": {
-      "ODSCode": "V001515",
-      "OrganisationName": "Northwood Hills Dental Practice",
-      "Latitude": 51.60359573364258,
-      "Longitude": -0.4136469066143036,
+      "ODSCode": "V001661",
+      "OrganisationName": "Mr A A Waugh",
+      "Latitude": 54.98543930053711,
+      "Longitude": -1.5818486213684082,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -755,32 +850,32 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-03T07:59:53.683Z",
-      "City": "Middx",
-      "Postcode": "HA6 1DB"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-03T11:22:28.703Z",
+      "City": "Newcastle upon Tyne",
+      "Postcode": "NE6 5JT"
     },
     "currentDentist": {
-      "ODSCode": "V001515",
-      "OrganisationName": "Northwood Hills Dental Practice",
-      "Latitude": 51.60359573364258,
-      "Longitude": -0.4136469066143036,
+      "ODSCode": "V001661",
+      "OrganisationName": "Mr A A Waugh",
+      "Latitude": 54.98543930053711,
+      "Longitude": -1.5818486213684082,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -794,17 +889,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T08:48:27Z",
-      "City": "Middx",
-      "Postcode": "HA6 1DB"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T11:23:13.917Z",
+      "City": "Newcastle upon Tyne",
+      "Postcode": "NE6 5JT"
     }
   },
-  "V002128": {
+  "V001927": {
     "previousDentist": {
-      "ODSCode": "V002128",
-      "OrganisationName": "Dental Care Centre",
-      "Latitude": 53.14598846435547,
-      "Longitude": -1.2017109394073486,
+      "ODSCode": "V001927",
+      "OrganisationName": "Loughborough Road Dental Practice",
+      "Latitude": 52.93083190917969,
+      "Longitude": -1.137789964675903,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -835,15 +930,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-17T12:43:42.12Z",
-      "City": "Mansfield",
-      "Postcode": "NG18 1QJ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-23T09:33:37.193Z",
+      "City": "Nottinghamshire",
+      "Postcode": "NG2 7JJ"
     },
     "currentDentist": {
-      "ODSCode": "V002128",
-      "OrganisationName": "Dental Care Centre",
-      "Latitude": 53.14598846435547,
-      "Longitude": -1.2017109394073486,
+      "ODSCode": "V001927",
+      "OrganisationName": "Loughborough Road Dental Practice",
+      "Latitude": 52.93083190917969,
+      "Longitude": -1.137789964675903,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -860,7 +955,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -874,17 +969,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:37:35.18Z",
-      "City": "Mansfield",
-      "Postcode": "NG18 1QJ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T11:38:46.367Z",
+      "City": "Nottinghamshire",
+      "Postcode": "NG2 7JJ"
     }
   },
-  "V002339": {
+  "V002526": {
     "previousDentist": {
-      "ODSCode": "V002339",
-      "OrganisationName": "Groves Dental Centre",
-      "Latitude": 51.40690231323242,
-      "Longitude": -0.2581325173377991,
+      "ODSCode": "V002526",
+      "OrganisationName": "Bupa Dental Care, Beeston",
+      "Latitude": 53.77033233642578,
+      "Longitude": -1.5643795728683472,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -915,15 +1010,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-26T08:58:46.577Z",
-      "City": "New Malden",
-      "Postcode": "KT3 4QS"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-30T11:42:31.03Z",
+      "City": "W Yorkshire",
+      "Postcode": "LS11 7AB"
     },
     "currentDentist": {
-      "ODSCode": "V002339",
-      "OrganisationName": "Groves Dental Centre",
-      "Latitude": 51.40690231323242,
-      "Longitude": -0.2581325173377991,
+      "ODSCode": "V002526",
+      "OrganisationName": "Bupa Dental Care, Beeston",
+      "Latitude": 53.77033233642578,
+      "Longitude": -1.5643795728683472,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -954,17 +1049,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T14:01:40.06Z",
-      "City": "New Malden",
-      "Postcode": "KT3 4QS"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T10:20:45.21Z",
+      "City": "W Yorkshire",
+      "Postcode": "LS11 7AB"
     }
   },
-  "V002770": {
+  "V002802": {
     "previousDentist": {
-      "ODSCode": "V002770",
-      "OrganisationName": "Montreal Dental Care",
-      "Latitude": 53.82692337036133,
-      "Longitude": -1.5338640213012695,
+      "ODSCode": "V002802",
+      "OrganisationName": "Farsley Dental Practice",
+      "Latitude": 53.81363677978515,
+      "Longitude": -1.671048641204834,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -995,15 +1090,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-15T13:06:14.123Z",
-      "City": "Leeds",
-      "Postcode": "LS7 4LF"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-09T10:06:31.443Z",
+      "City": "Pudsey",
+      "Postcode": "LS28 5HX"
     },
     "currentDentist": {
-      "ODSCode": "V002770",
-      "OrganisationName": "Montreal Dental Care",
-      "Latitude": 53.82692337036133,
-      "Longitude": -1.5338640213012695,
+      "ODSCode": "V002802",
+      "OrganisationName": "Farsley Dental Practice",
+      "Latitude": 53.81363677978515,
+      "Longitude": -1.671048641204834,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -1020,7 +1115,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -1034,17 +1129,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T14:48:59.277Z",
-      "City": "Leeds",
-      "Postcode": "LS7 4LF"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T11:33:57.823Z",
+      "City": "Pudsey",
+      "Postcode": "LS28 5HX"
     }
   },
-  "V002771": {
+  "V002949": {
     "previousDentist": {
-      "ODSCode": "V002771",
-      "OrganisationName": "Cleggs Lane Dental Practice",
-      "Latitude": 53.531795501708984,
-      "Longitude": -2.422759532928467,
+      "ODSCode": "V002949",
+      "OrganisationName": "Eclipse Dental Care",
+      "Latitude": 53.71541595458984,
+      "Longitude": -1.6343587636947632,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -1075,15 +1170,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-05T15:23:29.823Z",
-      "City": "Manchester",
-      "Postcode": "M38 9WT"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-26T15:10:16.25Z",
+      "City": "W Yorkshire",
+      "Postcode": "WF17 5SB"
     },
     "currentDentist": {
-      "ODSCode": "V002771",
-      "OrganisationName": "Cleggs Lane Dental Practice",
-      "Latitude": 53.531795501708984,
-      "Longitude": -2.422759532928467,
+      "ODSCode": "V002949",
+      "OrganisationName": "Eclipse Dental Care",
+      "Latitude": 53.71541595458984,
+      "Longitude": -1.6343587636947632,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -1114,34 +1209,34 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T10:55:06.047Z",
-      "City": "Manchester",
-      "Postcode": "M38 9WT"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T09:04:48.957Z",
+      "City": "W Yorkshire",
+      "Postcode": "WF17 5SB"
     }
   },
-  "V003011": {
+  "V003103": {
     "previousDentist": {
-      "ODSCode": "V003011",
-      "OrganisationName": "Cramlington Dental Centre",
-      "Latitude": 55.087249755859375,
-      "Longitude": -1.5828243494033811,
+      "ODSCode": "V003103",
+      "OrganisationName": "Foxland Dental Surgery",
+      "Latitude": 53.38774108886719,
+      "Longitude": -2.230273962020874,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -1155,32 +1250,32 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-21T13:53:59.103Z",
-      "City": "Northumberland",
-      "Postcode": "NE23 1BA"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-22T11:08:45.81Z",
+      "City": "Cheadle",
+      "Postcode": "SK8 4QB"
     },
     "currentDentist": {
-      "ODSCode": "V003011",
-      "OrganisationName": "Cramlington Dental Centre",
-      "Latitude": 55.087249755859375,
-      "Longitude": -1.5828243494033811,
+      "ODSCode": "V003103",
+      "OrganisationName": "Foxland Dental Surgery",
+      "Latitude": 53.38774108886719,
+      "Longitude": -2.230273962020874,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -1194,17 +1289,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T10:30:55.32Z",
-      "City": "Northumberland",
-      "Postcode": "NE23 1BA"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T15:57:44.553Z",
+      "City": "Cheadle",
+      "Postcode": "SK8 4QB"
     }
   },
-  "V003241": {
+  "V003273": {
     "previousDentist": {
-      "ODSCode": "V003241",
-      "OrganisationName": "Rosehill Dental Practice",
-      "Latitude": 53.39616775512695,
-      "Longitude": -2.0826423168182373,
+      "ODSCode": "V003273",
+      "OrganisationName": "Nursery Lane Dental Practice",
+      "Latitude": 53.85163497924805,
+      "Longitude": -1.554096221923828,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -1221,7 +1316,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -1235,15 +1330,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-09T03:56:22.977Z",
-      "City": "Stockport",
-      "Postcode": "SK6 6ES"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-08T16:25:03.057Z",
+      "City": "W Yorkshire",
+      "Postcode": "LS17 7AQ"
     },
     "currentDentist": {
-      "ODSCode": "V003241",
-      "OrganisationName": "Rosehill Dental Practice",
-      "Latitude": 53.39616775512695,
-      "Longitude": -2.0826423168182373,
+      "ODSCode": "V003273",
+      "OrganisationName": "Nursery Lane Dental Practice",
+      "Latitude": 53.85163497924805,
+      "Longitude": -1.554096221923828,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -1274,24 +1369,24 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T09:49:36.477Z",
-      "City": "Stockport",
-      "Postcode": "SK6 6ES"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T10:46:16.857Z",
+      "City": "W Yorkshire",
+      "Postcode": "LS17 7AQ"
     }
   },
-  "V003474": {
+  "V003696": {
     "previousDentist": {
-      "ODSCode": "V003474",
-      "OrganisationName": "Watling Street Dental Care",
-      "Latitude": 51.373046875,
-      "Longitude": 0.5564414262771606,
+      "ODSCode": "V003696",
+      "OrganisationName": "WEISS AJ MR",
+      "Latitude": 51.51845932006836,
+      "Longitude": -0.1480986326932907,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
@@ -1315,255 +1410,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-01T20:21:25.54Z",
-      "City": "Gillingham",
-      "Postcode": "ME7 2YN"
-    },
-    "currentDentist": {
-      "ODSCode": "V003474",
-      "OrganisationName": "Watling Street Dental Care",
-      "Latitude": 51.373046875,
-      "Longitude": 0.5564414262771606,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T07:14:52.587Z",
-      "City": "Gillingham",
-      "Postcode": "ME7 2YN"
-    }
-  },
-  "V004220": {
-    "previousDentist": {
-      "ODSCode": "V004220",
-      "OrganisationName": "Family Dental Care",
-      "Latitude": 51.56377410888672,
-      "Longitude": -0.13524946570396423,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-17T10:28:14.527Z",
-      "City": "London",
-      "Postcode": "N19 5QU"
-    },
-    "currentDentist": {
-      "ODSCode": "V004220",
-      "OrganisationName": "Family Dental Care",
-      "Latitude": 51.56377410888672,
-      "Longitude": -0.13524946570396423,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T12:18:02.833Z",
-      "City": "London",
-      "Postcode": "N19 5QU"
-    }
-  },
-  "V004276": {
-    "previousDentist": {
-      "ODSCode": "V004276",
-      "OrganisationName": "Angle House Orthodontics",
-      "Latitude": 51.62083435058594,
-      "Longitude": -0.08393874764442444,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:29:58.22Z",
-      "City": "London",
-      "Postcode": "N18 1JX"
-    },
-    "currentDentist": {
-      "ODSCode": "V004276",
-      "OrganisationName": "Angle House Orthodontics",
-      "Latitude": 51.62083435058594,
-      "Longitude": -0.08393874764442444,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:33:59.137Z",
-      "City": "London",
-      "Postcode": "N18 1JX"
-    }
-  },
-  "V004308": {
-    "previousDentist": {
-      "ODSCode": "V004308",
-      "OrganisationName": "Trinity Dental Practice",
-      "Latitude": 51.64068603515625,
-      "Longitude": -0.06513745337724686,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-01T14:43:15.377Z",
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-22T10:29:40.7Z",
       "City": "",
-      "Postcode": "EN1 1HT"
+      "Postcode": "W1G 8GG"
     },
     "currentDentist": {
-      "ODSCode": "V004308",
-      "OrganisationName": "Trinity Dental Practice",
-      "Latitude": 51.64068603515625,
-      "Longitude": -0.06513745337724686,
+      "ODSCode": "V003696",
+      "OrganisationName": "WEISS AJ MR",
+      "Latitude": 51.51845932006836,
+      "Longitude": -0.1480986326932907,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -1575,7 +1430,7 @@
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
@@ -1594,17 +1449,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T14:28:54.043Z",
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T14:03:48.86Z",
       "City": "",
-      "Postcode": "EN1 1HT"
+      "Postcode": "W1G 8GG"
     }
   },
-  "V004569": {
+  "V003816": {
     "previousDentist": {
-      "ODSCode": "V004569",
-      "OrganisationName": "Sutton Orthodontics",
-      "Latitude": 51.35268783569336,
-      "Longitude": -0.19168546795845032,
+      "ODSCode": "V003816",
+      "OrganisationName": "Mr KJ Khan",
+      "Latitude": 53.385467529296875,
+      "Longitude": -2.907402276992798,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -1616,7 +1471,7 @@
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
@@ -1631,36 +1486,36 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-10T15:52:30.303Z",
-      "City": "Sutton",
-      "Postcode": "SM2 5SJ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-03T09:00:45.86Z",
+      "City": "Liverpool",
+      "Postcode": "L18 2DD"
     },
     "currentDentist": {
-      "ODSCode": "V004569",
-      "OrganisationName": "Sutton Orthodontics",
-      "Latitude": 51.35268783569336,
-      "Longitude": -0.19168546795845032,
+      "ODSCode": "V003816",
+      "OrganisationName": "Mr KJ Khan",
+      "Latitude": 53.385467529296875,
+      "Longitude": -2.907402276992798,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -1670,38 +1525,38 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T19:01:33.5Z",
-      "City": "Sutton",
-      "Postcode": "SM2 5SJ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T11:44:24.173Z",
+      "City": "Liverpool",
+      "Postcode": "L18 2DD"
     }
   },
-  "V004969": {
+  "V003984": {
     "previousDentist": {
-      "ODSCode": "V004969",
-      "OrganisationName": "Poynton Dental Practice",
-      "Latitude": 53.34711837768555,
-      "Longitude": -2.122968912124634,
+      "ODSCode": "V003984",
+      "OrganisationName": "MJ Warren Dental Practice",
+      "Latitude": 52.45539093017578,
+      "Longitude": -2.143509864807129,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -1715,32 +1570,32 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-06T11:11:19.183Z",
-      "City": "Stockport",
-      "Postcode": "SK12 1LA"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-22T05:57:09.273Z",
+      "City": "Stourbridge",
+      "Postcode": "DY8 1EJ"
     },
     "currentDentist": {
-      "ODSCode": "V004969",
-      "OrganisationName": "Poynton Dental Practice",
-      "Latitude": 53.34711837768555,
-      "Longitude": -2.122968912124634,
+      "ODSCode": "V003984",
+      "OrganisationName": "MJ Warren Dental Practice",
+      "Latitude": 52.45539093017578,
+      "Longitude": -2.143509864807129,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -1754,34 +1609,34 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T09:06:54.68Z",
-      "City": "Stockport",
-      "Postcode": "SK12 1LA"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T13:42:24.823Z",
+      "City": "Stourbridge",
+      "Postcode": "DY8 1EJ"
     }
   },
-  "V005008": {
+  "V004332": {
     "previousDentist": {
-      "ODSCode": "V005008",
-      "OrganisationName": "Angle House Orthodontists",
-      "Latitude": 51.61035919189453,
-      "Longitude": -0.2784033417701721,
+      "ODSCode": "V004332",
+      "OrganisationName": "BOSE, Utpalendu",
+      "Latitude": 51.46052169799805,
+      "Longitude": -0.5859808325767517,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -1791,36 +1646,36 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:31:36.33Z",
-      "City": "Edgware",
-      "Postcode": "HA8 7EJ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-23T08:50:08.96Z",
+      "City": "Old Windsor",
+      "Postcode": "SL4 2QX"
     },
     "currentDentist": {
-      "ODSCode": "V005008",
-      "OrganisationName": "Angle House Orthodontists",
-      "Latitude": 51.61035919189453,
-      "Longitude": -0.2784033417701721,
+      "ODSCode": "V004332",
+      "OrganisationName": "BOSE, Utpalendu",
+      "Latitude": 51.46052169799805,
+      "Longitude": -0.5859808325767517,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -1830,21 +1685,21 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:35:03.18Z",
-      "City": "Edgware",
-      "Postcode": "HA8 7EJ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T11:49:37.75Z",
+      "City": "Old Windsor",
+      "Postcode": "SL4 2QX"
     }
   },
-  "V005048": {
+  "V004625": {
     "previousDentist": {
-      "ODSCode": "V005048",
-      "OrganisationName": "North Hill Dental Care",
-      "Latitude": 51.890254974365234,
-      "Longitude": 0.896155834197998,
+      "ODSCode": "V004625",
+      "OrganisationName": "Victoria Dental Clinic",
+      "Latitude": 51.7509880065918,
+      "Longitude": -0.33161911368370056,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -1875,15 +1730,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-10T09:07:12.597Z",
-      "City": "Colchester",
-      "Postcode": "CO1 1PX"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-13T09:48:39.06Z",
+      "City": "St Albans",
+      "Postcode": "AL1 3TJ"
     },
     "currentDentist": {
-      "ODSCode": "V005048",
-      "OrganisationName": "North Hill Dental Care",
-      "Latitude": 51.890254974365234,
-      "Longitude": 0.896155834197998,
+      "ODSCode": "V004625",
+      "OrganisationName": "Victoria Dental Clinic",
+      "Latitude": 51.7509880065918,
+      "Longitude": -0.33161911368370056,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -1900,7 +1755,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -1914,17 +1769,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T11:24:08.59Z",
-      "City": "Colchester",
-      "Postcode": "CO1 1PX"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T15:44:35.517Z",
+      "City": "St Albans",
+      "Postcode": "AL1 3TJ"
     }
   },
-  "V005294": {
+  "V005168": {
     "previousDentist": {
-      "ODSCode": "V005294",
-      "OrganisationName": "Broad Walk Dental Practice",
-      "Latitude": 53.25682067871094,
-      "Longitude": -1.9162439107894895,
+      "ODSCode": "V005168",
+      "OrganisationName": "Lake Road Dental Practice",
+      "Latitude": 50.80434799194336,
+      "Longitude": -1.07927405834198,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -1941,7 +1796,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -1955,15 +1810,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-06T11:09:13.88Z",
-      "City": "Buxton",
-      "Postcode": "SK17 6JH"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-22T15:39:22.623Z",
+      "City": "Hants",
+      "Postcode": "PO1 4JE"
     },
     "currentDentist": {
-      "ODSCode": "V005294",
-      "OrganisationName": "Broad Walk Dental Practice",
-      "Latitude": 53.25682067871094,
-      "Longitude": -1.9162439107894895,
+      "ODSCode": "V005168",
+      "OrganisationName": "Lake Road Dental Practice",
+      "Latitude": 50.80434799194336,
+      "Longitude": -1.07927405834198,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -1976,6 +1831,47 @@
             "Id": 2,
             "Name": "Adults entitled to free dental care",
             "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T19:00:42.733Z",
+      "City": "Hants",
+      "Postcode": "PO1 4JE"
+    }
+  },
+  "V005299": {
+    "previousDentist": {
+      "ODSCode": "V005299",
+      "OrganisationName": "Mr M S Tawana",
+      "Latitude": 51.438846588134766,
+      "Longitude": 0.23284979164600372,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
@@ -1994,56 +1890,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T12:46:15.37Z",
-      "City": "Buxton",
-      "Postcode": "SK17 6JH"
-    }
-  },
-  "V005467": {
-    "previousDentist": {
-      "ODSCode": "V005467",
-      "OrganisationName": "Cudworth Dental Surgery",
-      "Latitude": 53.577850341796875,
-      "Longitude": -1.4168249368667605,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-10T13:04:18.657Z",
-      "City": "Barnsley",
-      "Postcode": "S72 8SU"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-24T10:02:44.793Z",
+      "City": null,
+      "Postcode": "DA1 1QU"
     },
     "currentDentist": {
-      "ODSCode": "V005467",
-      "OrganisationName": "Cudworth Dental Surgery",
-      "Latitude": 53.577850341796875,
-      "Longitude": -1.4168249368667605,
+      "ODSCode": "V005299",
+      "OrganisationName": "Mr M S Tawana",
+      "Latitude": 51.438846588134766,
+      "Longitude": 0.23284979164600372,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -2074,29 +1929,29 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T11:20:28.01Z",
-      "City": "Barnsley",
-      "Postcode": "S72 8SU"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T06:30:45.593Z",
+      "City": null,
+      "Postcode": "DA1 1QU"
     }
   },
-  "V005653": {
+  "V005438": {
     "previousDentist": {
-      "ODSCode": "V005653",
-      "OrganisationName": "Shiva Momajjad",
-      "Latitude": 51.47821807861328,
-      "Longitude": -0.9466588497161864,
+      "ODSCode": "V005438",
+      "OrganisationName": "Hartley Dental Practice",
+      "Latitude": 51.39109420776367,
+      "Longitude": 0.30892181396484375,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
@@ -2115,27 +1970,27 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-29T12:55:23.98Z",
-      "City": "Caversham  Park Village",
-      "Postcode": "RG4 6NY"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-12T08:52:31Z",
+      "City": "Kent",
+      "Postcode": "DA3 7EG"
     },
     "currentDentist": {
-      "ODSCode": "V005653",
-      "OrganisationName": "Shiva Momajjad",
-      "Latitude": 51.47821807861328,
-      "Longitude": -0.9466588497161864,
+      "ODSCode": "V005438",
+      "OrganisationName": "Hartley Dental Practice",
+      "Latitude": 51.39109420776367,
+      "Longitude": 0.30892181396484375,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
@@ -2154,17 +2009,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T11:46:02.5Z",
-      "City": "Caversham  Park Village",
-      "Postcode": "RG4 6NY"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T08:10:02.987Z",
+      "City": "Kent",
+      "Postcode": "DA3 7EG"
     }
   },
-  "V005939": {
+  "V006159": {
     "previousDentist": {
-      "ODSCode": "V005939",
-      "OrganisationName": "Ongar Road Dental Practice",
-      "Latitude": 51.622562408447266,
-      "Longitude": 0.3040408194065094,
+      "ODSCode": "V006159",
+      "OrganisationName": "Studley Dental & Implant Clinic",
+      "Latitude": 52.271846771240234,
+      "Longitude": -1.8997002840042112,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -2195,32 +2050,32 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-25T17:06:34.303Z",
-      "City": "Brentwood",
-      "Postcode": "CM15 9AX"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-25T10:51:41.587Z",
+      "City": "Studley",
+      "Postcode": "B80 7HR"
     },
     "currentDentist": {
-      "ODSCode": "V005939",
-      "OrganisationName": "Ongar Road Dental Practice",
-      "Latitude": 51.622562408447266,
-      "Longitude": 0.3040408194065094,
+      "ODSCode": "V006159",
+      "OrganisationName": "Studley Dental & Implant Clinic",
+      "Latitude": 52.271846771240234,
+      "Longitude": -1.8997002840042112,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -2234,29 +2089,29 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T12:07:07.503Z",
-      "City": "Brentwood",
-      "Postcode": "CM15 9AX"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T10:16:33.963Z",
+      "City": "Studley",
+      "Postcode": "B80 7HR"
     }
   },
-  "V006132": {
+  "V006346": {
     "previousDentist": {
-      "ODSCode": "V006132",
-      "OrganisationName": "Euston Dental Place",
-      "Latitude": 52.288429260253906,
-      "Longitude": -1.5343657732009888,
+      "ODSCode": "V006346",
+      "OrganisationName": "Bilston Dental Care",
+      "Latitude": 52.56736755371094,
+      "Longitude": -2.0754201412200928,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
@@ -2275,27 +2130,27 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2024-10-10T13:58:20.09Z",
-      "City": "Leamington Spa",
-      "Postcode": "CV32 4LJ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-19T15:04:43.657Z",
+      "City": "Wolverhampton",
+      "Postcode": "WV14 6AA"
     },
     "currentDentist": {
-      "ODSCode": "V006132",
-      "OrganisationName": "Euston Dental Place",
-      "Latitude": 52.288429260253906,
-      "Longitude": -1.5343657732009888,
+      "ODSCode": "V006346",
+      "OrganisationName": "Bilston Dental Care",
+      "Latitude": 52.56736755371094,
+      "Longitude": -2.0754201412200928,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
@@ -2314,29 +2169,29 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T10:03:52.69Z",
-      "City": "Leamington Spa",
-      "Postcode": "CV32 4LJ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T12:22:04.76Z",
+      "City": "Wolverhampton",
+      "Postcode": "WV14 6AA"
     }
   },
-  "V006390": {
+  "V006395": {
     "previousDentist": {
-      "ODSCode": "V006390",
-      "OrganisationName": "Dovedale Dental Practice",
-      "Latitude": 52.555450439453125,
-      "Longitude": -2.1164472103118896,
+      "ODSCode": "V006395",
+      "OrganisationName": "Shoja-Assadi & Associates",
+      "Latitude": 52.567874908447266,
+      "Longitude": -2.1320598125457764,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
@@ -2355,27 +2210,27 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-18T10:19:55.04Z",
-      "City": "",
-      "Postcode": "WV4 6RA"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-18T10:14:46.687Z",
+      "City": "Wolverhampton",
+      "Postcode": "WV2 3JE"
     },
     "currentDentist": {
-      "ODSCode": "V006390",
-      "OrganisationName": "Dovedale Dental Practice",
-      "Latitude": 52.555450439453125,
-      "Longitude": -2.1164472103118896,
+      "ODSCode": "V006395",
+      "OrganisationName": "Shoja-Assadi & Associates",
+      "Latitude": 52.567874908447266,
+      "Longitude": -2.1320598125457764,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
@@ -2394,34 +2249,34 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T14:36:32.13Z",
-      "City": "",
-      "Postcode": "WV4 6RA"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T09:21:55.93Z",
+      "City": "Wolverhampton",
+      "Postcode": "WV2 3JE"
     }
   },
-  "V006552": {
+  "V006693": {
     "previousDentist": {
-      "ODSCode": "V006552",
-      "OrganisationName": "Total Orthodontics, Beckenham",
-      "Latitude": 51.40895462036133,
-      "Longitude": -0.040267325937747955,
+      "ODSCode": "V006693",
+      "OrganisationName": "Beaconsfield Dental Practice",
+      "Latitude": 51.42717742919922,
+      "Longitude": 0.04547109454870224,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -2431,36 +2286,36 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-24T11:36:02.707Z",
-      "City": "Beckenham",
-      "Postcode": "BR3 4LS"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-23T14:03:52.18Z",
+      "City": "Mottingham",
+      "Postcode": "SE9 4EA"
     },
     "currentDentist": {
-      "ODSCode": "V006552",
-      "OrganisationName": "Total Orthodontics, Beckenham",
-      "Latitude": 51.40895462036133,
-      "Longitude": -0.040267325937747955,
+      "ODSCode": "V006693",
+      "OrganisationName": "Beaconsfield Dental Practice",
+      "Latitude": 51.42717742919922,
+      "Longitude": 0.04547109454870224,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -2470,21 +2325,21 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:32:40.267Z",
-      "City": "Beckenham",
-      "Postcode": "BR3 4LS"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T18:47:59.767Z",
+      "City": "Mottingham",
+      "Postcode": "SE9 4EA"
     }
   },
-  "V006802": {
+  "V006954": {
     "previousDentist": {
-      "ODSCode": "V006802",
-      "OrganisationName": "Guys Dental Practice",
-      "Latitude": 52.68414306640625,
-      "Longitude": -1.8217501640319824,
+      "ODSCode": "V006954",
+      "OrganisationName": "Hayer's Dental Practice",
+      "Latitude": 52.58308410644531,
+      "Longitude": -2.0598180294036865,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -2515,15 +2370,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-03T10:36:36.893Z",
-      "City": "Lichfield",
-      "Postcode": "WS13 6DZ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-01T19:50:28.243Z",
+      "City": "W Midlands",
+      "Postcode": "WV13 2DA"
     },
     "currentDentist": {
-      "ODSCode": "V006802",
-      "OrganisationName": "Guys Dental Practice",
-      "Latitude": 52.68414306640625,
-      "Longitude": -1.8217501640319824,
+      "ODSCode": "V006954",
+      "OrganisationName": "Hayer's Dental Practice",
+      "Latitude": 52.58308410644531,
+      "Longitude": -2.0598180294036865,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -2554,29 +2409,29 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T11:46:02.867Z",
-      "City": "Lichfield",
-      "Postcode": "WS13 6DZ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T12:40:59.153Z",
+      "City": "W Midlands",
+      "Postcode": "WV13 2DA"
     }
   },
-  "V007050": {
+  "V007443": {
     "previousDentist": {
-      "ODSCode": "V007050",
-      "OrganisationName": "Queen Square Dental Practice",
-      "Latitude": 51.38352584838867,
-      "Longitude": -2.3627543449401855,
+      "ODSCode": "V007443",
+      "OrganisationName": "Cramond House Dental Practice ",
+      "Latitude": 53.87369155883789,
+      "Longitude": -2.389198064804077,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
@@ -2595,27 +2450,27 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-02T10:38:31.09Z",
-      "City": ",",
-      "Postcode": "BA1 2HA"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-09T09:21:55.05Z",
+      "City": "Lancs",
+      "Postcode": "BB7 2DH"
     },
     "currentDentist": {
-      "ODSCode": "V007050",
-      "OrganisationName": "Queen Square Dental Practice",
-      "Latitude": 51.38352584838867,
-      "Longitude": -2.3627543449401855,
+      "ODSCode": "V007443",
+      "OrganisationName": "Cramond House Dental Practice ",
+      "Latitude": 53.87369155883789,
+      "Longitude": -2.389198064804077,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
@@ -2634,34 +2489,34 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T05:57:41.38Z",
-      "City": ",",
-      "Postcode": "BA1 2HA"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T20:47:39.863Z",
+      "City": "Lancs",
+      "Postcode": "BB7 2DH"
     }
   },
-  "V007250": {
+  "V007560": {
     "previousDentist": {
-      "ODSCode": "V007250",
-      "OrganisationName": "Bupa Dental Care, Wellington",
-      "Latitude": 52.70240020751953,
-      "Longitude": -2.5185844898223877,
+      "ODSCode": "V007560",
+      "OrganisationName": "Eltham Dental",
+      "Latitude": 51.456600189208984,
+      "Longitude": 0.056819286197423935,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -2675,32 +2530,32 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-03T15:47:13.507Z",
-      "City": "Shropshire",
-      "Postcode": "TF1 1DG"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-12T08:27:34.45Z",
+      "City": null,
+      "Postcode": "SE9 1SB"
     },
     "currentDentist": {
-      "ODSCode": "V007250",
-      "OrganisationName": "Bupa Dental Care, Wellington",
-      "Latitude": 52.70240020751953,
-      "Longitude": -2.5185844898223877,
+      "ODSCode": "V007560",
+      "OrganisationName": "Eltham Dental",
+      "Latitude": 51.456600189208984,
+      "Longitude": 0.056819286197423935,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -2714,17 +2569,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T12:21:41.847Z",
-      "City": "Shropshire",
-      "Postcode": "TF1 1DG"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T09:25:44.12Z",
+      "City": null,
+      "Postcode": "SE9 1SB"
     }
   },
-  "V007636": {
+  "V007618": {
     "previousDentist": {
-      "ODSCode": "V007636",
-      "OrganisationName": "Barbara Castle Dental",
-      "Latitude": 51.74889373779297,
-      "Longitude": 0.07380921393632889,
+      "ODSCode": "V007618",
+      "OrganisationName": "Werrington Dental Practice",
+      "Latitude": 53.02558135986328,
+      "Longitude": -2.0840470790863037,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -2755,15 +2610,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-30T12:57:24Z",
-      "City": "Essex",
-      "Postcode": "CM19 5SJ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-08T15:36:30.33Z",
+      "City": "Staffordshire",
+      "Postcode": "ST9 0DT"
     },
     "currentDentist": {
-      "ODSCode": "V007636",
-      "OrganisationName": "Barbara Castle Dental",
-      "Latitude": 51.74889373779297,
-      "Longitude": 0.07380921393632889,
+      "ODSCode": "V007618",
+      "OrganisationName": "Werrington Dental Practice",
+      "Latitude": 53.02558135986328,
+      "Longitude": -2.0840470790863037,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -2775,12 +2630,12 @@
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -2794,17 +2649,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:51:16.237Z",
-      "City": "Essex",
-      "Postcode": "CM19 5SJ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T11:09:07.69Z",
+      "City": "Staffordshire",
+      "Postcode": "ST9 0DT"
     }
   },
-  "V008436": {
+  "V007751": {
     "previousDentist": {
-      "ODSCode": "V008436",
-      "OrganisationName": "Smile Essential",
-      "Latitude": 52.61725234985352,
-      "Longitude": -1.16051983833313,
+      "ODSCode": "V007751",
+      "OrganisationName": "Springfield Dental Care ",
+      "Latitude": 51.755149841308594,
+      "Longitude": 0.4927953779697418,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -2835,73 +2690,114 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-07-04T14:29:36.93Z",
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-23T12:02:24.8Z",
+      "City": "Chelmsford",
+      "Postcode": "CM1 6TB"
+    },
+    "currentDentist": {
+      "ODSCode": "V007751",
+      "OrganisationName": "Springfield Dental Care ",
+      "Latitude": 51.755149841308594,
+      "Longitude": 0.4927953779697418,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T09:27:51.42Z",
+      "City": "Chelmsford",
+      "Postcode": "CM1 6TB"
+    }
+  },
+  "V007758": {
+    "currentDentist": {
+      "ODSCode": "V007758",
+      "OrganisationName": "SplenDental Care",
+      "Latitude": 52.61470031738281,
+      "Longitude": -1.1633601188659668,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-22T10:56:38.01Z",
       "City": "Leics",
-      "Postcode": "LE3 2FS"
-    },
-    "currentDentist": {
-      "ODSCode": "V008436",
-      "OrganisationName": "Smile Essential",
-      "Latitude": 52.61725234985352,
-      "Longitude": -1.16051983833313,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T11:51:07.8Z",
-      "City": "Leics",
-      "Postcode": "LE3 2FS"
+      "Postcode": "LE3 2FU"
     }
   },
-  "V008739": {
+  "V008006": {
     "previousDentist": {
-      "ODSCode": "V008739",
-      "OrganisationName": "Dr T Tikam & Dr S Ramchandani",
-      "Latitude": 51.607139587402344,
-      "Longitude": -0.29693803191185,
+      "ODSCode": "V008006",
+      "OrganisationName": "Woodhall Farm Dental Surgery",
+      "Latitude": 51.7801628112793,
+      "Longitude": -0.4426450431346894,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -2915,68 +2811,27 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-07-21T14:40:00.423Z",
-      "City": "",
-      "Postcode": "HA8 6QY"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-13T09:49:54.657Z",
+      "City": "Herts",
+      "Postcode": "HP2 7QD"
     },
     "currentDentist": {
-      "ODSCode": "V008739",
-      "OrganisationName": "Dr T Tikam & Dr S Ramchandani",
-      "Latitude": 51.607139587402344,
-      "Longitude": -0.29693803191185,
+      "ODSCode": "V008006",
+      "OrganisationName": "Woodhall Farm Dental Surgery",
+      "Latitude": 51.7801628112793,
+      "Longitude": -0.4426450431346894,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T17:05:18.847Z",
-      "City": "",
-      "Postcode": "HA8 6QY"
-    }
-  },
-  "V008756": {
-    "previousDentist": {
-      "ODSCode": "V008756",
-      "OrganisationName": "Mr Sean Buckley & Associates",
-      "Latitude": 51.409427642822266,
-      "Longitude": 0.012655253522098064,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
@@ -2995,15 +2850,56 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-07T17:17:16.547Z",
-      "City": "Bromley",
-      "Postcode": "BR1 3PR"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T15:41:36.84Z",
+      "City": "Herts",
+      "Postcode": "HP2 7QD"
+    }
+  },
+  "V008214": {
+    "previousDentist": {
+      "ODSCode": "V008214",
+      "OrganisationName": "Hopwood Dental Practice (Mr R Khansary)",
+      "Latitude": 53.583194732666016,
+      "Longitude": -2.2105519771575928,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-10T11:00:22.97Z",
+      "City": "Hopwood",
+      "Postcode": "OL10 2PP"
     },
     "currentDentist": {
-      "ODSCode": "V008756",
-      "OrganisationName": "Mr Sean Buckley & Associates",
-      "Latitude": 51.409427642822266,
-      "Longitude": 0.012655253522098064,
+      "ODSCode": "V008214",
+      "OrganisationName": "Hopwood Dental Practice (Mr R Khansary)",
+      "Latitude": 53.583194732666016,
+      "Longitude": -2.2105519771575928,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -3020,7 +2916,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -3034,17 +2930,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T11:12:33.9Z",
-      "City": "Bromley",
-      "Postcode": "BR1 3PR"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T15:42:21.017Z",
+      "City": "Hopwood",
+      "Postcode": "OL10 2PP"
     }
   },
-  "V008962": {
+  "V008287": {
     "previousDentist": {
-      "ODSCode": "V008962",
-      "OrganisationName": "Evesham Dental Health Team",
-      "Latitude": 52.088626861572266,
-      "Longitude": -1.933000326156616,
+      "ODSCode": "V008287",
+      "OrganisationName": "York Street Dental Care  (Mr R Khansary)",
+      "Latitude": 53.5936164855957,
+      "Longitude": -2.217750310897827,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -3075,15 +2971,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-24T11:04:15.78Z",
-      "City": "Evesham",
-      "Postcode": "WR11 1BG"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-10T11:03:39.633Z",
+      "City": "Heywood",
+      "Postcode": "OL10 4NN"
     },
     "currentDentist": {
-      "ODSCode": "V008962",
-      "OrganisationName": "Evesham Dental Health Team",
-      "Latitude": 52.088626861572266,
-      "Longitude": -1.933000326156616,
+      "ODSCode": "V008287",
+      "OrganisationName": "York Street Dental Care  (Mr R Khansary)",
+      "Latitude": 53.5936164855957,
+      "Longitude": -2.217750310897827,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -3114,24 +3010,24 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T17:58:13.073Z",
-      "City": "Evesham",
-      "Postcode": "WR11 1BG"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T15:45:39.333Z",
+      "City": "Heywood",
+      "Postcode": "OL10 4NN"
     }
   },
-  "V009284": {
+  "V010317": {
     "previousDentist": {
-      "ODSCode": "V009284",
-      "OrganisationName": "Dental Arts Studio",
-      "Latitude": 51.5823974609375,
-      "Longitude": -0.22923094034194944,
+      "ODSCode": "V010317",
+      "OrganisationName": "Boston Dental Centre (Mrs L Amini & Mrs M Tavasoli)",
+      "Latitude": 52.95186996459961,
+      "Longitude": -0.041245244443416595,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
@@ -3155,32 +3051,32 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-24T13:00:00.803Z",
-      "City": "",
-      "Postcode": "NW4 3UX"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-07-28T09:07:06.203Z",
+      "City": "Boston",
+      "Postcode": "PE21 7BX"
     },
     "currentDentist": {
-      "ODSCode": "V009284",
-      "OrganisationName": "Dental Arts Studio",
-      "Latitude": 51.5823974609375,
-      "Longitude": -0.22923094034194944,
+      "ODSCode": "V010317",
+      "OrganisationName": "Boston Dental Centre (Mrs L Amini & Mrs M Tavasoli)",
+      "Latitude": 52.95186996459961,
+      "Longitude": -0.041245244443416595,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3194,34 +3090,34 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:29:37.09Z",
-      "City": "",
-      "Postcode": "NW4 3UX"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T14:11:24.707Z",
+      "City": "Boston",
+      "Postcode": "PE21 7BX"
     }
   },
-  "V009567": {
+  "V011847": {
     "previousDentist": {
-      "ODSCode": "V009567",
-      "OrganisationName": "Alchemy Dental Practice",
-      "Latitude": 53.09336471557617,
-      "Longitude": -2.441398859024048,
+      "ODSCode": "V011847",
+      "OrganisationName": "Beaconsfield Dental Practice",
+      "Latitude": 51.160736083984375,
+      "Longitude": 0.5504185557365417,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3231,36 +3127,36 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-21T14:19:18.36Z",
-      "City": "Crewe",
-      "Postcode": "CW2 7HT"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-23T14:14:52.893Z",
+      "City": "Staplehurst, Kent",
+      "Postcode": "TN12 0LB"
     },
     "currentDentist": {
-      "ODSCode": "V009567",
-      "OrganisationName": "Alchemy Dental Practice",
-      "Latitude": 53.09336471557617,
-      "Longitude": -2.441398859024048,
+      "ODSCode": "V011847",
+      "OrganisationName": "Beaconsfield Dental Practice",
+      "Latitude": 51.160736083984375,
+      "Longitude": 0.5504185557365417,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3270,38 +3166,38 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:01:22.383Z",
-      "City": "Crewe",
-      "Postcode": "CW2 7HT"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T18:51:49.74Z",
+      "City": "Staplehurst, Kent",
+      "Postcode": "TN12 0LB"
     }
   },
-  "V009584": {
+  "V012123": {
     "previousDentist": {
-      "ODSCode": "V009584",
-      "OrganisationName": "Cathedral Dental Practice",
-      "Latitude": 50.264610290527344,
-      "Longitude": -5.050534248352051,
+      "ODSCode": "V012123",
+      "OrganisationName": "Tewkesbury House Dental Practice",
+      "Latitude": 51.99298477172851,
+      "Longitude": -2.1544179916381836,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3315,15 +3211,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-10T08:49:35.71Z",
-      "City": "Truro",
-      "Postcode": "TR1 2UE"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-27T14:46:29.46Z",
+      "City": "Gloucester",
+      "Postcode": "GL20 5PR"
     },
     "currentDentist": {
-      "ODSCode": "V009584",
-      "OrganisationName": "Cathedral Dental Practice",
-      "Latitude": 50.264610290527344,
-      "Longitude": -5.050534248352051,
+      "ODSCode": "V012123",
+      "OrganisationName": "Tewkesbury House Dental Practice",
+      "Latitude": 51.99298477172851,
+      "Longitude": -2.1544179916381836,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -3354,97 +3250,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T08:50:04.607Z",
-      "City": "Truro",
-      "Postcode": "TR1 2UE"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T15:06:28.78Z",
+      "City": "Gloucester",
+      "Postcode": "GL20 5PR"
     }
   },
-  "V012146": {
+  "V012684": {
     "previousDentist": {
-      "ODSCode": "V012146",
-      "OrganisationName": "SPRINGFIELD DENTAL CLINIC",
-      "Latitude": 53.87348175048828,
-      "Longitude": -1.7111424207687378,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-29T18:42:42.773Z",
-      "City": "West Yorkshire",
-      "Postcode": "LS20 8AL"
-    },
-    "currentDentist": {
-      "ODSCode": "V012146",
-      "OrganisationName": "SPRINGFIELD DENTAL CLINIC",
-      "Latitude": 53.87348175048828,
-      "Longitude": -1.7111424207687378,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T12:27:19.84Z",
-      "City": "West Yorkshire",
-      "Postcode": "LS20 8AL"
-    }
-  },
-  "V012195": {
-    "previousDentist": {
-      "ODSCode": "V012195",
-      "OrganisationName": "Alchemy Dental Practice",
-      "Latitude": 53.01051712036133,
-      "Longitude": -2.1822054386138916,
+      "ODSCode": "V012684",
+      "OrganisationName": "Forest Dental Practice",
+      "Latitude": 51.542999267578125,
+      "Longitude": 0.0259710680693388,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -3475,112 +3291,32 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-21T14:20:42.547Z",
-      "City": "Shelton",
-      "Postcode": "ST4 2EQ"
-    },
-    "currentDentist": {
-      "ODSCode": "V012195",
-      "OrganisationName": "Alchemy Dental Practice",
-      "Latitude": 53.01051712036133,
-      "Longitude": -2.1822054386138916,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:02:18.143Z",
-      "City": "Shelton",
-      "Postcode": "ST4 2EQ"
-    }
-  },
-  "V012268": {
-    "previousDentist": {
-      "ODSCode": "V012268",
-      "OrganisationName": "Angle House Orthodontic Practice",
-      "Latitude": 51.61505126953125,
-      "Longitude": -0.028571151196956635,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:32:46.327Z",
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-23T14:17:36.317Z",
       "City": "London",
-      "Postcode": "E4 8HX"
+      "Postcode": "E7 9LW"
     },
     "currentDentist": {
-      "ODSCode": "V012268",
-      "OrganisationName": "Angle House Orthodontic Practice",
-      "Latitude": 51.61505126953125,
-      "Longitude": -0.028571151196956635,
+      "ODSCode": "V012684",
+      "OrganisationName": "Forest Dental Practice",
+      "Latitude": 51.542999267578125,
+      "Longitude": 0.0259710680693388,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3590,21 +3326,21 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:36:20.217Z",
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T18:52:50.507Z",
       "City": "London",
-      "Postcode": "E4 8HX"
+      "Postcode": "E7 9LW"
     }
   },
-  "V012690": {
+  "V013031": {
     "previousDentist": {
-      "ODSCode": "V012690",
-      "OrganisationName": "Campbell Orthodontics",
-      "Latitude": 52.577762603759766,
-      "Longitude": -0.24147580564022064,
+      "ODSCode": "V013031",
+      "OrganisationName": "Smiles of New Forest",
+      "Latitude": 50.75708770751953,
+      "Longitude": -1.5488293170928955,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -3621,7 +3357,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3631,19 +3367,19 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-23T08:59:42.19Z",
-      "City": "",
-      "Postcode": "PE1 2TN"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-03T13:30:04.253Z",
+      "City": "Lymington",
+      "Postcode": "SO41 9NH"
     },
     "currentDentist": {
-      "ODSCode": "V012690",
-      "OrganisationName": "Campbell Orthodontics",
-      "Latitude": 52.577762603759766,
-      "Longitude": -0.24147580564022064,
+      "ODSCode": "V013031",
+      "OrganisationName": "Smiles of New Forest",
+      "Latitude": 50.75708770751953,
+      "Longitude": -1.5488293170928955,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -3660,7 +3396,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3670,38 +3406,38 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T16:01:41.43Z",
-      "City": "",
-      "Postcode": "PE1 2TN"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T12:45:53.907Z",
+      "City": "Lymington",
+      "Postcode": "SO41 9NH"
     }
   },
-  "V013705": {
+  "V014047": {
     "previousDentist": {
-      "ODSCode": "V013705",
-      "OrganisationName": "Burgess & Hyder",
-      "Latitude": 54.7694091796875,
-      "Longitude": -1.7039477825164795,
+      "ODSCode": "V014047",
+      "OrganisationName": "Messenger Dental Practice",
+      "Latitude": 51.86172866821289,
+      "Longitude": -2.244610071182251,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3715,15 +3451,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-13T12:37:30.36Z",
-      "City": "Eshwinning",
-      "Postcode": "DH7 9HW"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-26T15:16:11.817Z",
+      "City": "Gloucestershire",
+      "Postcode": "GL1 1HX"
     },
     "currentDentist": {
-      "ODSCode": "V013705",
-      "OrganisationName": "Burgess & Hyder",
-      "Latitude": 54.7694091796875,
-      "Longitude": -1.7039477825164795,
+      "ODSCode": "V014047",
+      "OrganisationName": "Messenger Dental Practice",
+      "Latitude": 51.86172866821289,
+      "Longitude": -2.244610071182251,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -3740,7 +3476,7 @@
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -3754,17 +3490,17 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T14:10:26.64Z",
-      "City": "Eshwinning",
-      "Postcode": "DH7 9HW"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T08:45:48.473Z",
+      "City": "Gloucestershire",
+      "Postcode": "GL1 1HX"
     }
   },
-  "V019639": {
+  "V014451": {
     "previousDentist": {
-      "ODSCode": "V019639",
-      "OrganisationName": "Bedford Dental Centre",
-      "Latitude": 52.13524627685547,
-      "Longitude": -0.4756315648555755,
+      "ODSCode": "V014451",
+      "OrganisationName": "Hedge End Dental Surgery",
+      "Latitude": 50.91236877441406,
+      "Longitude": -1.3023011684417725,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -3795,15 +3531,15 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-22T10:36:32.703Z",
-      "City": "Bedford",
-      "Postcode": "MK40 1DN"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-28T14:48:28.56Z",
+      "City": "Southampton, Hants",
+      "Postcode": "SO30 0BJ"
     },
     "currentDentist": {
-      "ODSCode": "V019639",
-      "OrganisationName": "Bedford Dental Centre",
-      "Latitude": 52.13524627685547,
-      "Longitude": -0.4756315648555755,
+      "ODSCode": "V014451",
+      "OrganisationName": "Hedge End Dental Surgery",
+      "Latitude": 50.91236877441406,
+      "Longitude": -1.3023011684417725,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -3815,12 +3551,12 @@
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -3834,34 +3570,34 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:10:32.287Z",
-      "City": "Bedford",
-      "Postcode": "MK40 1DN"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-12T00:20:58.99Z",
+      "City": "Southampton, Hants",
+      "Postcode": "SO30 0BJ"
     }
   },
-  "V021550": {
+  "V017224": {
     "previousDentist": {
-      "ODSCode": "V021550",
-      "OrganisationName": "GOFFS OAK DENTAL CARE",
-      "Latitude": 51.710105895996094,
-      "Longitude": -0.08585701882839203,
+      "ODSCode": "V017224",
+      "OrganisationName": "St Johns Dental",
+      "Latitude": 52.184715270996094,
+      "Longitude": -2.2360541820526123,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3871,36 +3607,36 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:34:09.257Z",
-      "City": "Hertfordshire",
-      "Postcode": "EN7 5ET"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-23T07:25:40.003Z",
+      "City": "Worcester",
+      "Postcode": "WR2 4LE"
     },
     "currentDentist": {
-      "ODSCode": "V021550",
-      "OrganisationName": "GOFFS OAK DENTAL CARE",
-      "Latitude": 51.710105895996094,
-      "Longitude": -0.08585701882839203,
+      "ODSCode": "V017224",
+      "OrganisationName": "St Johns Dental",
+      "Latitude": 52.184715270996094,
+      "Longitude": -2.2360541820526123,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3910,38 +3646,38 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:37:19.02Z",
-      "City": "Hertfordshire",
-      "Postcode": "EN7 5ET"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T11:13:46.923Z",
+      "City": "Worcester",
+      "Postcode": "WR2 4LE"
     }
   },
-  "V022257": {
+  "V017401": {
     "previousDentist": {
-      "ODSCode": "V022257",
-      "OrganisationName": "SAKERCHAND N MR",
-      "Latitude": 51.91667938232422,
-      "Longitude": -0.6662949323654175,
+      "ODSCode": "V017401",
+      "OrganisationName": "Winton Dental Practice",
+      "Latitude": 53.49128341674805,
+      "Longitude": -2.368081569671631,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3955,32 +3691,32 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-13T09:21:34.737Z",
-      "City": "Bedfordshire",
-      "Postcode": "LU7 1DD"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-05T12:02:56.19Z",
+      "City": "Manchester",
+      "Postcode": "M30 8DH"
     },
     "currentDentist": {
-      "ODSCode": "V022257",
-      "OrganisationName": "SAKERCHAND N MR",
-      "Latitude": 51.91667938232422,
-      "Longitude": -0.6662949323654175,
+      "ODSCode": "V017401",
+      "OrganisationName": "Winton Dental Practice",
+      "Latitude": 53.49128341674805,
+      "Longitude": -2.368081569671631,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           },
           {
             "Id": 4,
@@ -3994,1031 +3730,32 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T13:40:30.423Z",
-      "City": "Bedfordshire",
-      "Postcode": "LU7 1DD"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T09:52:01.123Z",
+      "City": "Manchester",
+      "Postcode": "M30 8DH"
     }
   },
-  "V030698": {
-    "previousDentist": {
-      "ODSCode": "V030698",
-      "OrganisationName": "MR S SRI RANGANATHAN",
-      "Latitude": 51.47013854980469,
-      "Longitude": -0.173050194978714,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-16T14:29:30.707Z",
-      "City": "",
-      "Postcode": "SW11 3QA"
-    },
+  "V022426": {
     "currentDentist": {
-      "ODSCode": "V030698",
-      "OrganisationName": "MR S SRI RANGANATHAN",
-      "Latitude": 51.47013854980469,
-      "Longitude": -0.173050194978714,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T21:21:58.44Z",
-      "City": "",
-      "Postcode": "SW11 3QA"
-    }
-  },
-  "V043598": {
-    "previousDentist": {
-      "ODSCode": "V043598",
-      "OrganisationName": "The Priors Green Dental Hive",
-      "Latitude": 51.869873046875,
-      "Longitude": 0.2806991934776306,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-30T12:58:32.977Z",
-      "City": "DUNMOW",
-      "Postcode": "CM6 1HE"
-    },
-    "currentDentist": {
-      "ODSCode": "V043598",
-      "OrganisationName": "The Priors Green Dental Hive",
-      "Latitude": 51.869873046875,
-      "Longitude": 0.2806991934776306,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T17:09:32.07Z",
-      "City": "DUNMOW",
-      "Postcode": "CM6 1HE"
-    }
-  },
-  "V134969": {
-    "previousDentist": {
-      "ODSCode": "V134969",
-      "OrganisationName": "Shaunak Popat Orthodontists Ltd",
-      "Latitude": 51.63303756713867,
-      "Longitude": -0.1760779768228531,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:35:20.23Z",
-      "City": "London",
-      "Postcode": "N20 9LN"
-    },
-    "currentDentist": {
-      "ODSCode": "V134969",
-      "OrganisationName": "Shaunak Popat Orthodontists Ltd",
-      "Latitude": 51.63303756713867,
-      "Longitude": -0.1760779768228531,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:38:57.8Z",
-      "City": "London",
-      "Postcode": "N20 9LN"
-    }
-  },
-  "V134976": {
-    "previousDentist": {
-      "ODSCode": "V134976",
-      "OrganisationName": "Sandip Haria Orthodontists Ltd",
-      "Latitude": 51.6575927734375,
-      "Longitude": -0.09871164709329604,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:36:25.74Z",
-      "City": "Middlesex",
-      "Postcode": "EN2 8PD"
-    },
-    "currentDentist": {
-      "ODSCode": "V134976",
-      "OrganisationName": "Sandip Haria Orthodontists Ltd",
-      "Latitude": 51.6575927734375,
-      "Longitude": -0.09871164709329604,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:39:59.11Z",
-      "City": "Middlesex",
-      "Postcode": "EN2 8PD"
-    }
-  },
-  "V134977": {
-    "previousDentist": {
-      "ODSCode": "V134977",
-      "OrganisationName": "Angle House Orthodontics",
-      "Latitude": 51.5816764831543,
-      "Longitude": -0.12481734156608582,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:38:56.157Z",
-      "City": "London",
-      "Postcode": "N8 8TA"
-    },
-    "currentDentist": {
-      "ODSCode": "V134977",
-      "OrganisationName": "Angle House Orthodontics",
-      "Latitude": 51.5816764831543,
-      "Longitude": -0.12481734156608582,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:41:08.82Z",
-      "City": "London",
-      "Postcode": "N8 8TA"
-    }
-  },
-  "V134978": {
-    "previousDentist": {
-      "ODSCode": "V134978",
-      "OrganisationName": "Angle House Orthodontics Islington",
-      "Latitude": 51.53621673583984,
-      "Longitude": -0.11236788332462312,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:39:21.783Z",
-      "City": "London",
-      "Postcode": "N1 0JH"
-    },
-    "currentDentist": {
-      "ODSCode": "V134978",
-      "OrganisationName": "Angle House Orthodontics Islington",
-      "Latitude": 51.53621673583984,
-      "Longitude": -0.11236788332462312,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:42:10.157Z",
-      "City": "London",
-      "Postcode": "N1 0JH"
-    }
-  },
-  "V134989": {
-    "previousDentist": {
-      "ODSCode": "V134989",
-      "OrganisationName": "Hemant Patel Orthodontist Ltd",
-      "Latitude": 51.60714340209961,
-      "Longitude": -0.2973421812057495,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:42:09.02Z",
-      "City": "Middx",
-      "Postcode": "HA8 6QX"
-    },
-    "currentDentist": {
-      "ODSCode": "V134989",
-      "OrganisationName": "Hemant Patel Orthodontist Ltd",
-      "Latitude": 51.60714340209961,
-      "Longitude": -0.2973421812057495,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:44:09.467Z",
-      "City": "Middx",
-      "Postcode": "HA8 6QX"
-    }
-  },
-  "V161117": {
-    "previousDentist": {
-      "ODSCode": "V161117",
-      "OrganisationName": "Neo Orthodontics Ltd",
-      "Latitude": 51.270973205566406,
-      "Longitude": 0.19138246774673465,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2023-10-17T11:27:38.927Z",
-      "City": "",
-      "Postcode": "TN13 1AR"
-    },
-    "currentDentist": {
-      "ODSCode": "V161117",
-      "OrganisationName": "Neo Orthodontics Ltd",
-      "Latitude": 51.270973205566406,
-      "Longitude": 0.19138246774673465,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:56:27.493Z",
-      "City": "",
-      "Postcode": "TN13 1AR"
-    }
-  },
-  "V235292": {
-    "previousDentist": {
-      "ODSCode": "V235292",
-      "OrganisationName": "Hemant Patel Orthodontist Ltd",
-      "Latitude": 51.58114242553711,
-      "Longitude": -0.33205902576446533,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:43:20.893Z",
-      "City": "Lyon Road",
-      "Postcode": "HA1 2BU"
-    },
-    "currentDentist": {
-      "ODSCode": "V235292",
-      "OrganisationName": "Hemant Patel Orthodontist Ltd",
-      "Latitude": 51.58114242553711,
-      "Longitude": -0.33205902576446533,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:45:20.857Z",
-      "City": "Lyon Road",
-      "Postcode": "HA1 2BU"
-    }
-  },
-  "V320111": {
-    "previousDentist": {
-      "ODSCode": "V320111",
-      "OrganisationName": "Shaunak Popat Orthodontists Ltd",
-      "Latitude": 51.5598258972168,
-      "Longitude": -0.2097085267305374,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:44:34.29Z",
-      "City": "London",
-      "Postcode": "NW2 2DP"
-    },
-    "currentDentist": {
-      "ODSCode": "V320111",
-      "OrganisationName": "Shaunak Popat Orthodontists Ltd",
-      "Latitude": 51.5598258972168,
-      "Longitude": -0.2097085267305374,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:46:19.82Z",
-      "City": "London",
-      "Postcode": "NW2 2DP"
-    }
-  },
-  "V363659": {
-    "previousDentist": {
-      "ODSCode": "V363659",
-      "OrganisationName": "Hemant Patel Orthodontist Limited",
-      "Latitude": 51.50546646118164,
-      "Longitude": -0.3045210838317871,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:45:46.04Z",
-      "City": "London",
-      "Postcode": "W5 5RG"
-    },
-    "currentDentist": {
-      "ODSCode": "V363659",
-      "OrganisationName": "Hemant Patel Orthodontist Limited",
-      "Latitude": 51.50546646118164,
-      "Longitude": -0.3045210838317871,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:47:22.26Z",
-      "City": "London",
-      "Postcode": "W5 5RG"
-    }
-  },
-  "V367346": {
-    "previousDentist": {
-      "ODSCode": "V367346",
-      "OrganisationName": "Hemant Patel Orthodontist Ltd",
-      "Latitude": 51.607513427734375,
-      "Longitude": -0.374041885137558,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:46:51.91Z",
-      "City": "Pinner",
-      "Postcode": "HA5 4JR"
-    },
-    "currentDentist": {
-      "ODSCode": "V367346",
-      "OrganisationName": "Hemant Patel Orthodontist Ltd",
-      "Latitude": 51.607513427734375,
-      "Longitude": -0.374041885137558,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:49:15.82Z",
-      "City": "Pinner",
-      "Postcode": "HA5 4JR"
-    }
-  },
-  "V383389": {
-    "previousDentist": {
-      "ODSCode": "V383389",
-      "OrganisationName": "HALIFAX DENTAL LTD",
-      "Latitude": 53.72391128540039,
-      "Longitude": -1.860793709754944,
+      "ODSCode": "V022426",
+      "OrganisationName": "Sam Health Ltd",
+      "Latitude": 51.81752395629883,
+      "Longitude": -0.8116638660430908,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": []
       },
       "DentistsAcceptingPatientsLastUpdatedDate": null,
       "City": "",
-      "Postcode": "HX1 1UG"
-    },
-    "currentDentist": {
-      "ODSCode": "V383389",
-      "OrganisationName": "HALIFAX DENTAL LTD",
-      "Latitude": 53.72391128540039,
-      "Longitude": -1.860793709754944,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:33:49.36Z",
-      "City": "",
-      "Postcode": "HX1 1UG"
+      "Postcode": "HP20 1RP"
     }
   },
-  "V383804": {
+  "V023237": {
     "previousDentist": {
-      "ODSCode": "V383804",
-      "OrganisationName": "Hemant Patel Orthodontist Ltd",
-      "Latitude": 51.57044982910156,
-      "Longitude": -0.14552482962608335,
+      "ODSCode": "V023237",
+      "OrganisationName": "BEACONSFIELD DENTAL PRACTICE - CRAYS",
+      "Latitude": 51.37593078613281,
+      "Longitude": 0.09908219426870346,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -5045,19 +3782,19 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-16T13:48:13Z",
-      "City": "4-8 Highgate High Street",
-      "Postcode": "N6 5JL"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-17T10:14:46.867Z",
+      "City": "Kent",
+      "Postcode": "BR6 0LZ"
     },
     "currentDentist": {
-      "ODSCode": "V383804",
-      "OrganisationName": "Hemant Patel Orthodontist Ltd",
-      "Latitude": 51.57044982910156,
-      "Longitude": -0.14552482962608335,
+      "ODSCode": "V023237",
+      "OrganisationName": "BEACONSFIELD DENTAL PRACTICE - CRAYS",
+      "Latitude": 51.37593078613281,
+      "Longitude": 0.09908219426870346,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -5084,13 +3821,483 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-10T15:50:19.887Z",
-      "City": "4-8 Highgate High Street",
-      "Postcode": "N6 5JL"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T18:54:14.307Z",
+      "City": "Kent",
+      "Postcode": "BR6 0LZ"
+    }
+  },
+  "V029548": {
+    "previousDentist": {
+      "ODSCode": "V029548",
+      "OrganisationName": "Railway Dental Partnership",
+      "Latitude": 52.72452163696289,
+      "Longitude": -2.115654230117798,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-26T20:19:13.027Z",
+      "City": "",
+      "Postcode": "ST19 5AF"
+    },
+    "currentDentist": {
+      "ODSCode": "V029548",
+      "OrganisationName": "Railway Dental Partnership",
+      "Latitude": 52.72452163696289,
+      "Longitude": -2.115654230117798,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T08:35:58.957Z",
+      "City": "",
+      "Postcode": "ST19 5AF"
+    }
+  },
+  "V031363": {
+    "currentDentist": {
+      "ODSCode": "V031363",
+      "OrganisationName": "Ahmed Aleshaiker, Dinah Alshamma and Hanan Omran",
+      "Latitude": 51.45328903198242,
+      "Longitude": -0.8981701731681824,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "",
+      "Postcode": "RG5 4BE"
+    }
+  },
+  "V036453": {
+    "currentDentist": {
+      "ODSCode": "V036453",
+      "OrganisationName": "MRS N MAJEVADIA",
+      "Latitude": 51.667724609375,
+      "Longitude": -0.5666263699531555,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "Buckinghamshire",
+      "Postcode": "HP7 9NU"
+    }
+  },
+  "V037484": {
+    "currentDentist": {
+      "ODSCode": "V037484",
+      "OrganisationName": "Valley DC Ltd",
+      "Latitude": 51.63153076171875,
+      "Longitude": -0.7618853449821472,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "Buckinghamshire",
+      "Postcode": "HP11 2QL"
+    }
+  },
+  "V039462": {
+    "currentDentist": {
+      "ODSCode": "V039462",
+      "OrganisationName": "OXFORD DENTAL CARE LTD",
+      "Latitude": 51.73176956176758,
+      "Longitude": -1.217521071434021,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "Oxfordshire",
+      "Postcode": "OX4 3XH"
+    }
+  },
+  "V207221": {
+    "previousDentist": {
+      "ODSCode": "V207221",
+      "OrganisationName": "MRS CO ADELOYE",
+      "Latitude": 51.44472885131836,
+      "Longitude": 0.3660840094089508,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-23T14:20:53.27Z",
+      "City": "Gravesend",
+      "Postcode": "DA11 0DF"
+    },
+    "currentDentist": {
+      "ODSCode": "V207221",
+      "OrganisationName": "MRS CO ADELOYE",
+      "Latitude": 51.44472885131836,
+      "Longitude": 0.3660840094089508,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T18:55:29.383Z",
+      "City": "Gravesend",
+      "Postcode": "DA11 0DF"
+    }
+  },
+  "V367033": {
+    "previousDentist": {
+      "ODSCode": "V367033",
+      "OrganisationName": "AMH Healthcare Limited",
+      "Latitude": 52.05739212036133,
+      "Longitude": -2.7133724689483643,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-22T11:18:14.267Z",
+      "City": "",
+      "Postcode": "HR1 2DE"
+    },
+    "currentDentist": {
+      "ODSCode": "V367033",
+      "OrganisationName": "AMH Healthcare Limited",
+      "Latitude": 52.05739212036133,
+      "Longitude": -2.7133724689483643,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T11:27:22.87Z",
+      "City": "",
+      "Postcode": "HR1 2DE"
+    }
+  },
+  "V396529": {
+    "previousDentist": {
+      "ODSCode": "V396529",
+      "OrganisationName": "AMH Healthcare Limited",
+      "Latitude": 52.03729248046875,
+      "Longitude": -2.711463212966919,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-22T11:19:16.357Z",
+      "City": "",
+      "Postcode": "HR2 6HE"
+    },
+    "currentDentist": {
+      "ODSCode": "V396529",
+      "OrganisationName": "AMH Healthcare Limited",
+      "Latitude": 52.03729248046875,
+      "Longitude": -2.711463212966919,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-12-11T11:28:18.017Z",
+      "City": "",
+      "Postcode": "HR2 6HE"
+    }
+  },
+  "V398450": {
+    "currentDentist": {
+      "ODSCode": "V398450",
+      "OrganisationName": "MR SU CHOHAN",
+      "Latitude": 55.77010726928711,
+      "Longitude": -2.00402307510376,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "",
+      "Postcode": "TD15 1BN"
+    }
+  },
+  "V404686": {
+    "currentDentist": {
+      "ODSCode": "V404686",
+      "OrganisationName": "Rodericks Dental Partners Limited",
+      "Latitude": 51.58962631225586,
+      "Longitude": -1.4251830577850342,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "",
+      "Postcode": "OX12 7AA"
+    }
+  },
+  "V404734": {
+    "currentDentist": {
+      "ODSCode": "V404734",
+      "OrganisationName": "1OSD LTD",
+      "Latitude": 50.88552474975586,
+      "Longitude": -2.956554651260376,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "",
+      "Postcode": "TA20 1FA"
+    }
+  },
+  "V405021": {
+    "currentDentist": {
+      "ODSCode": "V405021",
+      "OrganisationName": "Bailiff Bridge Dent Ltd",
+      "Latitude": 53.72461700439453,
+      "Longitude": -1.7763760089874268,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "West Yorkshire",
+      "Postcode": "HD6 4EA"
+    }
+  },
+  "V405365": {
+    "currentDentist": {
+      "ODSCode": "V405365",
+      "OrganisationName": "Fayaaz Kassam",
+      "Latitude": 51.48893356323242,
+      "Longitude": 0.340901255607605,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "",
+      "Postcode": "RM17 5RY"
+    }
+  },
+  "V405449": {
+    "currentDentist": {
+      "ODSCode": "V405449",
+      "OrganisationName": "Damira Dental Studios Ltd",
+      "Latitude": 51.62120819091797,
+      "Longitude": -1.298566460609436,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "ABINGDON",
+      "Postcode": "OX14 4RR"
     }
   }
 }
