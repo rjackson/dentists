@@ -1,66 +1,66 @@
 {
-  "V004283": {
+  "V002783": {
     "previousDentist": {
-      "ODSCode": "V004283",
-      "OrganisationName": "Bond Dental London (Bloomsbury)",
-      "Latitude": 51.526023864746094,
-      "Longitude": -0.1255045086145401,
+      "ODSCode": "V002783",
+      "OrganisationName": "Mazaheri, Pakan",
+      "Latitude": 51.46586227416992,
+      "Longitude": -0.1821182817220688,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
             "AcceptingPatients": true
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
             "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-01-13T06:19:30.82Z",
-      "City": "London",
-      "Postcode": "WC1N 1AG"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2020-06-30T07:31:37Z",
+      "City": "Battersea",
+      "Postcode": "SW11 3UJ"
     },
     "currentDentist": {
-      "ODSCode": "V004283",
-      "OrganisationName": "Bond Dental London (Bloomsbury)",
-      "Latitude": 51.526023864746094,
-      "Longitude": -0.1255045086145401,
+      "ODSCode": "V002783",
+      "OrganisationName": "Mazaheri, Pakan",
+      "Latitude": 51.46586227416992,
+      "Longitude": -0.1821182817220688,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -74,34 +74,34 @@
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-14T15:22:17.997Z",
-      "City": "London",
-      "Postcode": "WC1N 1AG"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-15T19:39:15.437Z",
+      "City": "Battersea",
+      "Postcode": "SW11 3UJ"
     }
   },
-  "V004874": {
+  "V014004": {
     "previousDentist": {
-      "ODSCode": "V004874",
-      "OrganisationName": "Warwick Road Dental Surgery",
-      "Latitude": 52.45343017578125,
-      "Longitude": -1.8490220308303833,
+      "ODSCode": "V014004",
+      "OrganisationName": "Bupa Dental Care, Harrogate",
+      "Latitude": 53.99354934692383,
+      "Longitude": -1.5358344316482544,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
           {
             "Id": 1,
             "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 2,
             "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 3,
             "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
+            "AcceptingPatients": false
           },
           {
             "Id": 4,
@@ -111,380 +111,19 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
+            "AcceptingPatients": true
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-01-19T15:14:53.65Z",
-      "City": "Birmingham",
-      "Postcode": "B11 2HR"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-11T14:11:30.337Z",
+      "City": "Harrogate",
+      "Postcode": "HG1 5LB"
     },
     "currentDentist": {
-      "ODSCode": "V004874",
-      "OrganisationName": "Warwick Road Dental Surgery",
-      "Latitude": 52.45343017578125,
-      "Longitude": -1.8490220308303833,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-14T18:28:28.277Z",
-      "City": "Birmingham",
-      "Postcode": "B11 2HR"
-    }
-  },
-  "V005068": {
-    "previousDentist": {
-      "ODSCode": "V005068",
-      "OrganisationName": "Bond Dental London (Notting Hill)",
-      "Latitude": 51.50965118408203,
-      "Longitude": -0.1969914734363556,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-29T23:18:56.15Z",
-      "City": "",
-      "Postcode": "W11 3HL"
-    },
-    "currentDentist": {
-      "ODSCode": "V005068",
-      "OrganisationName": "Bond Dental London (Notting Hill)",
-      "Latitude": 51.50965118408203,
-      "Longitude": -0.1969914734363556,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-14T15:16:30.4Z",
-      "City": "",
-      "Postcode": "W11 3HL"
-    }
-  },
-  "V006779": {
-    "previousDentist": {
-      "ODSCode": "V006779",
-      "OrganisationName": "Castle Bromwich Dental Care",
-      "Latitude": 52.5072135925293,
-      "Longitude": -1.7681591510772705,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-01-19T15:15:16.607Z",
-      "City": "Birmingham",
-      "Postcode": "B36 0AY"
-    },
-    "currentDentist": {
-      "ODSCode": "V006779",
-      "OrganisationName": "Castle Bromwich Dental Care",
-      "Latitude": 52.5072135925293,
-      "Longitude": -1.7681591510772705,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-14T18:30:43Z",
-      "City": "Birmingham",
-      "Postcode": "B36 0AY"
-    }
-  },
-  "V010424": {
-    "previousDentist": {
-      "ODSCode": "V010424",
-      "OrganisationName": "Soho Dental Care",
-      "Latitude": 51.514522552490234,
-      "Longitude": -0.1319001019001007,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-29T23:19:39.4Z",
-      "City": "",
-      "Postcode": "W1D 3HZ"
-    },
-    "currentDentist": {
-      "ODSCode": "V010424",
-      "OrganisationName": "Soho Dental Care",
-      "Latitude": 51.514522552490234,
-      "Longitude": -0.1319001019001007,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-14T15:13:32.49Z",
-      "City": "",
-      "Postcode": "W1D 3HZ"
-    }
-  },
-  "V012075": {
-    "previousDentist": {
-      "ODSCode": "V012075",
-      "OrganisationName": "Bond Dental",
-      "Latitude": 51.518795013427734,
-      "Longitude": -0.15805736184120178,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-29T23:17:35.15Z",
-      "City": "London",
-      "Postcode": "W1U 8HW"
-    },
-    "currentDentist": {
-      "ODSCode": "V012075",
-      "OrganisationName": "Bond Dental",
-      "Latitude": 51.518795013427734,
-      "Longitude": -0.15805736184120178,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-14T15:20:28.15Z",
-      "City": "London",
-      "Postcode": "W1U 8HW"
-    }
-  },
-  "V014309": {
-    "previousDentist": {
-      "ODSCode": "V014309",
-      "OrganisationName": "Pembroke Practice Limited",
-      "Latitude": 51.11362838745117,
-      "Longitude": -0.1759592443704605,
+      "ODSCode": "V014004",
+      "OrganisationName": "Bupa Dental Care, Harrogate",
+      "Latitude": 53.99354934692383,
+      "Longitude": -1.5358344316482544,
       "AcceptingPatients": {
         "GP": null,
         "Dentist": [
@@ -511,132 +150,13 @@
           {
             "Id": 5,
             "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-06T09:36:20.107Z",
-      "City": "Crawley",
-      "Postcode": "RH10 1AH"
-    },
-    "currentDentist": {
-      "ODSCode": "V014309",
-      "OrganisationName": "Pembroke Practice Limited",
-      "Latitude": 51.11362838745117,
-      "Longitude": -0.1759592443704605,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-14T11:19:39.7Z",
-      "City": "Crawley",
-      "Postcode": "RH10 1AH"
-    }
-  },
-  "V393875": {
-    "previousDentist": {
-      "ODSCode": "V393875",
-      "OrganisationName": "Bond Dental London (Mayfair)",
-      "Latitude": 51.513404846191406,
-      "Longitude": -0.14756856858730316,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
             "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
           }
         ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-13T10:11:57.13Z",
-      "City": "London",
-      "Postcode": "W1K 5QL"
-    },
-    "currentDentist": {
-      "ODSCode": "V393875",
-      "OrganisationName": "Bond Dental London (Mayfair)",
-      "Latitude": 51.513404846191406,
-      "Longitude": -0.14756856858730316,
-      "AcceptingPatients": {
-        "GP": null,
-        "Dentist": [
-          {
-            "Id": 1,
-            "Name": "Adults (18 and over)",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 2,
-            "Name": "Adults entitled to free dental care",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 3,
-            "Name": "Children (up to the age of 18)",
-            "AcceptingPatients": true
-          },
-          {
-            "Id": 4,
-            "Name": "Urgent care appointments offered",
-            "AcceptingPatients": false
-          },
-          {
-            "Id": 5,
-            "Name": "Only by referral from a dental practitioner",
-            "AcceptingPatients": false
-          }
-        ]
-      },
-      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-14T15:25:30.257Z",
-      "City": "London",
-      "Postcode": "W1K 5QL"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2026-02-15T17:26:22.613Z",
+      "City": "Harrogate",
+      "Postcode": "HG1 5LB"
     }
   }
 }
