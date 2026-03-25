@@ -4,6 +4,9 @@ import sendAlerts from "lib/notifications/jobs/sendAlerts";
 import loadConfig from "lib/notifications/helpers/loadConfig";
 
 const SendAlerts = async (req: NextApiRequest, res: NextApiResponse) => {
+  // Email notifications temporarily disabled (Sendgrid free plan discontinued)
+  return res.status(constants.HTTP_STATUS_SERVICE_UNAVAILABLE).json({ message: 'Email notifications are temporarily unavailable' });
+
   if (req.method !== 'POST') {
     return res
       .status(constants.HTTP_STATUS_METHOD_NOT_ALLOWED)

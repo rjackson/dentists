@@ -6,7 +6,8 @@ import SearchFilters from "@components/SearchFilters";
 import DentistsList from "@components/DentistsList";
 import { DentistsProvider } from "@contexts/Dentists";
 import { useReducer } from "react";
-import NotificationsCta from "@components/NotificationsCta";
+// TODO: Re-enable once email provider is set up (Sendgrid free plan discontinued)
+// import NotificationsCta from "@components/NotificationsCta";
 import { FiltersProvider } from "@contexts/Filters";
 
 const DentistsMap = dynamic(() => import("@components/DentistsMap"), { ssr: false });
@@ -52,7 +53,7 @@ export default function Home({ initialLocation, initialRadius, showCells }) {
               </Section>
 
               <SearchFilters />
-              <NotificationsCta />
+              {/* <NotificationsCta /> */}
               <DentistsList />
             </div>
             <Footer />

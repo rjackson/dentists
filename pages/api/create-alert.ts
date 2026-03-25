@@ -17,6 +17,9 @@ const isFormData = (data: unknown): data is FormData => {
 }
 
 const CreateAlert = async (req: NextApiRequest, res: NextApiResponse) => {
+  // Email notifications temporarily disabled (Sendgrid free plan discontinued)
+  return res.status(constants.HTTP_STATUS_SERVICE_UNAVAILABLE).json({ message: 'Email notifications are temporarily unavailable' });
+
   const config = loadConfig();
 
   if (req.method !== 'POST') {
