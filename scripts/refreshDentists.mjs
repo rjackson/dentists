@@ -13,8 +13,8 @@ import { readFileSync, writeFileSync } from "fs";
 import fetch from "node-fetch";
 
 nextEnv.loadEnvConfig(process.cwd());
-const baseUrl = process.env.NHSDIGITAL_ODATA_ENDPOINT.replace("//$/", "");
-const subscriptionKey = process.env.NHSDIGITAL_ODATA_SUBSCRIPTION_KEY;
+const apiKey = process.env.NHSDIGITAL_API_KEY;
+const apiHost = process.env.NHSDIGITAL_API_HOST || "api.service.nhs.uk";
 
 const DENTISTS_FILE = path.join(process.cwd(), "data/dentists.json");
 const SMALL_DENTISTS_FILE = path.join(process.cwd(), "data/small-dentists.json");
@@ -23,9 +23,9 @@ const CHANGED_DENTISTS_FILE = path.join(process.cwd(), "data/changed-dentists.js
 const getAllDentists = async (offset = 0) => {
   try {
     const response = await fetch(
-      `${baseUrl}/service-search/?` +
+      `https://${apiHost}/service-search-api/?` +
         new URLSearchParams({
-          "api-version": 2,
+          "api-version": 3,
           $skip: offset,
           $top: 9999,
           $filter: `OrganisationTypeId eq 'DEN'`,
@@ -33,11 +33,16 @@ const getAllDentists = async (offset = 0) => {
         }),
       {
         headers: {
-          "subscription-key": subscriptionKey,
+          apikey: apiKey,
         },
       }
     );
     const data = await response.json();
+    console.log(`Fetched dentists with offset ${offset}: ${response.status} ${response.statusText}, ${data?.value?.length ?? 0} results`);
+
+    if (!response.ok) {
+      throw `Error fetching dentists. HTTP ${response.status}: ${JSON.stringify(data)}`;
+    }
 
     if ("error" in data) {
       const { code, message } = data.error;
@@ -57,7 +62,7 @@ const getAllDentists = async (offset = 0) => {
 
     return [...data?.value, ...(nextOffset ? await getAllDentists(nextOffset) : [])];
   } catch (e) {
-    console.log(e);
+    console.error(e);
     return false;
   }
 };

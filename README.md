@@ -1,6 +1,6 @@
 # dentists on a map
 
-The NHS lists numerous dental practises through the [Find a Dentist](https://www.nhs.uk/service-search/find-a-dentist) service, and its underlying data is available through the NHS' [Service Search API (organisations (version 2))](https://developer.api.nhs.uk/nhs-api/documentation/service-search-organisations-2).
+The NHS lists numerous dental practises through the [Find a Dentist](https://www.nhs.uk/service-search/find-a-dentist) service, and its underlying data is available through the NHS' [Service Search API (version 3)](https://digital.nhs.uk/developer/api-catalogue/directory-of-healthcare-services/version-3).
 
 The _Find a Dentist_ service serves a flat list of results. _Dentists on a map_ aims to present the same data in a friendlier format for end users, as well as adding search, filtering & notification capabilities.
 
@@ -18,8 +18,7 @@ Configure `.env.local` with credentials for these providers. `.env.example` has 
 
 | Environmental variable            | Note                                                                                                                           |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| NHSDIGITAL_ODATA_ENDPOINT         | Preset to `https://api.nhs` in `.env`.uk/                                                                                      |
-| NHSDIGITAL_ODATA_SUBSCRIPTION_KEY | Your subscription key for the NHS API. You can retrieve this from your [My Account](https://developer.api.nhs.uk/profile) page |
+| NHSDIGITAL_API_KEY                | Your API key for the NHS Service Search API                                                                                    |
 | NEXT_PUBLIC_GEONAMES_USERNAME     | Your username for the Geonames Web Services                                                                                    |
 | CLOUDFLARE_API_TOKEN              | Your credentials for the Cloudflare API. Needs read and edit access to "Workers KV Storage"                                    |
 | CLOUDFLARE_ACCOUNT_ID             | The ID of the Cloudflare account under which the Cloudflare KV namespace is set up                                             |

@@ -1,7 +1,7 @@
 namespace NodeJS {
     interface ProcessEnv {
-        NHSDIGITAL_ODATA_ENDPOINT: string;
-        NHSDIGITAL_ODATA_SUBSCRIPTION_KEY: string;
+        NHSDIGITAL_API_KEY: string;
+        NHSDIGITAL_API_HOST?: string;
         NEXT_PUBLIC_GEONAMES_USERNAME: string;
         CLOUDFLARE_API_TOKEN: string;
         CLOUDFLARE_ACCOUNT_ID: string;
