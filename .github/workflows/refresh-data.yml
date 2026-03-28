@@ -22,6 +22,7 @@ jobs:
         run: npm run refresh-data
         env:
           NHSDIGITAL_API_KEY: ${{ secrets.NHSDIGITAL_API_KEY }}
+          NHSDIGITAL_API_HOST: ${{ secrets.NHSDIGITAL_API_HOST }}
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v9
         id: verify-changed-files
