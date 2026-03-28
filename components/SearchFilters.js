@@ -75,7 +75,7 @@ const SearchFilters = () => {
               className="space-y-1"
               title={<label htmlFor="updated-since">Information updated within the past</label>}
             >
-              <Select value={updatedInLast} onChange={(e) => setUpdatedInLast(e.target.value)}>
+              <Select value={updatedInLast ?? "0"} onChange={(e) => setUpdatedInLast(e.target.value)}>
                 <option value="0">Any time</option>
                 <option value="90">90 days</option>
                 <option value="30">30 days</option>

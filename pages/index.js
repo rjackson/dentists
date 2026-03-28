@@ -62,7 +62,6 @@ export default function Home({ initialLocation, initialRadius, showCells }) {
             <DentistsMap showCells={showCells} />
           </section>
         </div>
-        )
       </FiltersProvider>
     </DentistsProvider>
   );
@@ -72,8 +71,8 @@ export async function getStaticProps() {
   const showCells = process.env.NODE_ENV == "development" ? process.env.SHOW_CELLS == "true" : false;
 
   const initialLocation = {
-    lng: "-2.23743",
-    lat: "53.48095",
+    lng: -2.23743,
+    lat: 53.48095,
     name: "Manchester",
   };
   const initialRadius = 15; // km

@@ -4,11 +4,15 @@ import { IndexManifest } from "./types/IndexManifest";
 import { RawDentist } from "./types/RawDentist";
 
 export const loadManifest = async (): Promise<IndexManifest> => {
-  return await fetch(MANIFEST_PATH).then((res) => res.json());
+  const res = await fetch(MANIFEST_PATH);
+  if (!res.ok) throw new Error(`Failed to load manifest: ${res.status}`);
+  return res.json();
 };
 
 export const loadCell = async (cell: string): Promise<RawDentist[]> => {
-  return fetch(`${CHUNKS_FOLDER_PATH}/${cell}.json`).then((res) => res.json());
+  const res = await fetch(`${CHUNKS_FOLDER_PATH}/${cell}.json`);
+  if (!res.ok) throw new Error(`Failed to load cell ${cell}: ${res.status}`);
+  return res.json();
 };
 
 export const loadDentists = async (lat: number, lng: number, radius: number): Promise<Dentist[]> => {
@@ -16,5 +20,10 @@ export const loadDentists = async (lat: number, lng: number, radius: number): Pr
   const resolution = resolutionForRadius(radius, resolutions);
   const cells = getCellsWithinGeoRadius(lat, lng, radius, resolution);
 
-  return (await Promise.all(cells.filter((cell) => chunks.includes(cell)).map(loadCell))).flat(1).map(mapDentists);
+  const allRaw = (await Promise.all(cells.filter((cell) => chunks.includes(cell)).map(loadCell))).flat(1);
+
+  // Deduplicate dentists that appear in multiple H3 cells
+  const unique = [...new Map(allRaw.map((d) => [d.ODSCode, d])).values()];
+
+  return unique.map(mapDentists);
 };

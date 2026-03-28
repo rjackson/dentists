@@ -33,19 +33,24 @@ export function DentistsProvider({ initialLocation, initialRadius, children }) {
     [setName, setLat, setLng]
   );
 
-  // Refetch dentists on change
+  // Load dentists client-side on search change (useEffect skips server render)
   const { lat: searchLat, lng: searchLng } = searchLocation;
   useEffect(() => {
-    let mounted = true;
+    let cancelled = false;
 
-    if (mounted) {
-      // First run will be seeded by server. Skip it
-      loadDentists(searchLat, searchLng, searchRadius).then((dentists) => setAllDentists(dentists));
-      loadManifest().then(({ resolutions }) => setResolutions(resolutions));
-    }
+    loadDentists(searchLat, searchLng, searchRadius)
+      .then((dentists) => {
+        if (!cancelled) setAllDentists(dentists);
+      })
+      .catch((err) => console.error("Failed to load dentists:", err));
+    loadManifest()
+      .then(({ resolutions }) => {
+        if (!cancelled) setResolutions(resolutions);
+      })
+      .catch((err) => console.error("Failed to load manifest:", err));
 
     return () => {
-      mounted = false;
+      cancelled = true;
     };
   }, [searchLat, searchLng, searchRadius]);
 

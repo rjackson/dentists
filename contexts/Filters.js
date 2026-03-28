@@ -58,7 +58,7 @@ export function FiltersProvider({ children }) {
       .map(
         (property) =>
           ({ AcceptingPatients }) =>
-            AcceptingPatients[property] == true
+            AcceptingPatients[property] === true
       );
   }, [acceptanceStates]);
 
@@ -79,11 +79,12 @@ export function FiltersProvider({ children }) {
   );
 
   // Filter functions, to apply to dentists list
-  const filters = [...acceptanceFilters, updatedFilter];
-
-  const filteredDentists = allDentists.filter((dentist) =>
-    filters.length > 0 ? filters.every((filter) => filter(dentist)) : true
-  );
+  const filteredDentists = useMemo(() => {
+    const filters = [...acceptanceFilters, updatedFilter];
+    return allDentists.filter((dentist) =>
+      filters.length > 0 ? filters.every((filter) => filter(dentist)) : true
+    );
+  }, [allDentists, acceptanceFilters, updatedFilter]);
 
   const state = {
     updatedInLast,

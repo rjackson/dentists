@@ -93,6 +93,7 @@ const smallerDentists = (dentists === false ? [] : dentists).map(
 );
 
 if (!dentists || dentists.length === 0) {
+  console.error("No dentists fetched — aborting to preserve existing data files.");
   process.exit(1);
 }
 
