@@ -1,4 +1,4 @@
-import { ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
+import { ACCEPTANCE_SUMMARIES, ACCEPTANCE_TYPES } from "@helpers/DentalAcceptance";
 import { DescriptionList, DescriptionListItem, H2, Panel, Section, Input, Select, Button } from "@rjackson/rjds";
 import { useState } from "react";
 import GeonamesAutosuggest from "@components/GeonamesAutosuggest";
@@ -14,9 +14,9 @@ const SearchFilters = () => {
   const { updatedInLast, acceptanceStates } = useFiltersState();
   const { setUpdatedInLast, toggleAcceptanceState } = useFiltersUpdate();
 
-  const activeAcceptanceStates = Object.entries(acceptanceStates)
+  const acceptanceSummaries = Object.entries(acceptanceStates)
     .filter(([, value]) => !!value)
-    .map(([property]) => ACCEPTANCE_TYPES[property]);
+    .map(([property]) => ACCEPTANCE_SUMMARIES[property])
 
   return (
     <Section className="space-y-4">
@@ -27,9 +27,10 @@ const SearchFilters = () => {
         </div>
         {collapsed ? (
           <p>
-            {activeAcceptanceStates.length > 0 ? "Dentists" : "All dentists"} within {searchRadius}{" "}
-            <abbr title="kilometers">km</abbr> of {searchLocation.name}{" "}
-            {activeAcceptanceStates.length > 0 && `accepting certain types of patients`}
+            {acceptanceSummaries.length > 0 ? "Dentists" : "All dentists"} within {searchRadius}{" "}
+            <abbr title="kilometers">km</abbr> of {searchLocation.name}
+            {acceptanceSummaries.length > 0 && ` accepting ${acceptanceSummaries.length > 3 ? 'various patients types' : acceptanceSummaries.join(", ")}`}
+            {updatedInLast > 0 && `; updated in the last ${updatedInLast} days`}
           </p>
         ) : (
           <DescriptionList>

@@ -50,6 +50,13 @@ export const ACCEPTANCE_TYPES = {
   AcceptingUrgent: "Urgent care appointments offered",
   AcceptingReferrals: "Only by referral from a dental practitioner",
 };
+export const ACCEPTANCE_SUMMARIES = {
+  AcceptingAdults: "adults",
+  AcceptingAdultsEntitled: "adults entitled to free dental care",
+  AcceptingChildren: "children",
+  AcceptingUrgent: "urgent care appointments",
+  AcceptingReferrals: "referrals",
+};
 
 /**
  *
