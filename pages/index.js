@@ -46,14 +46,16 @@ export default function Home({ initialLocation, initialRadius, showCells }) {
                 {focusMap ? "+" : "-"}
               </Button>
             </div>
-            <div className="flex flex-col space-y-4 overflow-y-scroll">
-              <Section as="main" className="text-center">
-                <H2 className="sr-only">About</H2>
-                <p>Find NHS Dentists near you and filter them by the patients they&apos;re currently accepting.</p>
-              </Section>
+            <div className="flex flex-col flex-1 min-h-0 space-y-4">
+              <div className="flex-shrink-0 space-y-4 overflow-y-auto">
+                <Section as="main" className="text-center">
+                  <H2 className="sr-only">About</H2>
+                  <p>Find NHS Dentists near you and filter them by the patients they&apos;re currently accepting.</p>
+                </Section>
 
-              <SearchFilters />
-              {/* <NotificationsCta /> */}
+                <SearchFilters />
+                {/* <NotificationsCta /> */}
+              </div>
               <DentistsList />
             </div>
             <Footer />
