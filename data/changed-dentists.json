@@ -1,1 +1,56 @@
-{}
+{
+  "V385911": {
+    "previousDentist": {
+      "ODSCode": "V385911",
+      "OrganisationName": "Brighter Smile Dental Practice",
+      "Latitude": 50.93415069580078,
+      "Longitude": -1.417657732963562,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": []
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": null,
+      "City": "",
+      "Postcode": "SO16 7AP"
+    },
+    "currentDentist": {
+      "ODSCode": "V385911",
+      "OrganisationName": "Brighter Smile Dental Practice",
+      "Latitude": 50.93415069580078,
+      "Longitude": -1.417657732963562,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2026-07-02T16:14:47.397Z",
+      "City": "",
+      "Postcode": "SO16 7AP"
+    }
+  }
+}
