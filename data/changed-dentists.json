@@ -1,17 +1,82 @@
 {
-  "V017979": {
-    "currentDentist": {
-      "ODSCode": "V017979",
-      "OrganisationName": "M & B Practices Ltd",
-      "Latitude": 53.79766845703125,
-      "Longitude": -1.5878256559371948,
+  "V008219": {
+    "previousDentist": {
+      "ODSCode": "V008219",
+      "OrganisationName": "Wigginton Dental Practice",
+      "Latitude": 54.01863479614258,
+      "Longitude": -1.090133547782898,
       "AcceptingPatients": {
         "GP": null,
-        "Dentist": []
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
       },
-      "DentistsAcceptingPatientsLastUpdatedDate": null,
-      "City": "Leeds",
-      "Postcode": "LS12 3AQ"
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-22T10:31:42.16Z",
+      "City": "York",
+      "Postcode": "YO32 2PU"
+    },
+    "currentDentist": {
+      "ODSCode": "V008219",
+      "OrganisationName": "Wigginton Dental Practice",
+      "Latitude": 54.01863479614258,
+      "Longitude": -1.090133547782898,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2026-09-24T15:45:19.683Z",
+      "City": "York",
+      "Postcode": "YO32 2PU"
     }
   }
 }
