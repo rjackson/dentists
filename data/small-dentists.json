@@ -36088,6 +36088,45 @@
     "Postcode": "SS17 9AB"
   },
   {
+    "ODSCode": "V001776",
+    "OrganisationName": "Community Dental Services - CDS CIC Essex",
+    "Latitude": 51.47938537597656,
+    "Longitude": 0.3236478567123413,
+    "AcceptingPatients": {
+      "GP": null,
+      "Dentist": [
+        {
+          "Id": 5,
+          "Name": "Only by referral from a dental practitioner",
+          "AcceptingPatients": true
+        },
+        {
+          "Id": 3,
+          "Name": "Children (up to the age of 18)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 1,
+          "Name": "Adults (18 and over)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 2,
+          "Name": "Adults entitled to free dental care",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 4,
+          "Name": "Urgent care appointments offered",
+          "AcceptingPatients": false
+        }
+      ]
+    },
+    "DentistsAcceptingPatientsLastUpdatedDate": "2021-07-19T11:26:33.783Z",
+    "City": "Grays",
+    "Postcode": "RM17 5BY"
+  },
+  {
     "ODSCode": "V001777",
     "OrganisationName": "Sorrells Dental Care",
     "Latitude": 51.522003173828125,
@@ -85484,7 +85523,7 @@
       ]
     },
     "DentistsAcceptingPatientsLastUpdatedDate": "2025-09-23T08:50:08.96Z",
-    "City": "Old Windsor",
+    "City": "Windsor",
     "Postcode": "SL4 2QX"
   },
   {
@@ -170833,45 +170872,6 @@
     "Postcode": "WD24 5DN"
   },
   {
-    "ODSCode": "V008694",
-    "OrganisationName": "North Yorkshire Dental Care",
-    "Latitude": 54.34233474731445,
-    "Longitude": -1.4305187463760376,
-    "AcceptingPatients": {
-      "GP": null,
-      "Dentist": [
-        {
-          "Id": 1,
-          "Name": "Adults (18 and over)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 2,
-          "Name": "Adults entitled to free dental care",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 3,
-          "Name": "Children (up to the age of 18)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 4,
-          "Name": "Urgent care appointments offered",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 5,
-          "Name": "Only by referral from a dental practitioner",
-          "AcceptingPatients": true
-        }
-      ]
-    },
-    "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-22T08:09:11.49Z",
-    "City": "Northallerton",
-    "Postcode": "DL6 1JG"
-  },
-  {
     "ODSCode": "V008695",
     "OrganisationName": "Bathampton Dental Practice",
     "Latitude": 51.393280029296875,
@@ -171769,45 +171769,6 @@
     "Postcode": "WD5 0AZ"
   },
   {
-    "ODSCode": "V008744",
-    "OrganisationName": "North Yorkshire Dental Care",
-    "Latitude": 53.94915771484375,
-    "Longitude": -1.1293482780456543,
-    "AcceptingPatients": {
-      "GP": null,
-      "Dentist": [
-        {
-          "Id": 1,
-          "Name": "Adults (18 and over)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 2,
-          "Name": "Adults entitled to free dental care",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 3,
-          "Name": "Children (up to the age of 18)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 4,
-          "Name": "Urgent care appointments offered",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 5,
-          "Name": "Only by referral from a dental practitioner",
-          "AcceptingPatients": true
-        }
-      ]
-    },
-    "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-22T08:10:43.367Z",
-    "City": "YORK",
-    "Postcode": "YO24 3WY"
-  },
-  {
     "ODSCode": "V008747",
     "OrganisationName": "1A Group Dental Practice Partnership",
     "Latitude": 52.580196380615234,
@@ -172079,45 +172040,6 @@
     "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-06T16:09:14.56Z",
     "City": "Cockermouth",
     "Postcode": "CA13 0HS"
-  },
-  {
-    "ODSCode": "V008766",
-    "OrganisationName": "North Yorkshire Dental Care",
-    "Latitude": 54.483787536621094,
-    "Longitude": -0.6180549263954163,
-    "AcceptingPatients": {
-      "GP": null,
-      "Dentist": [
-        {
-          "Id": 1,
-          "Name": "Adults (18 and over)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 2,
-          "Name": "Adults entitled to free dental care",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 3,
-          "Name": "Children (up to the age of 18)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 4,
-          "Name": "Urgent care appointments offered",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 5,
-          "Name": "Only by referral from a dental practitioner",
-          "AcceptingPatients": true
-        }
-      ]
-    },
-    "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-22T08:11:32.653Z",
-    "City": "WHITBY",
-    "Postcode": "YO21 1DP"
   },
   {
     "ODSCode": "V008770",
@@ -173288,45 +173210,6 @@
     "DentistsAcceptingPatientsLastUpdatedDate": "2025-08-04T08:05:59.26Z",
     "City": "Hants",
     "Postcode": "SO53 3AP"
-  },
-  {
-    "ODSCode": "V008885",
-    "OrganisationName": "North Yorkshire Dental care",
-    "Latitude": 53.96398162841797,
-    "Longitude": -1.0768043994903564,
-    "AcceptingPatients": {
-      "GP": null,
-      "Dentist": [
-        {
-          "Id": 1,
-          "Name": "Adults (18 and over)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 2,
-          "Name": "Adults entitled to free dental care",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 3,
-          "Name": "Children (up to the age of 18)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 4,
-          "Name": "Urgent care appointments offered",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 5,
-          "Name": "Only by referral from a dental practitioner",
-          "AcceptingPatients": true
-        }
-      ]
-    },
-    "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-22T08:12:19.29Z",
-    "City": "YORK",
-    "Postcode": "YO31 7WA"
   },
   {
     "ODSCode": "V008886",
@@ -177541,45 +177424,6 @@
     "Postcode": "BD21 1SA"
   },
   {
-    "ODSCode": "V009483",
-    "OrganisationName": " North Yorkshire Dental Care",
-    "Latitude": 53.95569610595703,
-    "Longitude": -2.0189976692199707,
-    "AcceptingPatients": {
-      "GP": null,
-      "Dentist": [
-        {
-          "Id": 1,
-          "Name": "Adults (18 and over)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 2,
-          "Name": "Adults entitled to free dental care",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 3,
-          "Name": "Children (up to the age of 18)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 4,
-          "Name": "Urgent care appointments offered",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 5,
-          "Name": "Only by referral from a dental practitioner",
-          "AcceptingPatients": true
-        }
-      ]
-    },
-    "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-22T08:13:09.39Z",
-    "City": "SKIPTON",
-    "Postcode": "BD23 2RJ"
-  },
-  {
     "ODSCode": "V009490",
     "OrganisationName": "Start2Smile Dental Clinic",
     "Latitude": 51.49081039428711,
@@ -178436,6 +178280,45 @@
     "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-05T11:45:12.163Z",
     "City": "Kidderminster",
     "Postcode": "DY11 6LD"
+  },
+  {
+    "ODSCode": "V009895",
+    "OrganisationName": "Community Dental Services CIC",
+    "Latitude": 51.9068489074707,
+    "Longitude": 0.90298193693161,
+    "AcceptingPatients": {
+      "GP": null,
+      "Dentist": [
+        {
+          "Id": 5,
+          "Name": "Only by referral from a dental practitioner",
+          "AcceptingPatients": true
+        },
+        {
+          "Id": 3,
+          "Name": "Children (up to the age of 18)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 1,
+          "Name": "Adults (18 and over)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 2,
+          "Name": "Adults entitled to free dental care",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 4,
+          "Name": "Urgent care appointments offered",
+          "AcceptingPatients": false
+        }
+      ]
+    },
+    "DentistsAcceptingPatientsLastUpdatedDate": "2017-05-31T14:18:25.603Z",
+    "City": "Colchester",
+    "Postcode": "CO4 5JR"
   },
   {
     "ODSCode": "V009898",
@@ -179411,6 +179294,45 @@
     "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-31T13:04:41.13Z",
     "City": "Hants",
     "Postcode": "PO13 8AT"
+  },
+  {
+    "ODSCode": "V010196",
+    "OrganisationName": "Community Dental Services CIC",
+    "Latitude": 51.53993225097656,
+    "Longitude": 0.7159499526023865,
+    "AcceptingPatients": {
+      "GP": null,
+      "Dentist": [
+        {
+          "Id": 5,
+          "Name": "Only by referral from a dental practitioner",
+          "AcceptingPatients": true
+        },
+        {
+          "Id": 3,
+          "Name": "Children (up to the age of 18)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 1,
+          "Name": "Adults (18 and over)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 2,
+          "Name": "Adults entitled to free dental care",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 4,
+          "Name": "Urgent care appointments offered",
+          "AcceptingPatients": false
+        }
+      ]
+    },
+    "DentistsAcceptingPatientsLastUpdatedDate": "2017-07-19T10:07:10Z",
+    "City": "Southend-on-Sea",
+    "Postcode": "SS1 2LZ"
   },
   {
     "ODSCode": "V010207",
@@ -181530,6 +181452,45 @@
     "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-17T11:23:04.333Z",
     "City": "Uckfield",
     "Postcode": "TN22 5DL"
+  },
+  {
+    "ODSCode": "V010754",
+    "OrganisationName": "Community Dental Services CIC",
+    "Latitude": 51.771148681640625,
+    "Longitude": 0.08906298875808716,
+    "AcceptingPatients": {
+      "GP": null,
+      "Dentist": [
+        {
+          "Id": 5,
+          "Name": "Only by referral from a dental practitioner",
+          "AcceptingPatients": true
+        },
+        {
+          "Id": 3,
+          "Name": "Children (up to the age of 18)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 1,
+          "Name": "Adults (18 and over)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 2,
+          "Name": "Adults entitled to free dental care",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 4,
+          "Name": "Urgent care appointments offered",
+          "AcceptingPatients": false
+        }
+      ]
+    },
+    "DentistsAcceptingPatientsLastUpdatedDate": "2017-05-31T14:33:14.857Z",
+    "City": "Harlow",
+    "Postcode": "CM20 1EP"
   },
   {
     "ODSCode": "V010757",
@@ -205179,6 +205140,45 @@
     "Postcode": "SS1 2NE"
   },
   {
+    "ODSCode": "V016572",
+    "OrganisationName": "Community Dental Services - CDS CIC Essex",
+    "Latitude": 51.70429611206055,
+    "Longitude": 0.12394475936889648,
+    "AcceptingPatients": {
+      "GP": null,
+      "Dentist": [
+        {
+          "Id": 5,
+          "Name": "Only by referral from a dental practitioner",
+          "AcceptingPatients": true
+        },
+        {
+          "Id": 3,
+          "Name": "Children (up to the age of 18)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 1,
+          "Name": "Adults (18 and over)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 2,
+          "Name": "Adults entitled to free dental care",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 4,
+          "Name": "Urgent care appointments offered",
+          "AcceptingPatients": false
+        }
+      ]
+    },
+    "DentistsAcceptingPatientsLastUpdatedDate": "2017-05-31T14:30:15.437Z",
+    "City": "Essex",
+    "Postcode": "CM16 6TN"
+  },
+  {
     "ODSCode": "V016625",
     "OrganisationName": "Genix Healthcare Gloucester",
     "Latitude": 51.864898681640625,
@@ -210184,19 +210184,6 @@
     "Postcode": "SG5 1JW"
   },
   {
-    "ODSCode": "V021606",
-    "OrganisationName": "Harrogate & District NHS Foundation Trust",
-    "Latitude": 54.281700134277344,
-    "Longitude": -0.4087783098220825,
-    "AcceptingPatients": {
-      "GP": null,
-      "Dentist": []
-    },
-    "DentistsAcceptingPatientsLastUpdatedDate": null,
-    "City": "",
-    "Postcode": "YO12 7AF"
-  },
-  {
     "ODSCode": "V021656",
     "OrganisationName": "MRS O SULAIMAN",
     "Latitude": 51.517704010009766,
@@ -212135,7 +212122,7 @@
   },
   {
     "ODSCode": "V025213",
-    "OrganisationName": "Ms S Mestry",
+    "OrganisationName": "Dental Centre of Excellence",
     "Latitude": 52.316410064697266,
     "Longitude": -1.9066413640975952,
     "AcceptingPatients": {
@@ -212169,7 +212156,7 @@
       ]
     },
     "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-01T11:50:29.267Z",
-    "City": "Worcs",
+    "City": "Redditch",
     "Postcode": "B98 9AA"
   },
   {
@@ -216762,6 +216749,19 @@
     "Postcode": "OL1 3TG"
   },
   {
+    "ODSCode": "V040010",
+    "OrganisationName": "Community Dental Services - CDS CIC Essex",
+    "Latitude": 51.80055618286133,
+    "Longitude": 0.6428900957107544,
+    "AcceptingPatients": {
+      "GP": null,
+      "Dentist": []
+    },
+    "DentistsAcceptingPatientsLastUpdatedDate": null,
+    "City": "Essex",
+    "Postcode": "CM8 2UX"
+  },
+  {
     "ODSCode": "V040060",
     "OrganisationName": "MR WW LEE",
     "Latitude": 53.49957656860352,
@@ -218619,6 +218619,45 @@
     "DentistsAcceptingPatientsLastUpdatedDate": "2025-11-05T10:45:12.59Z",
     "City": "",
     "Postcode": "OL8 2BS"
+  },
+  {
+    "ODSCode": "V042953",
+    "OrganisationName": "Community Dental Services - CDS CIC Essex",
+    "Latitude": 51.62355041503906,
+    "Longitude": 0.3164149820804596,
+    "AcceptingPatients": {
+      "GP": null,
+      "Dentist": [
+        {
+          "Id": 5,
+          "Name": "Only by referral from a dental practitioner",
+          "AcceptingPatients": true
+        },
+        {
+          "Id": 3,
+          "Name": "Children (up to the age of 18)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 1,
+          "Name": "Adults (18 and over)",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 2,
+          "Name": "Adults entitled to free dental care",
+          "AcceptingPatients": false
+        },
+        {
+          "Id": 4,
+          "Name": "Urgent care appointments offered",
+          "AcceptingPatients": false
+        }
+      ]
+    },
+    "DentistsAcceptingPatientsLastUpdatedDate": "2017-05-31T14:09:21.67Z",
+    "City": "Essex",
+    "Postcode": "CM15 8DR"
   },
   {
     "ODSCode": "V042958",
