@@ -14337,6 +14337,16 @@
     "Services": [],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "08:00",
         "ClosingTime": "20:00",
@@ -14368,10 +14378,10 @@
       },
       {
         "Weekday": "Thursday",
-        "OpeningTime": "08:00",
-        "ClosingTime": "20:00",
-        "OffsetOpeningTime": 480,
-        "OffsetClosingTime": 1200,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -14405,16 +14415,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 25 2026",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -14525,7 +14525,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-08-27T23:31:29.493Z",
+      "OpeningTimes": "2026-10-15T15:02:26.36Z",
       "BankHolidayOpeningTimes": "2026-08-28T20:44:29.417Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-11-19T10:44:50.943Z",
@@ -23355,6 +23355,36 @@
     ],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Nov 03 2026",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Sep 25 2026",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "08:00",
         "ClosingTime": "12:30",
@@ -23416,19 +23446,9 @@
       },
       {
         "Weekday": "Thursday",
-        "OpeningTime": "08:00",
-        "ClosingTime": "12:30",
-        "OffsetOpeningTime": 480,
-        "OffsetClosingTime": 750,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Thursday",
-        "OpeningTime": "13:30",
+        "OpeningTime": "09:00",
         "ClosingTime": "17:00",
-        "OffsetOpeningTime": 810,
+        "OffsetOpeningTime": 540,
         "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
@@ -23473,36 +23493,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Nov 03 2026",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Sep 25 2026",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 25 2026",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -23637,7 +23627,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-09-22T12:06:46.237Z",
+      "OpeningTimes": "2026-10-15T14:59:58.81Z",
       "BankHolidayOpeningTimes": "2026-08-28T20:49:57.233Z",
       "TemporaryChangesOpeningTimes": "2026-08-27T23:37:35.503Z",
       "DentistsAcceptingPatients": "2025-09-22T12:06:22.54Z",
@@ -66090,6 +66080,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Oct 30 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -66208,7 +66208,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-11T14:11:37.21Z",
       "BankHolidayOpeningTimes": "2025-09-11T14:11:45.463Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:57:34.683Z",
       "DentistsAcceptingPatients": "2025-09-11T14:11:18.257Z",
       "Facilities": "2025-09-11T14:12:11.4Z",
       "HospitalDepartment": null,
@@ -194671,14 +194671,25 @@
       "OrganisationName": "NHS Devon ICB"
     },
     "Services": [],
-    "OpeningTimes": [],
+    "OpeningTimes": [
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Oct 09 2027",
+        "IsOpen": true
+      }
+    ],
     "Contacts": [],
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:59:09.913Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2020-07-20T11:35:20.45Z",
       "HospitalDepartment": null,
@@ -199655,7 +199666,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-10-14T22:01:30.597Z",
+      "OpeningTimes": "2026-10-15T14:59:46.583Z",
       "BankHolidayOpeningTimes": "2026-08-27T23:03:34.773Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-11-19T16:27:44.777Z",
@@ -283194,6 +283205,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "May 09 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -283209,7 +283230,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-28T20:35:34.15Z",
       "BankHolidayOpeningTimes": "2025-09-25T21:31:28.047Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:01:42.543Z",
       "DentistsAcceptingPatients": "2025-09-25T21:31:08.3Z",
       "Facilities": "2025-09-25T21:31:58.293Z",
       "HospitalDepartment": null,
@@ -356840,6 +356861,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Aug 22 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -356927,7 +356958,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-06-23T14:15:47.873Z",
-      "BankHolidayOpeningTimes": "2025-06-23T14:15:56.1Z",
+      "BankHolidayOpeningTimes": "2026-10-15T12:58:57.343Z",
       "TemporaryChangesOpeningTimes": "2026-08-27T23:33:15.35Z",
       "DentistsAcceptingPatients": "2025-06-23T14:15:31.573Z",
       "Facilities": "2025-06-23T14:34:52.99Z",
@@ -436492,6 +436523,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Aug 09 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jul 31 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -436544,7 +436585,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-06-05T13:14:56.963Z",
       "BankHolidayOpeningTimes": "2025-06-05T13:15:06.773Z",
-      "TemporaryChangesOpeningTimes": "2026-08-27T23:03:01.073Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:01:20.293Z",
       "DentistsAcceptingPatients": "2025-06-05T13:14:21.107Z",
       "Facilities": "2025-03-24T14:02:50.617Z",
       "HospitalDepartment": null,
@@ -505264,6 +505305,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -505381,7 +505432,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-10-14T16:52:16.893Z",
-      "BankHolidayOpeningTimes": "2025-09-22T10:38:35.997Z",
+      "BankHolidayOpeningTimes": "2026-10-15T12:59:36.87Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-09-22T10:38:19.913Z",
       "Facilities": "2025-09-22T10:39:24.57Z",
@@ -597471,26 +597522,6 @@
     "Services": [],
     "OpeningTimes": [
       {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Sep 25 2026",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 13 2027",
-        "IsOpen": true
-      },
-      {
         "Weekday": "Monday",
         "OpeningTime": "09:00",
         "ClosingTime": "13:00",
@@ -597599,6 +597630,26 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Aug 13 2027",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jan 11 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -597626,7 +597677,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-10-14T13:48:57.52Z",
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": "2026-08-27T23:40:58Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:57:54.613Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2014-06-23T22:31:22Z",
       "HospitalDepartment": null,
@@ -646338,6 +646389,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 12 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -646468,7 +646529,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-26T11:01:54.74Z",
       "BankHolidayOpeningTimes": "2026-10-09T15:32:29.253Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:00:40.477Z",
       "DentistsAcceptingPatients": "2025-09-26T11:01:45.557Z",
       "Facilities": "2025-09-26T11:02:12.387Z",
       "HospitalDepartment": null,
@@ -657228,6 +657289,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 09 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -657322,7 +657393,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-28T20:43:41.467Z",
       "BankHolidayOpeningTimes": "2025-09-02T12:49:48.28Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:05:10.19Z",
       "DentistsAcceptingPatients": "2025-09-02T12:49:27.513Z",
       "Facilities": "2025-09-02T12:50:17.92Z",
       "HospitalDepartment": null,
@@ -789690,7 +789761,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-08-28T20:38:39.51Z",
+      "OpeningTimes": "2026-10-15T11:00:07.753Z",
       "BankHolidayOpeningTimes": "2025-10-01T14:19:04.983Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-10-01T14:17:52.123Z",
@@ -845134,26 +845205,6 @@
     "Services": [],
     "OpeningTimes": [
       {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Feb 14 2027",
-        "IsOpen": true
-      },
-      {
         "Weekday": "Monday",
         "OpeningTime": "09:00",
         "ClosingTime": "12:50",
@@ -845262,6 +845313,26 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Feb 14 2027",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Nov 21 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -845338,7 +845409,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-27T23:28:07.12Z",
       "BankHolidayOpeningTimes": "2026-08-21T00:03:22.333Z",
-      "TemporaryChangesOpeningTimes": "2026-08-27T22:56:21.807Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:00:08.22Z",
       "DentistsAcceptingPatients": "2025-09-23T08:18:20.873Z",
       "Facilities": "2025-03-20T15:51:28.49Z",
       "HospitalDepartment": null,
@@ -845562,40 +845633,20 @@
     "Services": [],
     "OpeningTimes": [
       {
-        "Weekday": "Friday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "17:00",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 1020,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Aug 31 2026",
         "IsOpen": true
       },
       {
         "Weekday": "Monday",
         "OpeningTime": "09:00",
-        "ClosingTime": "18:00",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 1080,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Saturday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Thursday",
-        "OpeningTime": "08:00",
         "ClosingTime": "17:00",
-        "OffsetOpeningTime": 480,
+        "OffsetOpeningTime": 540,
         "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
@@ -845622,14 +845673,44 @@
         "IsOpen": true
       },
       {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
+        "Weekday": "Thursday",
+        "OpeningTime": "08:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 480,
+        "OffsetClosingTime": 1020,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
         "IsOpen": true
+      },
+      {
+        "Weekday": "Friday",
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Saturday",
+        "OpeningTime": "09:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Sunday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
       }
     ],
     "Contacts": [
@@ -845722,7 +845803,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2016-04-30T10:38:24Z",
+      "OpeningTimes": "2026-10-15T15:07:13.543Z",
       "BankHolidayOpeningTimes": "2026-08-27T22:51:15.89Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2019-05-17T12:10:13Z",
@@ -860685,6 +860766,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "May 18 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -860797,7 +860888,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-23T09:36:05.933Z",
       "BankHolidayOpeningTimes": "2025-09-23T09:36:13.613Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:01:15.28Z",
       "DentistsAcceptingPatients": "2025-09-23T09:35:23.94Z",
       "Facilities": "2025-09-23T09:37:30.52Z",
       "HospitalDepartment": null,
@@ -911249,6 +911340,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -911312,7 +911413,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-06-24T11:24:37.417Z",
-      "BankHolidayOpeningTimes": "2025-06-24T11:24:50.12Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:57:16.007Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-06-24T11:21:18.287Z",
       "Facilities": "2025-06-24T11:29:03.847Z",
@@ -966533,6 +966634,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -966572,7 +966683,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-22T10:24:30.82Z",
-      "BankHolidayOpeningTimes": "2025-09-22T10:24:43.02Z",
+      "BankHolidayOpeningTimes": "2026-10-15T12:58:29.913Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-09-22T10:24:06.2Z",
       "Facilities": "2025-09-22T10:25:27.61Z",
@@ -1057721,13 +1057832,13 @@
       },
       {
         "Weekday": "Saturday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
-        "IsOpen": false
+        "IsOpen": true
       },
       {
         "Weekday": "Sunday",
@@ -1057830,7 +1057941,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-10-14T16:55:52.173Z",
+      "OpeningTimes": "2026-10-15T15:01:33.54Z",
       "BankHolidayOpeningTimes": "2024-12-17T11:32:53.477Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-06-26T16:24:50.973Z",
@@ -1083761,13 +1083872,13 @@
       },
       {
         "Weekday": "Saturday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
-        "IsOpen": false
+        "IsOpen": true
       },
       {
         "Weekday": "Sunday",
@@ -1083840,7 +1083951,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-11-19T11:29:35.223Z",
+      "OpeningTimes": "2026-10-15T11:03:25.77Z",
       "BankHolidayOpeningTimes": "2025-11-19T11:29:38.527Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-11-19T11:29:27.793Z",
@@ -1086353,13 +1086464,13 @@
       },
       {
         "Weekday": "Saturday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
-        "IsOpen": false
+        "IsOpen": true
       },
       {
         "Weekday": "Sunday",
@@ -1086462,7 +1086573,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-08-31T22:20:40.277Z",
+      "OpeningTimes": "2026-10-15T14:57:52.99Z",
       "BankHolidayOpeningTimes": "2026-08-27T23:01:29.76Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-03-07T18:14:07.997Z",
@@ -1115921,6 +1116032,26 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Sep 02 2027",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1115978,8 +1116109,8 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-10-14T16:46:58.193Z",
-      "BankHolidayOpeningTimes": "2025-09-03T11:38:04.693Z",
-      "TemporaryChangesOpeningTimes": null,
+      "BankHolidayOpeningTimes": "2026-10-15T14:59:35.55Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T11:00:39.663Z",
       "DentistsAcceptingPatients": "2025-09-03T11:37:20.797Z",
       "Facilities": "2025-09-03T11:38:47.447Z",
       "HospitalDepartment": null,
@@ -1130062,33 +1130193,13 @@
       },
       {
         "Weekday": "",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 29 2025",
-        "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 30 2025",
-        "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 31 2025",
-        "IsOpen": false
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1130200,7 +1130311,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-23T08:15:55.43Z",
-      "BankHolidayOpeningTimes": "2025-09-23T08:16:27.143Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:01:34.7Z",
       "TemporaryChangesOpeningTimes": "2025-09-23T08:17:12.28Z",
       "DentistsAcceptingPatients": "2025-09-23T08:15:31.5Z",
       "Facilities": "2025-09-23T08:18:29.05Z",
@@ -1189802,6 +1189913,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Oct 15 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1189896,7 +1190017,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-22T11:47:17.907Z",
       "BankHolidayOpeningTimes": "2025-09-22T11:47:31.3Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:01:46.213Z",
       "DentistsAcceptingPatients": "2025-09-22T11:46:56.8Z",
       "Facilities": "2025-09-22T11:49:58.277Z",
       "HospitalDepartment": null,
@@ -1305805,6 +1305926,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1305892,7 +1306023,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-20T00:29:24.073Z",
-      "BankHolidayOpeningTimes": "2025-11-24T07:37:26.6Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:58:29.51Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-11-24T07:37:01.3Z",
       "Facilities": "2025-11-24T07:38:19.647Z",
@@ -1322105,16 +1322236,6 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 25 2026",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Sep 13 2027",
         "IsOpen": true
       },
@@ -1322126,6 +1322247,16 @@
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "May 25 2027",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
       }
     ],
@@ -1322184,7 +1322315,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-10-31T08:07:03.057Z",
-      "BankHolidayOpeningTimes": "2026-10-14T13:59:59.87Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:59:28.73Z",
       "TemporaryChangesOpeningTimes": "2026-10-14T22:02:06.19Z",
       "DentistsAcceptingPatients": "2025-10-31T08:06:35.017Z",
       "Facilities": "2025-10-31T08:08:09.397Z",
@@ -1382238,6 +1382369,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Feb 25 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 04 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1382296,7 +1382437,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-11-04T11:26:11.14Z",
       "BankHolidayOpeningTimes": "2025-11-04T11:26:15.41Z",
-      "TemporaryChangesOpeningTimes": "2026-08-27T23:08:38.2Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T12:56:52.363Z",
       "DentistsAcceptingPatients": "2025-11-04T11:25:58.47Z",
       "Facilities": "2025-11-04T11:26:33.43Z",
       "HospitalDepartment": null,
@@ -1386514,6 +1386655,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Oct 15 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1386559,7 +1386710,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-22T15:37:07.58Z",
-      "BankHolidayOpeningTimes": "2025-09-22T15:37:12.593Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:56:06.967Z",
       "TemporaryChangesOpeningTimes": "2026-08-28T20:43:41.413Z",
       "DentistsAcceptingPatients": "2025-09-22T15:36:41.92Z",
       "Facilities": "2025-09-22T15:39:03.993Z",
@@ -1387751,6 +1387902,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Jul 09 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1387771,7 +1387932,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2024-03-25T19:00:57.47Z",
-      "BankHolidayOpeningTimes": "2026-08-27T23:25:51.917Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:56:19.01Z",
       "TemporaryChangesOpeningTimes": "2026-09-08T08:45:40.03Z",
       "DentistsAcceptingPatients": "2024-06-28T11:10:49.21Z",
       "Facilities": "2014-04-08T04:36:32Z",
@@ -1388668,21 +1388829,21 @@
     ],
     "OpeningTimes": [
       {
-        "Weekday": "Monday",
-        "OpeningTime": "08:30",
-        "ClosingTime": "13:00",
-        "OffsetOpeningTime": 510,
-        "OffsetClosingTime": 780,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
       },
       {
         "Weekday": "Monday",
-        "OpeningTime": "14:00",
-        "ClosingTime": "17:30",
-        "OffsetOpeningTime": 840,
-        "OffsetClosingTime": 1050,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -1388786,16 +1388947,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 25 2026",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1388870,7 +1389021,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-06-24T09:53:28.34Z",
+      "OpeningTimes": "2026-10-15T15:04:02.007Z",
       "BankHolidayOpeningTimes": "2026-10-14T22:05:52.13Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-06-24T09:52:58.837Z",
@@ -1392744,6 +1392895,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1392771,7 +1392932,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-10-06T15:22:22.727Z",
-      "BankHolidayOpeningTimes": "2025-10-06T15:22:27.563Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:04:09.597Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-10-06T15:22:06.393Z",
       "Facilities": "2025-10-06T15:24:11.977Z",
@@ -1411921,20 +1412082,20 @@
     ],
     "OpeningTimes": [
       {
-        "Weekday": "Monday",
-        "OpeningTime": "08:30",
-        "ClosingTime": "13:00",
-        "OffsetOpeningTime": 510,
-        "OffsetClosingTime": 780,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Nov 13 2026",
         "IsOpen": true
       },
       {
         "Weekday": "Monday",
-        "OpeningTime": "14:00",
+        "OpeningTime": "09:00",
         "ClosingTime": "17:00",
-        "OffsetOpeningTime": 840,
+        "OffsetOpeningTime": 540,
         "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
@@ -1412039,16 +1412200,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Nov 13 2026",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1412111,7 +1412262,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-11-11T15:16:41.123Z",
+      "OpeningTimes": "2026-10-15T14:56:40.173Z",
       "BankHolidayOpeningTimes": "2025-11-11T15:16:48.453Z",
       "TemporaryChangesOpeningTimes": "2026-08-27T22:58:36.69Z",
       "DentistsAcceptingPatients": "2025-11-11T15:16:31.27Z",
@@ -1428713,6 +1428864,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Oct 26 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1428783,7 +1428944,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-01-24T11:03:59.883Z",
       "BankHolidayOpeningTimes": "2026-08-31T22:21:33.463Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:56:10.133Z",
       "DentistsAcceptingPatients": "2025-10-30T14:47:24.313Z",
       "Facilities": "2024-07-26T07:54:30.417Z",
       "HospitalDepartment": null,
@@ -1473612,7 +1473773,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
+        "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
       }
     ],
@@ -1473621,7 +1473782,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": null,
-      "BankHolidayOpeningTimes": "2026-08-27T23:52:25.607Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:05:29.883Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": null,
       "Facilities": "2024-05-12T02:15:40.96Z",
@@ -1489905,7 +1490066,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
+        "AdditionalOpeningDate": "Dec 19 2026",
         "IsOpen": true
       }
     ],
@@ -1490067,7 +1490228,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-26T12:25:25.547Z",
       "BankHolidayOpeningTimes": "2026-08-20T01:15:17.233Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T11:03:04.337Z",
       "DentistsAcceptingPatients": "2025-09-26T12:25:17.407Z",
       "Facilities": "2025-09-26T12:25:43.85Z",
       "HospitalDepartment": null,
@@ -1550847,6 +1551008,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Nov 14 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1550904,7 +1551075,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2010-11-12T04:58:41.947Z",
-      "BankHolidayOpeningTimes": "2026-08-27T23:12:42.74Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:59:38.36Z",
       "TemporaryChangesOpeningTimes": "2026-10-14T22:12:55.9Z",
       "DentistsAcceptingPatients": "2011-01-06T21:56:06.377Z",
       "Facilities": "2010-11-12T04:57:29Z",
@@ -1554742,7 +1554913,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
+        "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
       }
     ],
@@ -1554825,7 +1554996,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-22T11:04:37.23Z",
-      "BankHolidayOpeningTimes": "2026-08-27T23:15:26.97Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:03:46.84Z",
       "TemporaryChangesOpeningTimes": "2025-10-24T09:35:42.7Z",
       "DentistsAcceptingPatients": "2025-10-24T09:34:24.033Z",
       "Facilities": "2025-09-22T11:05:36.363Z",
@@ -1579140,6 +1579311,16 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 17 2026",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Apr 01 2027",
         "IsOpen": true
       },
@@ -1579150,7 +1579331,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 17 2026",
+        "AdditionalOpeningDate": "Nov 12 2026",
         "IsOpen": true
       }
     ],
@@ -1579210,7 +1579391,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-10-14T21:47:50.567Z",
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": "2026-10-14T22:09:51.86Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T12:58:19.34Z",
       "DentistsAcceptingPatients": "2011-01-06T21:56:06.377Z",
       "Facilities": "2010-11-12T04:57:29.63Z",
       "HospitalDepartment": null,
@@ -1592914,7 +1593095,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
+        "AdditionalOpeningDate": "Jan 16 2027",
         "IsOpen": true
       },
       {
@@ -1592924,7 +1593105,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Jan 16 2027",
+        "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
       }
     ],
@@ -1593019,7 +1593200,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-18T09:10:07.21Z",
-      "BankHolidayOpeningTimes": "2026-08-27T23:32:05.833Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:02:16.103Z",
       "TemporaryChangesOpeningTimes": "2026-08-27T23:52:06.857Z",
       "DentistsAcceptingPatients": "2025-09-18T09:09:52.653Z",
       "Facilities": "2025-09-18T09:11:08.41Z",
@@ -1614179,6 +1614360,16 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Nov 22 2026",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
       }
@@ -1614262,8 +1614453,8 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-10-17T11:02:16.9Z",
-      "BankHolidayOpeningTimes": "2026-08-28T20:44:29.553Z",
-      "TemporaryChangesOpeningTimes": null,
+      "BankHolidayOpeningTimes": "2026-10-15T15:02:38.397Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T12:57:46.663Z",
       "DentistsAcceptingPatients": "2025-10-17T11:02:03.047Z",
       "Facilities": "2025-10-17T11:03:03.493Z",
       "HospitalDepartment": null,
@@ -1670118,6 +1670309,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1670163,7 +1670364,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-22T11:19:05.85Z",
-      "BankHolidayOpeningTimes": "2025-06-23T12:28:24.72Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:01:11.433Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-09-22T11:18:30.883Z",
       "Facilities": "2025-06-23T12:31:29.137Z",
@@ -1679648,6 +1679849,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1679711,7 +1679922,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-27T23:34:02.617Z",
-      "BankHolidayOpeningTimes": null,
+      "BankHolidayOpeningTimes": "2026-10-15T14:57:06.753Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-09-03T12:45:20.123Z",
       "Facilities": "2025-09-03T12:46:53.18Z",
@@ -1680627,6 +1680838,16 @@
     ],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Aug 31 2026",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "09:00",
         "ClosingTime": "17:30",
@@ -1680659,9 +1680880,9 @@
       {
         "Weekday": "Thursday",
         "OpeningTime": "09:00",
-        "ClosingTime": "17:30",
+        "ClosingTime": "17:00",
         "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 1050,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -1680695,16 +1680916,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1680785,7 +1680996,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-10-07T10:37:55.697Z",
+      "OpeningTimes": "2026-10-15T14:57:29.793Z",
       "BankHolidayOpeningTimes": "2026-08-20T23:54:43.143Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-10-07T10:37:41.48Z",
@@ -1698395,18 +1698606,8 @@
       {
         "Weekday": "Monday",
         "OpeningTime": "09:00",
-        "ClosingTime": "12:30",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 750,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Monday",
-        "OpeningTime": "13:15",
         "ClosingTime": "17:00",
-        "OffsetOpeningTime": 795,
+        "OffsetOpeningTime": 540,
         "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
@@ -1698599,7 +1698800,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-08-19T23:17:57.953Z",
+      "OpeningTimes": "2026-10-15T15:06:34.837Z",
       "BankHolidayOpeningTimes": "2025-09-22T15:07:55.853Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-09-22T15:07:26.25Z",
@@ -1707048,6 +1707249,16 @@
     ],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Sep 01 2026",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "09:00",
         "ClosingTime": "17:00",
@@ -1707116,16 +1707327,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Sep 01 2026",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1707200,7 +1707401,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-05-23T11:56:29.517Z",
+      "OpeningTimes": "2026-10-15T14:56:08.82Z",
       "BankHolidayOpeningTimes": "2025-05-23T11:56:35.97Z",
       "TemporaryChangesOpeningTimes": "2026-08-31T22:34:58.603Z",
       "DentistsAcceptingPatients": "2025-05-23T11:57:16.047Z",
@@ -1708228,16 +1708429,6 @@
     ],
     "OpeningTimes": [
       {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "May 30 2027",
-        "IsOpen": true
-      },
-      {
         "Weekday": "Monday",
         "OpeningTime": "08:00",
         "ClosingTime": "13:00",
@@ -1708346,6 +1708537,26 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "May 30 2027",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 01 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1708476,7 +1708687,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-10-14T13:54:24.15Z",
       "BankHolidayOpeningTimes": "2025-11-19T12:23:53.533Z",
-      "TemporaryChangesOpeningTimes": "2026-08-27T23:08:54.54Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:02:42.577Z",
       "DentistsAcceptingPatients": "2025-11-19T12:22:58.43Z",
       "Facilities": "2025-11-19T12:24:31.43Z",
       "HospitalDepartment": null,
@@ -1713145,6 +1713356,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 07 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1713281,7 +1713502,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-10T14:00:41.4Z",
       "BankHolidayOpeningTimes": "2025-09-10T14:00:46.28Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:59:13.86Z",
       "DentistsAcceptingPatients": "2025-09-10T14:00:26.467Z",
       "Facilities": "2025-09-10T14:02:01.833Z",
       "HospitalDepartment": null,
@@ -1730328,6 +1730549,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Mar 01 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1730445,7 +1730676,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-22T11:32:12.81Z",
-      "BankHolidayOpeningTimes": "2025-09-22T11:32:17.407Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:59:27.4Z",
       "TemporaryChangesOpeningTimes": "2026-08-19T22:13:07.767Z",
       "DentistsAcceptingPatients": "2025-09-22T11:31:53.517Z",
       "Facilities": "2025-09-22T11:34:23.573Z",
@@ -1742987,6 +1743218,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 03 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 04 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1743069,7 +1743310,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2019-11-08T16:16:29Z",
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": "2026-10-14T16:55:02.73Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:02:57.43Z",
       "DentistsAcceptingPatients": "2020-02-04T12:02:06Z",
       "Facilities": "2019-11-08T16:33:52Z",
       "HospitalDepartment": null,
@@ -1743288,6 +1743529,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Mar 25 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "May 06 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -1743296,7 +1743547,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": "2026-08-28T20:54:02.093Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:03:03.797Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2016-02-09T06:10:14.72Z",
       "HospitalDepartment": null,
@@ -1745640,6 +1745891,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jun 21 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1745698,7 +1745959,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2011-01-07T15:34:48Z",
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:00:15.97Z",
       "DentistsAcceptingPatients": "2011-01-06T21:56:06.377Z",
       "Facilities": "2010-11-12T04:57:29Z",
       "HospitalDepartment": null,
@@ -1762144,6 +1762405,16 @@
     "Services": [],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "09:00",
         "ClosingTime": "17:00",
@@ -1762165,13 +1762436,13 @@
       },
       {
         "Weekday": "Wednesday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
-        "IsOpen": false
+        "IsOpen": true
       },
       {
         "Weekday": "Thursday",
@@ -1762212,23 +1762483,13 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 25 2026",
-        "IsOpen": true
       }
     ],
     "Contacts": [],
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-08-27T23:49:09.9Z",
+      "OpeningTimes": "2026-10-15T15:04:41.86Z",
       "BankHolidayOpeningTimes": "2026-09-04T23:04:37.633Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": null,
@@ -1766211,14 +1766472,25 @@
       "OrganisationName": "NHS South West London ICB"
     },
     "Services": [],
-    "OpeningTimes": [],
+    "OpeningTimes": [
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jan 07 2027",
+        "IsOpen": true
+      }
+    ],
     "Contacts": [],
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T12:57:20.393Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2016-02-09T06:10:14.72Z",
       "HospitalDepartment": null,
@@ -1770629,6 +1770901,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jun 17 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -1770637,7 +1770919,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-27T22:50:38.317Z",
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T11:01:28.457Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2016-02-09T06:10:14Z",
       "HospitalDepartment": null,
@@ -1779332,6 +1779614,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Feb 27 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1779402,7 +1779694,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-11-07T12:41:44.463Z",
       "BankHolidayOpeningTimes": "2026-08-31T22:20:29.13Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:59:04.22Z",
       "DentistsAcceptingPatients": "2025-11-07T12:41:32.41Z",
       "Facilities": "2025-11-07T12:42:21.75Z",
       "HospitalDepartment": null,
@@ -1789029,6 +1789321,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 25 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1789063,7 +1789365,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2024-12-19T17:02:51.767Z",
       "BankHolidayOpeningTimes": "2026-08-31T22:33:02.603Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:58:03.2Z",
       "DentistsAcceptingPatients": "2025-06-03T09:00:31.323Z",
       "Facilities": "2024-07-05T08:51:21.863Z",
       "HospitalDepartment": null,
@@ -1799708,6 +1800010,16 @@
     "Services": [],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "13:30",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 810,
+        "OffsetClosingTime": 1020,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Oct 23 2025",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "08:30",
         "ClosingTime": "12:30",
@@ -1799729,20 +1800041,10 @@
       },
       {
         "Weekday": "Tuesday",
-        "OpeningTime": "08:30",
-        "ClosingTime": "12:30",
-        "OffsetOpeningTime": 510,
-        "OffsetClosingTime": 750,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Tuesday",
-        "OpeningTime": "14:00",
-        "ClosingTime": "17:30",
-        "OffsetOpeningTime": 840,
-        "OffsetClosingTime": 1050,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -1799826,16 +1800128,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "13:30",
-        "ClosingTime": "17:00",
-        "OffsetOpeningTime": 810,
-        "OffsetClosingTime": 1020,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Oct 23 2025",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1799958,7 +1800250,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-09-22T10:32:20.067Z",
+      "OpeningTimes": "2026-10-15T14:58:11.757Z",
       "BankHolidayOpeningTimes": "2025-09-22T10:32:12.36Z",
       "TemporaryChangesOpeningTimes": "2025-09-22T10:33:08.983Z",
       "DentistsAcceptingPatients": "2025-09-22T10:31:49.62Z",
@@ -1804107,6 +1804399,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Mar 03 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Mar 10 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1804177,7 +1804479,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2024-09-23T15:19:37.753Z",
       "BankHolidayOpeningTimes": "2024-09-23T15:19:55.407Z",
-      "TemporaryChangesOpeningTimes": "2026-08-31T22:21:34.747Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T11:03:38.317Z",
       "DentistsAcceptingPatients": "2024-09-23T15:19:04.483Z",
       "Facilities": "2024-09-23T15:22:03.697Z",
       "HospitalDepartment": null,
@@ -1805803,6 +1806105,86 @@
     "Services": [],
     "OpeningTimes": [
       {
+        "Weekday": "Monday",
+        "OpeningTime": "09:00",
+        "ClosingTime": "13:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 780,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Monday",
+        "OpeningTime": "14:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 840,
+        "OffsetClosingTime": 1020,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Tuesday",
+        "OpeningTime": "09:00",
+        "ClosingTime": "13:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 780,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Tuesday",
+        "OpeningTime": "14:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 840,
+        "OffsetClosingTime": 1020,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Wednesday",
+        "OpeningTime": "09:00",
+        "ClosingTime": "13:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 780,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Wednesday",
+        "OpeningTime": "14:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 840,
+        "OffsetClosingTime": 1020,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Thursday",
+        "OpeningTime": "09:00",
+        "ClosingTime": "13:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 780,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Thursday",
+        "OpeningTime": "14:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 840,
+        "OffsetClosingTime": 1020,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Friday",
         "OpeningTime": "09:00",
         "ClosingTime": "15:00",
@@ -1805813,80 +1806195,20 @@
         "IsOpen": true
       },
       {
-        "Weekday": "Monday",
+        "Weekday": "Saturday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Sunday",
         "OpeningTime": "09:00",
-        "ClosingTime": "13:00",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 780,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Monday",
-        "OpeningTime": "14:00",
         "ClosingTime": "17:00",
-        "OffsetOpeningTime": 840,
-        "OffsetClosingTime": 1020,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Thursday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "13:00",
         "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 780,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Thursday",
-        "OpeningTime": "14:00",
-        "ClosingTime": "17:00",
-        "OffsetOpeningTime": 840,
-        "OffsetClosingTime": 1020,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Tuesday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "13:00",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 780,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Tuesday",
-        "OpeningTime": "14:00",
-        "ClosingTime": "17:00",
-        "OffsetOpeningTime": 840,
-        "OffsetClosingTime": 1020,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Wednesday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "13:00",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 780,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Wednesday",
-        "OpeningTime": "14:00",
-        "ClosingTime": "17:00",
-        "OffsetOpeningTime": 840,
         "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
@@ -1805964,7 +1806286,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2019-03-04T10:53:10.82Z",
+      "OpeningTimes": "2026-10-15T14:58:45.45Z",
       "BankHolidayOpeningTimes": null,
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": null,
@@ -1828715,6 +1829037,16 @@
     ],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "May 16 2027",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "08:15",
         "ClosingTime": "19:00",
@@ -1828756,10 +1829088,10 @@
       },
       {
         "Weekday": "Friday",
-        "OpeningTime": "08:15",
-        "ClosingTime": "15:15",
-        "OffsetOpeningTime": 495,
-        "OffsetClosingTime": 915,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -1828783,16 +1829115,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "May 16 2027",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1828951,7 +1829273,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-11-19T14:12:01.387Z",
+      "OpeningTimes": "2026-10-15T14:57:36.92Z",
       "BankHolidayOpeningTimes": "2025-11-19T14:12:04.73Z",
       "TemporaryChangesOpeningTimes": "2026-08-28T20:48:24.37Z",
       "DentistsAcceptingPatients": "2025-11-19T14:11:54.137Z",
@@ -1829252,6 +1829574,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Aug 27 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1829340,7 +1829672,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2019-02-12T14:54:35.35Z",
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:02:03.947Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2019-02-12T14:57:16Z",
       "HospitalDepartment": null,
@@ -1838297,7 +1838629,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
+        "AdditionalOpeningDate": "Apr 03 2027",
         "IsOpen": true
       },
       {
@@ -1838307,7 +1838639,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Apr 03 2027",
+        "AdditionalOpeningDate": "Apr 17 2027",
         "IsOpen": true
       }
     ],
@@ -1838324,7 +1838656,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-06-23T12:21:04.44Z",
       "BankHolidayOpeningTimes": "2026-08-27T23:45:43.137Z",
-      "TemporaryChangesOpeningTimes": "2026-08-31T22:35:00.337Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:01:21.967Z",
       "DentistsAcceptingPatients": "2025-09-24T11:55:12.857Z",
       "Facilities": "2024-06-24T10:46:03.633Z",
       "HospitalDepartment": null,
@@ -1840932,7 +1841264,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-22T10:26:15.853Z",
-      "BankHolidayOpeningTimes": "2026-10-14T13:48:11.3Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:01:13.833Z",
       "TemporaryChangesOpeningTimes": "2026-08-27T23:41:32.65Z",
       "DentistsAcceptingPatients": "2025-09-22T10:25:52.307Z",
       "Facilities": "2025-09-22T10:28:25.01Z",
@@ -1849908,16 +1850240,6 @@
     "Services": [],
     "OpeningTimes": [
       {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
-        "IsOpen": true
-      },
-      {
         "Weekday": "Monday",
         "OpeningTime": "09:00",
         "ClosingTime": "13:00",
@@ -1850016,6 +1850338,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1850049,7 +1850381,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-31T22:33:41.593Z",
-      "BankHolidayOpeningTimes": "2026-08-27T23:29:16.3Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:03:40.16Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-09-22T09:29:57.65Z",
       "Facilities": "2025-09-22T09:27:13.957Z",
@@ -1853692,7 +1854024,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-10-03T09:45:48.007Z",
+      "OpeningTimes": "2026-10-15T15:00:46.873Z",
       "BankHolidayOpeningTimes": "2025-10-03T09:45:53.37Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-10-03T09:45:34.963Z",
@@ -1861117,6 +1861449,16 @@
     ],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "08:30",
         "ClosingTime": "17:30",
@@ -1861128,10 +1861470,10 @@
       },
       {
         "Weekday": "Tuesday",
-        "OpeningTime": "08:30",
-        "ClosingTime": "17:30",
-        "OffsetOpeningTime": 510,
-        "OffsetClosingTime": 1050,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -1861185,16 +1861527,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 25 2026",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1861220,7 +1861552,7 @@
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-09-25T05:34:32.78Z",
+      "OpeningTimes": "2026-10-15T13:09:36.153Z",
       "BankHolidayOpeningTimes": "2026-09-04T23:02:24.85Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-09-25T05:34:14.68Z",
@@ -1863260,7 +1863592,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
+        "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
       }
     ],
@@ -1863445,7 +1863777,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-11-20T11:58:48.76Z",
-      "BankHolidayOpeningTimes": "2026-08-27T23:15:42.703Z",
+      "BankHolidayOpeningTimes": "2026-10-15T13:09:51.35Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-11-20T11:58:42.603Z",
       "Facilities": "2025-11-20T11:59:07.773Z",
@@ -1864073,6 +1864405,16 @@
     ],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jan 02 2027",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "08:00",
         "ClosingTime": "20:00",
@@ -1864094,10 +1864436,10 @@
       },
       {
         "Weekday": "Wednesday",
-        "OpeningTime": "08:00",
-        "ClosingTime": "20:00",
-        "OffsetOpeningTime": 480,
-        "OffsetClosingTime": 1200,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -1864141,16 +1864483,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Jan 02 2027",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1864303,7 +1864635,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-09-22T11:39:48.31Z",
+      "OpeningTimes": "2026-10-15T11:05:03.08Z",
       "BankHolidayOpeningTimes": "2025-09-22T11:39:54.12Z",
       "TemporaryChangesOpeningTimes": "2026-08-20T00:18:43.13Z",
       "DentistsAcceptingPatients": "2025-09-22T11:39:37.793Z",
@@ -1889665,6 +1889997,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jan 21 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1889741,7 +1890083,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-01-21T10:15:53.607Z",
       "BankHolidayOpeningTimes": "2026-08-31T22:20:45.27Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:01:17.333Z",
       "DentistsAcceptingPatients": "2025-07-14T08:10:05.573Z",
       "Facilities": "2025-06-26T13:02:47.137Z",
       "HospitalDepartment": null,
@@ -1901897,6 +1902239,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jul 20 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1902021,7 +1902373,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-26T14:44:05.68Z",
       "BankHolidayOpeningTimes": "2026-10-14T13:59:03.9Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T12:56:44.213Z",
       "DentistsAcceptingPatients": "2025-09-26T14:43:57.227Z",
       "Facilities": "2025-09-26T14:44:20.473Z",
       "HospitalDepartment": null,
@@ -1914986,7 +1915338,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Oct 01 2026",
+        "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
       },
       {
@@ -1915006,7 +1915358,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 25 2026",
+        "AdditionalOpeningDate": "Sep 13 2027",
         "IsOpen": true
       }
     ],
@@ -1915078,7 +1915430,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-22T10:38:55.2Z",
       "BankHolidayOpeningTimes": "2026-08-28T20:37:56.423Z",
-      "TemporaryChangesOpeningTimes": "2026-08-27T23:03:03.83Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:57:17.017Z",
       "DentistsAcceptingPatients": "2025-09-22T10:38:43.09Z",
       "Facilities": "2025-09-22T10:39:23.283Z",
       "HospitalDepartment": null,
@@ -1943501,6 +1943853,16 @@
     "Services": [],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "08:30",
         "ClosingTime": "17:30",
@@ -1943552,13 +1943914,13 @@
       },
       {
         "Weekday": "Saturday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
-        "IsOpen": false
+        "IsOpen": true
       },
       {
         "Weekday": "Sunday",
@@ -1943569,16 +1943931,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 25 2026",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -1943659,7 +1944011,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-09-25T15:50:36.663Z",
+      "OpeningTimes": "2026-10-15T12:57:01.543Z",
       "BankHolidayOpeningTimes": "2026-09-04T22:43:53.373Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-09-25T15:50:22.013Z",
@@ -1964356,7 +1964708,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-08-28T20:35:40.103Z",
+      "OpeningTimes": "2026-10-15T11:05:50.397Z",
       "BankHolidayOpeningTimes": "2025-03-19T14:27:35.49Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-06-27T12:37:58.587Z",
@@ -2036748,6 +2037100,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Oct 19 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2036756,7 +2037118,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": "2026-10-14T13:52:59.087Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:58:20.793Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2017-04-27T01:35:15.737Z",
       "HospitalDepartment": null,
@@ -2041467,6 +2041829,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Jun 27 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Sep 21 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2041573,7 +2041945,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-11-04T09:50:54.51Z",
       "BankHolidayOpeningTimes": "2025-11-04T09:51:04.31Z",
-      "TemporaryChangesOpeningTimes": "2026-08-21T00:09:03.443Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T12:58:41.29Z",
       "DentistsAcceptingPatients": "2025-11-04T09:50:31.987Z",
       "Facilities": "2025-11-04T09:52:31.543Z",
       "HospitalDepartment": null,
@@ -2057489,10 +2057861,10 @@
       },
       {
         "Weekday": "Tuesday",
-        "OpeningTime": "08:00",
-        "ClosingTime": "17:30",
-        "OffsetOpeningTime": 480,
-        "OffsetClosingTime": 1050,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -2057626,7 +2057998,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-09-08T08:44:45.923Z",
+      "OpeningTimes": "2026-10-15T15:03:11.687Z",
       "BankHolidayOpeningTimes": "2026-08-31T22:33:31.063Z",
       "TemporaryChangesOpeningTimes": "2026-08-28T20:44:03.75Z",
       "DentistsAcceptingPatients": "2025-09-11T10:37:04.053Z",
@@ -2063143,7 +2063515,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2024-03-18T14:41:22.76Z",
-      "BankHolidayOpeningTimes": "2026-08-28T20:35:28.94Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:57:23.99Z",
       "TemporaryChangesOpeningTimes": "2026-08-27T23:11:17.127Z",
       "DentistsAcceptingPatients": "2025-09-02T12:37:09.543Z",
       "Facilities": "2024-03-18T14:41:54.44Z",
@@ -2070047,6 +2070419,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2070080,7 +2070462,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-27T23:51:00.873Z",
-      "BankHolidayOpeningTimes": "2025-07-18T08:45:37.603Z",
+      "BankHolidayOpeningTimes": "2026-10-15T12:57:55.47Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-07-18T08:45:03.347Z",
       "Facilities": "2025-07-18T08:47:16.04Z",
@@ -2073574,6 +2073956,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 25 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2073638,7 +2074030,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-26T14:42:33.693Z",
       "BankHolidayOpeningTimes": "2026-08-28T20:40:28.62Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:03:42.28Z",
       "DentistsAcceptingPatients": "2025-09-26T14:42:25.617Z",
       "Facilities": "2025-09-26T14:42:49.92Z",
       "HospitalDepartment": null,
@@ -2075258,6 +2075650,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 01 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2075266,7 +2075668,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-10-14T22:00:00.623Z",
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:03:45.37Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2018-09-27T01:35:18Z",
       "HospitalDepartment": null,
@@ -2077497,6 +2077899,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Nov 17 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2077602,7 +2078014,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-10T14:03:22.53Z",
-      "BankHolidayOpeningTimes": "2025-09-10T14:03:26.967Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:02:47.85Z",
       "TemporaryChangesOpeningTimes": "2026-08-21T00:31:20.13Z",
       "DentistsAcceptingPatients": "2025-09-10T14:03:10.2Z",
       "Facilities": "2025-09-10T14:04:02.447Z",
@@ -2080119,14 +2080531,25 @@
       "OrganisationName": "NHS Essex ICB"
     },
     "Services": [],
-    "OpeningTimes": [],
+    "OpeningTimes": [
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "May 09 2027",
+        "IsOpen": true
+      }
+    ],
     "Contacts": [],
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:56:37.45Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2025-09-12T02:15:53.86Z",
       "HospitalDepartment": null,
@@ -2085976,6 +2086399,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Nov 24 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2085983,7 +2086416,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": null,
-      "BankHolidayOpeningTimes": null,
+      "BankHolidayOpeningTimes": "2026-10-15T15:01:47.13Z",
       "TemporaryChangesOpeningTimes": "2026-10-14T21:49:59.783Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2024-06-12T02:15:40.85Z",
@@ -2104687,13 +2105120,83 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Sep 07 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "Monday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Tuesday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Wednesday",
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Thursday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Friday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Saturday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Sunday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
       }
     ],
     "Contacts": [],
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": null,
+      "OpeningTimes": "2026-10-15T12:58:50.71Z",
       "BankHolidayOpeningTimes": null,
       "TemporaryChangesOpeningTimes": "2026-08-28T20:39:59.03Z",
       "DentistsAcceptingPatients": null,
@@ -2113256,6 +2113759,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Aug 05 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2113356,7 +2113869,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-09-04T22:54:04.503Z",
       "BankHolidayOpeningTimes": "2025-09-15T14:23:08.77Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:57:24.697Z",
       "DentistsAcceptingPatients": "2025-09-15T14:22:36.65Z",
       "Facilities": "2025-09-15T14:24:05.263Z",
       "HospitalDepartment": null,
@@ -2113885,6 +2114398,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2113948,7 +2114471,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-10-02T11:17:20.113Z",
-      "BankHolidayOpeningTimes": "2025-10-02T11:17:25.567Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:56:05.197Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-09-26T11:31:47.493Z",
       "Facilities": "2025-09-26T11:32:25.527Z",
@@ -2114686,6 +2115209,16 @@
     ],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 22 2027",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": null,
         "ClosingTime": null,
@@ -2114698,9 +2115231,9 @@
       {
         "Weekday": "Tuesday",
         "OpeningTime": "09:00",
-        "ClosingTime": "16:00",
+        "ClosingTime": "17:00",
         "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 960,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -2114754,16 +2115287,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Apr 22 2027",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2114826,7 +2115349,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-02-04T14:30:03.897Z",
+      "OpeningTimes": "2026-10-15T11:04:10.157Z",
       "BankHolidayOpeningTimes": "2025-02-04T14:30:14.957Z",
       "TemporaryChangesOpeningTimes": "2026-08-27T23:07:43.807Z",
       "DentistsAcceptingPatients": "2025-02-04T14:29:50.99Z",
@@ -2116598,6 +2117121,16 @@
     "Services": [],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Feb 23 2027",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "08:00",
         "ClosingTime": "20:00",
@@ -2116619,10 +2117152,10 @@
       },
       {
         "Weekday": "Wednesday",
-        "OpeningTime": "08:00",
-        "ClosingTime": "20:00",
-        "OffsetOpeningTime": 480,
-        "OffsetClosingTime": 1200,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -2116782,9 +2117315,9 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-11-19T14:41:36.673Z",
+      "OpeningTimes": "2026-10-15T15:01:11.857Z",
       "BankHolidayOpeningTimes": "2025-11-19T14:41:42.273Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:55:55.62Z",
       "DentistsAcceptingPatients": "2025-11-19T14:41:29.887Z",
       "Facilities": "2025-11-19T14:41:58.55Z",
       "HospitalDepartment": null,
@@ -2117118,6 +2117651,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jan 11 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2117254,7 +2117797,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-07-03T13:44:21.373Z",
       "BankHolidayOpeningTimes": "2025-07-03T13:44:29.36Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:56:41.54Z",
       "DentistsAcceptingPatients": "2025-07-03T13:43:51.153Z",
       "Facilities": "2025-07-03T13:54:09.333Z",
       "HospitalDepartment": null,
@@ -2123248,19 +2123791,9 @@
       {
         "Weekday": "Friday",
         "OpeningTime": "09:00",
-        "ClosingTime": "13:00",
+        "ClosingTime": "17:00",
         "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 780,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Friday",
-        "OpeningTime": "14:00",
-        "ClosingTime": "17:30",
-        "OffsetOpeningTime": 840,
-        "OffsetClosingTime": 1050,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -2123340,7 +2123873,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-04-22T16:49:58.967Z",
+      "OpeningTimes": "2026-10-15T14:59:50.923Z",
       "BankHolidayOpeningTimes": "2025-04-22T16:50:29.87Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-07-14T11:32:42.987Z",
@@ -2124739,6 +2125272,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "May 21 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2124844,7 +2125387,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-06-03T08:35:01.787Z",
-      "BankHolidayOpeningTimes": "2025-06-03T08:35:09.93Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:55:40.957Z",
       "TemporaryChangesOpeningTimes": "2026-08-27T23:37:41.763Z",
       "DentistsAcceptingPatients": "2025-06-03T08:32:20.893Z",
       "Facilities": "2025-06-03T08:38:36.42Z",
@@ -2125626,6 +2126169,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Mar 11 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Aug 21 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2125634,7 +2126187,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": "2026-08-31T22:35:19.063Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T12:58:24.467Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2026-04-16T02:16:21.257Z",
       "HospitalDepartment": null,
@@ -2132721,13 +2133274,83 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Aug 09 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "Monday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Tuesday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Wednesday",
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Thursday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Friday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Saturday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Sunday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
       }
     ],
     "Contacts": [],
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": null,
+      "OpeningTimes": "2026-10-15T14:57:34.96Z",
       "BankHolidayOpeningTimes": null,
       "TemporaryChangesOpeningTimes": "2026-08-21T00:27:26.927Z",
       "DentistsAcceptingPatients": null,
@@ -2141489,6 +2142112,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Feb 05 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jul 19 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2141516,7 +2142149,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-26T15:12:24.053Z",
       "BankHolidayOpeningTimes": "2024-09-26T09:22:44.843Z",
-      "TemporaryChangesOpeningTimes": "2026-08-31T22:20:22.127Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:57:54.347Z",
       "DentistsAcceptingPatients": "2025-09-26T15:12:11.21Z",
       "Facilities": "2025-09-26T15:12:40.413Z",
       "HospitalDepartment": null,
@@ -2148273,14 +2148906,25 @@
       "OrganisationName": "NHS West and North London ICB"
     },
     "Services": [],
-    "OpeningTimes": [],
+    "OpeningTimes": [
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Feb 18 2027",
+        "IsOpen": true
+      }
+    ],
     "Contacts": [],
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T11:05:35.127Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2018-12-20T01:35:25.753Z",
       "HospitalDepartment": null,
@@ -2150290,6 +2150934,16 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Feb 22 2027",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
       }
@@ -2150331,8 +2150985,8 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-28T20:54:24.59Z",
-      "BankHolidayOpeningTimes": "2026-10-14T22:11:45.35Z",
-      "TemporaryChangesOpeningTimes": "2026-08-31T22:22:42.463Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:59:16.18Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:55:55.843Z",
       "DentistsAcceptingPatients": "2025-09-30T08:00:34.083Z",
       "Facilities": "2025-09-30T08:01:27.907Z",
       "HospitalDepartment": null,
@@ -2157601,6 +2158255,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Oct 12 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2157641,7 +2158305,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-11-22T07:28:10.87Z",
       "BankHolidayOpeningTimes": "2026-09-04T22:52:37.94Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T12:58:41.76Z",
       "DentistsAcceptingPatients": "2025-11-22T07:27:30.65Z",
       "Facilities": "2025-11-22T07:29:12.16Z",
       "HospitalDepartment": null,
@@ -2160022,6 +2160686,16 @@
     ],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Aug 14 2027",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "08:30",
         "ClosingTime": "12:30",
@@ -2160043,19 +2160717,9 @@
       },
       {
         "Weekday": "Tuesday",
-        "OpeningTime": "08:30",
-        "ClosingTime": "12:30",
-        "OffsetOpeningTime": 510,
-        "OffsetClosingTime": 750,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Tuesday",
-        "OpeningTime": "13:30",
+        "OpeningTime": "09:00",
         "ClosingTime": "17:00",
-        "OffsetOpeningTime": 810,
+        "OffsetOpeningTime": 540,
         "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
@@ -2160140,16 +2160804,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 14 2027",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2160230,7 +2160884,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-08-20T23:44:18.64Z",
+      "OpeningTimes": "2026-10-15T15:01:14.893Z",
       "BankHolidayOpeningTimes": null,
       "TemporaryChangesOpeningTimes": "2026-08-27T23:12:05.81Z",
       "DentistsAcceptingPatients": "2025-09-03T12:59:16.933Z",
@@ -2164564,7 +2165218,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-10-14T21:59:03.587Z",
+      "OpeningTimes": "2026-10-15T12:56:36.713Z",
       "BankHolidayOpeningTimes": "2025-08-26T20:02:11.5Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-08-26T20:01:55.997Z",
@@ -2172343,6 +2172997,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Mar 19 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2172454,7 +2173118,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-23T11:19:08.453Z",
-      "BankHolidayOpeningTimes": "2025-09-23T11:19:13.47Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:02:15.893Z",
       "TemporaryChangesOpeningTimes": "2026-10-14T21:59:07.223Z",
       "DentistsAcceptingPatients": "2025-09-23T11:18:47.257Z",
       "Facilities": "2025-09-23T11:20:22.19Z",
@@ -2176789,6 +2177453,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2176894,7 +2177568,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-28T20:37:46.277Z",
-      "BankHolidayOpeningTimes": "2025-09-22T11:54:41.407Z",
+      "BankHolidayOpeningTimes": "2026-10-15T12:59:59.003Z",
       "TemporaryChangesOpeningTimes": "2026-08-21T00:24:52.387Z",
       "DentistsAcceptingPatients": "2025-09-22T11:54:13.78Z",
       "Facilities": "2025-09-22T11:55:15.047Z",
@@ -2185300,6 +2185974,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Jun 01 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Oct 18 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2185308,7 +2185992,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-27T23:07:48.75Z",
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": "2026-08-31T22:17:29.53Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:58:47.223Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2020-07-20T11:35:20.45Z",
       "HospitalDepartment": null,
@@ -2191337,6 +2192021,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Oct 11 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2191394,7 +2192088,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-28T20:54:46.28Z",
-      "BankHolidayOpeningTimes": "2025-06-04T11:57:17.193Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:58:10.993Z",
       "TemporaryChangesOpeningTimes": "2026-10-14T21:54:58.683Z",
       "DentistsAcceptingPatients": "2025-09-22T10:33:31.18Z",
       "Facilities": "2025-09-22T10:42:47.953Z",
@@ -2192492,6 +2193186,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Mar 23 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2192586,7 +2193290,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-27T23:15:39.507Z",
       "BankHolidayOpeningTimes": "2024-09-25T11:54:15.56Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:01:20.577Z",
       "DentistsAcceptingPatients": "2025-09-22T16:08:55.64Z",
       "Facilities": "2024-09-25T11:54:48.64Z",
       "HospitalDepartment": null,
@@ -2194366,6 +2195070,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jun 13 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2194424,7 +2195138,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-27T23:41:33.443Z",
       "BankHolidayOpeningTimes": "2023-10-03T17:41:37.37Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:55:31.073Z",
       "DentistsAcceptingPatients": "2025-04-22T14:05:53.123Z",
       "Facilities": "2025-01-30T16:36:28.603Z",
       "HospitalDepartment": null,
@@ -2194755,6 +2195469,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Feb 24 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2194782,7 +2195506,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-06-23T13:38:18.447Z",
       "BankHolidayOpeningTimes": "2026-10-14T22:07:01.143Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:57:23.613Z",
       "DentistsAcceptingPatients": "2025-09-22T11:32:05.76Z",
       "Facilities": "2025-06-23T13:37:23.637Z",
       "HospitalDepartment": null,
@@ -2194880,6 +2195604,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Oct 19 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jun 06 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2194888,7 +2195622,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": "2026-09-04T23:08:22.283Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:02:24.54Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2019-10-31T01:35:18.21Z",
       "HospitalDepartment": null,
@@ -2197367,12 +2198101,83 @@
       "OrganisationName": "NHS West and North London ICB"
     },
     "Services": [],
-    "OpeningTimes": [],
+    "OpeningTimes": [
+      {
+        "Weekday": "Monday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Tuesday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Wednesday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Thursday",
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Friday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Saturday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Sunday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      }
+    ],
     "Contacts": [],
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": null,
+      "OpeningTimes": "2026-10-15T11:06:11.02Z",
       "BankHolidayOpeningTimes": null,
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": null,
@@ -2199178,6 +2199983,16 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Nov 04 2026",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 21 2026",
         "IsOpen": true
       },
@@ -2199188,7 +2200003,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Nov 04 2026",
+        "AdditionalOpeningDate": "Jul 01 2027",
         "IsOpen": true
       }
     ],
@@ -2199272,7 +2200087,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-19T11:16:17.263Z",
       "BankHolidayOpeningTimes": "2025-09-19T11:16:47.62Z",
-      "TemporaryChangesOpeningTimes": "2026-08-31T22:35:20.377Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T12:57:34.11Z",
       "DentistsAcceptingPatients": "2025-09-19T11:15:32.903Z",
       "Facilities": "2025-09-19T11:24:09.7Z",
       "HospitalDepartment": null,
@@ -2209694,6 +2210509,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2209793,7 +2210618,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-10-08T12:39:23.84Z",
-      "BankHolidayOpeningTimes": "2025-10-08T12:39:30.25Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:59:54.457Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-10-08T12:38:58.883Z",
       "Facilities": "2025-10-08T12:40:11.227Z",
@@ -2211696,6 +2212521,16 @@
     ],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jun 11 2027",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "09:30",
         "ClosingTime": "18:00",
@@ -2211737,10 +2212572,10 @@
       },
       {
         "Weekday": "Thursday",
-        "OpeningTime": "09:30",
-        "ClosingTime": "13:00",
-        "OffsetOpeningTime": 570,
-        "OffsetClosingTime": 780,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -2211774,16 +2212609,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2211852,9 +2212677,9 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-09-25T16:21:15.393Z",
+      "OpeningTimes": "2026-10-15T12:57:52.06Z",
       "BankHolidayOpeningTimes": "2026-08-27T23:34:53.677Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T11:00:25.17Z",
       "DentistsAcceptingPatients": "2025-09-25T16:20:48.317Z",
       "Facilities": "2025-09-25T16:22:41.637Z",
       "HospitalDepartment": null,
@@ -2213942,6 +2214767,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2213956,7 +2214791,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-31T22:15:25.367Z",
-      "BankHolidayOpeningTimes": "2025-10-07T14:13:01.94Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:56:27.54Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-10-07T14:07:22.903Z",
       "Facilities": "2025-10-07T14:13:21.007Z",
@@ -2214791,6 +2215626,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2214914,7 +2215759,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-31T22:15:48.417Z",
-      "BankHolidayOpeningTimes": "2025-09-28T09:17:02.337Z",
+      "BankHolidayOpeningTimes": "2026-10-15T11:04:31.323Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-09-28T09:16:34.683Z",
       "Facilities": "2025-09-28T09:18:09.383Z",
@@ -2222307,18 +2223152,8 @@
       {
         "Weekday": "Friday",
         "OpeningTime": "09:00",
-        "ClosingTime": "13:00",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 780,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Friday",
-        "OpeningTime": "14:00",
         "ClosingTime": "17:00",
-        "OffsetOpeningTime": 840,
+        "OffsetOpeningTime": 540,
         "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
@@ -2222417,7 +2223252,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-06-23T12:23:33.313Z",
+      "OpeningTimes": "2026-10-15T14:58:53.32Z",
       "BankHolidayOpeningTimes": "2025-06-15T20:32:18.967Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-09-24T11:55:48.72Z",
@@ -2225311,6 +2226146,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 19 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jun 16 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2225375,7 +2226220,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2023-10-09T07:51:07.823Z",
       "BankHolidayOpeningTimes": "2023-10-09T07:51:12.49Z",
-      "TemporaryChangesOpeningTimes": "2026-10-14T13:45:41.887Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:57:43.07Z",
       "DentistsAcceptingPatients": "2025-05-26T11:01:32.93Z",
       "Facilities": "2023-10-09T07:52:18.903Z",
       "HospitalDepartment": null,
@@ -2229968,6 +2230813,16 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "May 02 2027",
         "IsOpen": true
       },
@@ -2229978,17 +2230833,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Dec 25 2026",
+        "AdditionalOpeningDate": "Aug 18 2027",
         "IsOpen": true
       }
     ],
@@ -2230132,7 +2230977,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-10-14T12:50:34.387Z",
       "BankHolidayOpeningTimes": "2026-08-31T22:26:42.567Z",
-      "TemporaryChangesOpeningTimes": "2026-08-20T23:57:26.207Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T11:02:18.757Z",
       "DentistsAcceptingPatients": "2025-10-14T12:50:18.137Z",
       "Facilities": "2025-10-14T12:51:24.843Z",
       "HospitalDepartment": null,
@@ -2236047,6 +2236892,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2236152,7 +2237007,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-31T22:20:25.313Z",
-      "BankHolidayOpeningTimes": "2025-09-22T22:10:46.163Z",
+      "BankHolidayOpeningTimes": "2026-10-15T14:56:13.317Z",
       "TemporaryChangesOpeningTimes": "2026-08-28T20:37:33.057Z",
       "DentistsAcceptingPatients": "2025-09-22T22:10:19.947Z",
       "Facilities": "2025-09-22T22:11:46.643Z",
@@ -2246663,10 +2247518,10 @@
       },
       {
         "Weekday": "Thursday",
-        "OpeningTime": "08:30",
-        "ClosingTime": "19:00",
-        "OffsetOpeningTime": 510,
-        "OffsetClosingTime": 1140,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -2246816,7 +2247671,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-08-31T22:29:55.563Z",
+      "OpeningTimes": "2026-10-15T11:00:46.667Z",
       "BankHolidayOpeningTimes": "2025-10-06T15:33:40.62Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-10-06T15:33:24.813Z",
@@ -2254990,6 +2255845,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Jun 18 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "May 27 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2254998,7 +2255863,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": "2026-09-08T09:00:47.76Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:00:54.473Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2023-01-18T13:40:12.683Z",
       "HospitalDepartment": null,
@@ -2256015,6 +2256880,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2256022,7 +2256897,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-31T22:26:43.463Z",
-      "BankHolidayOpeningTimes": null,
+      "BankHolidayOpeningTimes": "2026-10-15T12:57:07.083Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": null,
       "Facilities": "2024-06-12T02:15:40.85Z",
@@ -2261046,6 +2261921,16 @@
     "Services": [],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Jan 21 2027",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
         "OpeningTime": "09:00",
         "ClosingTime": "13:00",
@@ -2261068,19 +2261953,9 @@
       {
         "Weekday": "Tuesday",
         "OpeningTime": "09:00",
-        "ClosingTime": "13:00",
+        "ClosingTime": "17:00",
         "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 780,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Tuesday",
-        "OpeningTime": "14:00",
-        "ClosingTime": "18:00",
-        "OffsetOpeningTime": 840,
-        "OffsetClosingTime": 1080,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -2261154,16 +2262029,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Jan 21 2027",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2261238,7 +2262103,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-08-31T22:34:01.393Z",
+      "OpeningTimes": "2026-10-15T14:59:45.707Z",
       "BankHolidayOpeningTimes": "2025-11-15T11:12:59.147Z",
       "TemporaryChangesOpeningTimes": "2026-10-14T22:11:02.623Z",
       "DentistsAcceptingPatients": "2025-11-15T11:12:45.58Z",
@@ -2262087,6 +2262952,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Jan 14 2027",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2262094,7 +2262969,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": null,
-      "BankHolidayOpeningTimes": null,
+      "BankHolidayOpeningTimes": "2026-10-15T15:03:41.853Z",
       "TemporaryChangesOpeningTimes": "2026-08-31T22:17:39.053Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2023-07-12T01:35:39.193Z",
@@ -2263949,20 +2264824,10 @@
       },
       {
         "Weekday": "Wednesday",
-        "OpeningTime": "08:30",
-        "ClosingTime": "12:30",
-        "OffsetOpeningTime": 510,
-        "OffsetClosingTime": 750,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Wednesday",
-        "OpeningTime": "13:15",
-        "ClosingTime": "16:30",
-        "OffsetOpeningTime": 795,
-        "OffsetClosingTime": 990,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -2264120,7 +2264985,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-08-19T08:48:11.853Z",
+      "OpeningTimes": "2026-10-15T12:58:09.8Z",
       "BankHolidayOpeningTimes": null,
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-08-19T08:47:37.34Z",
@@ -2264224,11 +2265089,21 @@
     ],
     "OpeningTimes": [
       {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Nov 07 2026",
+        "IsOpen": true
+      },
+      {
         "Weekday": "Monday",
-        "OpeningTime": "08:30",
-        "ClosingTime": "17:30",
-        "OffsetOpeningTime": 510,
-        "OffsetClosingTime": 1050,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": true
@@ -2264292,16 +2265167,6 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Nov 07 2026",
-        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2264352,7 +2265217,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2025-09-22T17:05:12.77Z",
+      "OpeningTimes": "2026-10-15T14:58:39.01Z",
       "BankHolidayOpeningTimes": "2025-09-22T17:05:17.59Z",
       "TemporaryChangesOpeningTimes": "2026-08-31T22:20:45.237Z",
       "DentistsAcceptingPatients": "2025-09-22T17:05:02.973Z",
@@ -2265303,7 +2266168,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-10-06T10:02:20.1Z",
-      "BankHolidayOpeningTimes": "2026-08-28T20:51:55.163Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:01:33.907Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-10-06T10:02:01.497Z",
       "Facilities": "2025-10-06T10:03:14.56Z",
@@ -2267745,6 +2268610,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2267802,7 +2268677,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-09-19T12:47:50.793Z",
-      "BankHolidayOpeningTimes": "2025-09-19T12:47:56.01Z",
+      "BankHolidayOpeningTimes": "2026-10-15T12:56:56.753Z",
       "TemporaryChangesOpeningTimes": "2024-12-02T12:36:01.607Z",
       "DentistsAcceptingPatients": "2025-09-19T12:47:38.797Z",
       "Facilities": "2025-09-19T12:48:22.243Z",
@@ -2269060,18 +2269935,8 @@
       {
         "Weekday": "Friday",
         "OpeningTime": "09:00",
-        "ClosingTime": "13:00",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 780,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Friday",
-        "OpeningTime": "14:00",
         "ClosingTime": "17:00",
-        "OffsetOpeningTime": 840,
+        "OffsetOpeningTime": 540,
         "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
@@ -2269146,7 +2270011,7 @@
     ],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-08-27T23:01:08.353Z",
+      "OpeningTimes": "2026-10-15T11:03:10.06Z",
       "BankHolidayOpeningTimes": "2025-11-04T11:32:54.983Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-11-04T11:32:40.133Z",
@@ -2271582,7 +2272447,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
+        "AdditionalOpeningDate": "Nov 28 2026",
         "IsOpen": true
       },
       {
@@ -2271592,7 +2272457,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Nov 28 2026",
+        "AdditionalOpeningDate": "Sep 02 2027",
         "IsOpen": true
       }
     ],
@@ -2271602,7 +2272467,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": "2026-08-27T22:58:26.863Z",
-      "TemporaryChangesOpeningTimes": "2026-08-28T20:38:42.42Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:57:59.49Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2024-01-13T02:15:46.09Z",
       "HospitalDepartment": null,
@@ -2273591,16 +2274456,6 @@
     ],
     "OpeningTimes": [
       {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
-        "IsOpen": true
-      },
-      {
         "Weekday": "Monday",
         "OpeningTime": "09:00",
         "ClosingTime": "17:30",
@@ -2273669,6 +2274524,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 29 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2273781,7 +2274646,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-28T20:35:19.577Z",
       "BankHolidayOpeningTimes": "2026-08-27T23:21:57.587Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:04:48.703Z",
       "DentistsAcceptingPatients": "2025-09-11T11:45:52.223Z",
       "Facilities": "2025-09-11T11:46:19.557Z",
       "HospitalDepartment": null,
@@ -2284509,6 +2285374,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Apr 15 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2284561,7 +2285436,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-10-14T16:54:04.28Z",
       "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:04:23.027Z",
       "DentistsAcceptingPatients": "2025-04-23T15:03:24.123Z",
       "Facilities": "2025-04-23T13:33:20.233Z",
       "HospitalDepartment": null,
@@ -2289084,6 +2289959,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Aug 07 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2289196,7 +2290081,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2025-11-19T14:32:45.797Z",
       "BankHolidayOpeningTimes": "2025-11-19T14:32:49.443Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:57:01.397Z",
       "DentistsAcceptingPatients": "2025-11-19T14:32:39.203Z",
       "Facilities": "2025-11-19T14:33:16.02Z",
       "HospitalDepartment": null,
@@ -2292724,13 +2293609,13 @@
       },
       {
         "Weekday": "Monday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
-        "IsOpen": false
+        "IsOpen": true
       },
       {
         "Weekday": "Tuesday",
@@ -2292744,13 +2293629,13 @@
       },
       {
         "Weekday": "Wednesday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
-        "IsOpen": false
+        "IsOpen": true
       },
       {
         "Weekday": "Thursday",
@@ -2292797,7 +2293682,7 @@
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-10-14T21:48:03.747Z",
+      "OpeningTimes": "2026-10-15T15:04:11.203Z",
       "BankHolidayOpeningTimes": "2026-08-28T20:41:45.507Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": null,
@@ -2292931,6 +2293816,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [
@@ -2293078,7 +2293973,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2025-11-20T12:01:24.57Z",
-      "BankHolidayOpeningTimes": "2025-11-20T12:01:29.083Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:00:22.273Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": "2025-11-20T12:01:06.08Z",
       "Facilities": "2025-11-20T12:01:42.737Z",
@@ -2297211,16 +2298106,6 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Mar 22 2027",
         "IsOpen": true
       },
@@ -2297302,6 +2298187,16 @@
         "OffsetClosingTime": 840,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
       }
     ],
@@ -2297456,7 +2298351,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-31T22:14:57.8Z",
-      "BankHolidayOpeningTimes": "2026-08-27T23:09:35.503Z",
+      "BankHolidayOpeningTimes": "2026-10-15T11:03:55.793Z",
       "TemporaryChangesOpeningTimes": "2026-08-28T20:53:31.46Z",
       "DentistsAcceptingPatients": "2025-11-20T12:02:07.743Z",
       "Facilities": "2025-11-20T12:03:17.97Z",
@@ -2298248,13 +2299143,13 @@
     "OpeningTimes": [
       {
         "Weekday": "Monday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
-        "IsOpen": false
+        "IsOpen": true
       },
       {
         "Weekday": "Tuesday",
@@ -2298321,7 +2299216,7 @@
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-10-14T22:00:30.38Z",
+      "OpeningTimes": "2026-10-15T15:03:49.287Z",
       "BankHolidayOpeningTimes": null,
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": null,
@@ -2301273,6 +2302168,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "May 28 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2301281,7 +2302186,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-27T23:22:54.19Z",
       "BankHolidayOpeningTimes": "2026-10-14T22:04:39.187Z",
-      "TemporaryChangesOpeningTimes": "2026-08-27T23:28:42.74Z",
+      "TemporaryChangesOpeningTimes": "2026-10-15T14:57:51.66Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2025-09-12T02:15:53.86Z",
       "HospitalDepartment": null,
@@ -2302323,6 +2303228,16 @@
         "OpeningTimeType": "General",
         "AdditionalOpeningDate": "",
         "IsOpen": false
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Dec 25 2026",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2302330,7 +2303245,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": "2026-08-28T20:39:15.573Z",
-      "BankHolidayOpeningTimes": null,
+      "BankHolidayOpeningTimes": "2026-10-15T12:58:59.747Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": null,
       "Facilities": "2025-11-12T16:14:42.65Z",
@@ -2302928,7 +2303843,7 @@
     "GSD": null,
     "LastUpdatedDates": {
       "OpeningTimes": null,
-      "BankHolidayOpeningTimes": "2026-10-14T22:09:45.967Z",
+      "BankHolidayOpeningTimes": "2026-10-15T15:07:35.24Z",
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": null,
       "Facilities": "2025-10-12T02:15:50.94Z",
@@ -2303070,6 +2303985,16 @@
         "OpeningTimeType": "Additional",
         "AdditionalOpeningDate": "Dec 25 2026",
         "IsOpen": true
+      },
+      {
+        "Weekday": "",
+        "OpeningTime": "11:00",
+        "ClosingTime": "12:00",
+        "OffsetOpeningTime": 660,
+        "OffsetClosingTime": 720,
+        "OpeningTimeType": "Additional",
+        "AdditionalOpeningDate": "Mar 16 2027",
+        "IsOpen": true
       }
     ],
     "Contacts": [],
@@ -2303078,7 +2304003,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": "2026-08-28T20:51:34.647Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T12:57:06.013Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2025-11-12T16:14:42.65Z",
       "HospitalDepartment": null,
@@ -2304265,12 +2305190,83 @@
       "OrganisationName": "NHS Staffordshire and Stoke-on-Trent ICB"
     },
     "Services": [],
-    "OpeningTimes": [],
+    "OpeningTimes": [
+      {
+        "Weekday": "Monday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Tuesday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Wednesday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Thursday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Friday",
+        "OpeningTime": "09:00",
+        "ClosingTime": "17:00",
+        "OffsetOpeningTime": 540,
+        "OffsetClosingTime": 1020,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": true
+      },
+      {
+        "Weekday": "Saturday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      },
+      {
+        "Weekday": "Sunday",
+        "OpeningTime": null,
+        "ClosingTime": null,
+        "OffsetOpeningTime": 0,
+        "OffsetClosingTime": 0,
+        "OpeningTimeType": "General",
+        "AdditionalOpeningDate": "",
+        "IsOpen": false
+      }
+    ],
     "Contacts": [],
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": null,
+      "OpeningTimes": "2026-10-15T15:21:42.597Z",
       "BankHolidayOpeningTimes": null,
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": null,
@@ -2304969,7 +2305965,7 @@
     "Facilities": [],
     "GSD": null,
     "LastUpdatedDates": {
-      "OpeningTimes": "2026-10-14T22:08:09.977Z",
+      "OpeningTimes": "2026-10-15T15:03:29.393Z",
       "BankHolidayOpeningTimes": null,
       "TemporaryChangesOpeningTimes": null,
       "DentistsAcceptingPatients": null,
@@ -2309943,7 +2310939,7 @@
         "OffsetOpeningTime": 660,
         "OffsetClosingTime": 720,
         "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 31 2026",
+        "AdditionalOpeningDate": "May 12 2027",
         "IsOpen": true
       }
     ],
@@ -2309953,7 +2310949,7 @@
     "LastUpdatedDates": {
       "OpeningTimes": null,
       "BankHolidayOpeningTimes": "2026-08-20T23:36:26.57Z",
-      "TemporaryChangesOpeningTimes": null,
+      "TemporaryChangesOpeningTimes": "2026-10-15T15:02:52.87Z",
       "DentistsAcceptingPatients": null,
       "Facilities": "2026-08-12T02:15:50.73Z",
       "HospitalDepartment": null,
