@@ -1,1 +1,82 @@
-{}
+{
+  "V001863": {
+    "previousDentist": {
+      "ODSCode": "V001863",
+      "OrganisationName": "Airedale Dental Practice",
+      "Latitude": 53.723541259765625,
+      "Longitude": -1.3146207332611084,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2025-10-03T14:23:31.3Z",
+      "City": "Castleford",
+      "Postcode": "WF10 3JJ"
+    },
+    "currentDentist": {
+      "ODSCode": "V001863",
+      "OrganisationName": "Airedale Dental Practice",
+      "Latitude": 53.723541259765625,
+      "Longitude": -1.3146207332611084,
+      "AcceptingPatients": {
+        "GP": null,
+        "Dentist": [
+          {
+            "Id": 1,
+            "Name": "Adults (18 and over)",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 2,
+            "Name": "Adults entitled to free dental care",
+            "AcceptingPatients": true
+          },
+          {
+            "Id": 3,
+            "Name": "Children (up to the age of 18)",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 4,
+            "Name": "Urgent care appointments offered",
+            "AcceptingPatients": false
+          },
+          {
+            "Id": 5,
+            "Name": "Only by referral from a dental practitioner",
+            "AcceptingPatients": false
+          }
+        ]
+      },
+      "DentistsAcceptingPatientsLastUpdatedDate": "2026-10-30T11:56:44.003Z",
+      "City": "Castleford",
+      "Postcode": "WF10 3JJ"
+    }
+  }
+}
