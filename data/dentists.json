@@ -410081,11 +410081,11 @@
     "OrganisationTypeId": "DEN",
     "OrganisationType": "Dentist",
     "OrganisationStatus": "Visible",
-    "Address1": "(Formerly - Queenstown Dental Practice)",
-    "Address2": "53-55 Queenstown Road",
-    "Address3": "Battersea",
-    "City": "London",
-    "County": "",
+    "Address1": "53-55 Queenstown Road",
+    "Address2": "Battersea",
+    "Address3": "",
+    "City": "Battersea",
+    "County": "London",
     "Latitude": 51.46833038330078,
     "Longitude": -0.15056107938289642,
     "Postcode": "SW8 3RG",
@@ -561807,7 +561807,7 @@
     "@search.score": 1,
     "SearchKey": "X22229",
     "ODSCode": "V002797",
-    "OrganisationName": "MEHTA Mr B V",
+    "OrganisationName": "Thushianthy Sucindran",
     "OrganisationTypeId": "DEN",
     "OrganisationType": "Dentist",
     "OrganisationStatus": "Visible",
@@ -1052563,7 +1052563,7 @@
     "@search.score": 1,
     "SearchKey": "X24441",
     "ODSCode": "V005436",
-    "OrganisationName": "Bolton Dental Practice",
+    "OrganisationName": "Alpha Dental Care Bolton",
     "OrganisationTypeId": "DEN",
     "OrganisationType": "Dentist",
     "OrganisationStatus": "Visible",
@@ -1225054,7 +1225054,7 @@
     "@search.score": 1,
     "SearchKey": "X22291",
     "ODSCode": "V006282",
-    "OrganisationName": "NW10 Dentists",
+    "OrganisationName": "NW10 DENTISTS",
     "OrganisationTypeId": "DEN",
     "OrganisationType": "Dentist",
     "OrganisationStatus": "Visible",
@@ -1701184,325 +1701184,6 @@
   },
   {
     "@search.score": 1,
-    "SearchKey": "X26285",
-    "ODSCode": "V008773",
-    "OrganisationName": "Refresh Dental Care",
-    "OrganisationTypeId": "DEN",
-    "OrganisationType": "Dentist",
-    "OrganisationStatus": "Visible",
-    "Address1": "2a Rosslyn Road",
-    "Address2": "2A ROSSLYN ROAD",
-    "Address3": "Watford",
-    "City": "WATFORD",
-    "County": "Hertfordshire",
-    "Latitude": 51.65755462646485,
-    "Longitude": -0.4023517370223999,
-    "Postcode": "WD18 0JY",
-    "Geocode": {
-      "type": "Point",
-      "coordinates": [
-        -0.402352,
-        51.6576
-      ],
-      "crs": {
-        "type": "name",
-        "properties": {
-          "name": "EPSG:4326"
-        }
-      }
-    },
-    "OrganisationSubType": null,
-    "Country": "England",
-    "IsEpsEnabled": null,
-    "OrganisationAliases": [],
-    "ParentOrganisation": {
-      "ODSCode": "S1Y5D",
-      "OrganisationName": "NHS Central East ICB"
-    },
-    "Services": [],
-    "OpeningTimes": [
-      {
-        "Weekday": "Monday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "17:30",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 1050,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Tuesday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "17:30",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 1050,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Wednesday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "17:30",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 1050,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Thursday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "17:30",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 1050,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Friday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "17:30",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 1050,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Saturday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Sunday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": false
-      }
-    ],
-    "Contacts": [
-      {
-        "ContactType": "Primary",
-        "ContactAvailabilityType": "Office hours",
-        "ContactMethodType": "Telephone",
-        "ContactValue": "01923223611"
-      },
-      {
-        "ContactType": "Primary",
-        "ContactAvailabilityType": "Office hours",
-        "ContactMethodType": "Email",
-        "ContactValue": "hello@refreshdentalcare.co.uk"
-      },
-      {
-        "ContactType": "Primary",
-        "ContactAvailabilityType": "Office hours",
-        "ContactMethodType": "Website",
-        "ContactValue": "https://refreshdentalcare.co.uk"
-      }
-    ],
-    "Facilities": [
-      {
-        "Id": 4,
-        "Name": "Induction loop",
-        "Value": "Yes",
-        "FacilityGroupName": "Accessibility"
-      },
-      {
-        "Id": 28,
-        "Name": "Car parking",
-        "Value": "Yes",
-        "FacilityGroupName": "Parking"
-      }
-    ],
-    "GSD": null,
-    "LastUpdatedDates": {
-      "OpeningTimes": "2024-12-04T21:16:36.43Z",
-      "BankHolidayOpeningTimes": "2024-12-04T21:16:49.76Z",
-      "TemporaryChangesOpeningTimes": null,
-      "DentistsAcceptingPatients": "2024-12-04T21:16:09.443Z",
-      "Facilities": "2024-07-04T12:11:12.43Z",
-      "HospitalDepartment": null,
-      "Services": "2024-07-04T12:10:01.727Z",
-      "ContactDetails": "2024-12-04T21:16:21.77Z",
-      "AcceptingPatients": "2024-12-04T21:16:09.443Z",
-      "GpRegistration": null,
-      "ServiceOpeningTimes": null,
-      "OutpatientAppointments": null,
-      "TrustServices": null,
-      "KeyValueData": []
-    },
-    "AcceptingPatients": {
-      "GP": null,
-      "Dentist": [
-        {
-          "Id": 1,
-          "Name": "Adults (18 and over)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 2,
-          "Name": "Adults entitled to free dental care",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 3,
-          "Name": "Children (up to the age of 18)",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 4,
-          "Name": "Urgent care appointments offered",
-          "AcceptingPatients": false
-        },
-        {
-          "Id": 5,
-          "Name": "Only by referral from a dental practitioner",
-          "AcceptingPatients": false
-        }
-      ]
-    },
-    "GpAcceptingPatients": null,
-    "GPRegistration": null,
-    "RelatedIAPTCCGs": [],
-    "Trusts": [],
-    "Metrics": [
-      {
-        "MetricID": 43,
-        "MetricName": "Has Car Parking",
-        "DisplayName": "Car parking",
-        "Description": "Is there car parking at this organisation?",
-        "Value": "yes",
-        "Value2": null,
-        "Value3": null,
-        "Text": "Parking available",
-        "LinkUrl": null,
-        "LinkText": null,
-        "MetricDisplayTypeID": 4,
-        "MetricDisplayTypeName": "BooleanImage",
-        "HospitalSectorType": null,
-        "MetricText": null,
-        "DefaultText": null,
-        "IsMetaMetric": true,
-        "BandingClassification": "yes",
-        "BandingName": "Yes"
-      },
-      {
-        "MetricID": 44,
-        "MetricName": "Has Disabled Car Parking",
-        "DisplayName": "Disabled parking",
-        "Description": "Is disabled car parking available at this organisation?",
-        "Value": "no",
-        "Value2": null,
-        "Value3": null,
-        "Text": "Disabled parking not available",
-        "LinkUrl": null,
-        "LinkText": null,
-        "MetricDisplayTypeID": 4,
-        "MetricDisplayTypeName": "BooleanImage",
-        "HospitalSectorType": null,
-        "MetricText": null,
-        "DefaultText": null,
-        "IsMetaMetric": true,
-        "BandingClassification": "no",
-        "BandingName": "No"
-      },
-      {
-        "MetricID": 45,
-        "MetricName": "Has Disabled Access",
-        "DisplayName": "Disabled access",
-        "Description": "Disabled access",
-        "Value": "yes",
-        "Value2": null,
-        "Value3": null,
-        "Text": "Disabled access available",
-        "LinkUrl": null,
-        "LinkText": null,
-        "MetricDisplayTypeID": 4,
-        "MetricDisplayTypeName": "BooleanImage",
-        "HospitalSectorType": null,
-        "MetricText": null,
-        "DefaultText": null,
-        "IsMetaMetric": true,
-        "BandingClassification": "yes",
-        "BandingName": "Yes"
-      },
-      {
-        "MetricID": 47,
-        "MetricName": "Has Induction Loop",
-        "DisplayName": "Induction loop",
-        "Description": "Induction loop in place",
-        "Value": "no",
-        "Value2": null,
-        "Value3": null,
-        "Text": "Does not have induction loop",
-        "LinkUrl": null,
-        "LinkText": null,
-        "MetricDisplayTypeID": 4,
-        "MetricDisplayTypeName": "BooleanImage",
-        "HospitalSectorType": null,
-        "MetricText": null,
-        "DefaultText": null,
-        "IsMetaMetric": true,
-        "BandingClassification": "no",
-        "BandingName": "No"
-      },
-      {
-        "MetricID": 48,
-        "MetricName": "Has Signing Service",
-        "DisplayName": "Signing services",
-        "Description": "Signing services",
-        "Value": "no",
-        "Value2": null,
-        "Value3": null,
-        "Text": "Signing service not available",
-        "LinkUrl": null,
-        "LinkText": null,
-        "MetricDisplayTypeID": 4,
-        "MetricDisplayTypeName": "BooleanImage",
-        "HospitalSectorType": null,
-        "MetricText": null,
-        "DefaultText": null,
-        "IsMetaMetric": true,
-        "BandingClassification": "no",
-        "BandingName": "No"
-      },
-      {
-        "MetricID": 99002,
-        "MetricName": "Business Card: Has Car Parking",
-        "DisplayName": "Car parking",
-        "Description": "Is there car parking at this organisation?",
-        "Value": "yes",
-        "Value2": null,
-        "Value3": null,
-        "Text": "Parking available",
-        "LinkUrl": null,
-        "LinkText": null,
-        "MetricDisplayTypeID": 5,
-        "MetricDisplayTypeName": "BandingImage",
-        "HospitalSectorType": null,
-        "MetricText": null,
-        "DefaultText": null,
-        "IsMetaMetric": true,
-        "BandingClassification": "parking",
-        "BandingName": "Yes"
-      }
-    ],
-    "ServiceOpeningTimes": []
-  },
-  {
-    "@search.score": 1,
     "SearchKey": "X23450",
     "ODSCode": "V008776",
     "OrganisationName": "The Firs Dental Practice",
@@ -2092681,166 +2092362,6 @@
   },
   {
     "@search.score": 1,
-    "SearchKey": "X118183",
-    "ODSCode": "V024946",
-    "OrganisationName": "Northumbria HC Trust NHS Foundation Trust",
-    "OrganisationTypeId": "DEN",
-    "OrganisationType": "Dentist",
-    "OrganisationStatus": "Visible",
-    "Address1": "Northumbria Dental Service",
-    "Address2": "Morpeth Health Centre",
-    "Address3": "The Mount",
-    "City": "Morpeth",
-    "County": "Northumberland",
-    "Latitude": 55.17169570922851,
-    "Longitude": -1.6834089756011963,
-    "Postcode": "NE61 1JX",
-    "Geocode": {
-      "type": "Point",
-      "coordinates": [
-        -1.68341,
-        55.1717
-      ],
-      "crs": {
-        "type": "name",
-        "properties": {
-          "name": "EPSG:4326"
-        }
-      }
-    },
-    "OrganisationSubType": null,
-    "Country": "England",
-    "IsEpsEnabled": null,
-    "OrganisationAliases": [],
-    "ParentOrganisation": {
-      "ODSCode": "QHM",
-      "OrganisationName": "NHS North East and North Cumbria ICB"
-    },
-    "Services": [],
-    "OpeningTimes": [
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Aug 26 2027",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "",
-        "OpeningTime": "11:00",
-        "ClosingTime": "12:00",
-        "OffsetOpeningTime": 660,
-        "OffsetClosingTime": 720,
-        "OpeningTimeType": "Additional",
-        "AdditionalOpeningDate": "Nov 01 2026",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Monday",
-        "OpeningTime": "09:00",
-        "ClosingTime": "17:00",
-        "OffsetOpeningTime": 540,
-        "OffsetClosingTime": 1020,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": true
-      },
-      {
-        "Weekday": "Tuesday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": false
-      },
-      {
-        "Weekday": "Wednesday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": false
-      },
-      {
-        "Weekday": "Thursday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": false
-      },
-      {
-        "Weekday": "Friday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": false
-      },
-      {
-        "Weekday": "Saturday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": false
-      },
-      {
-        "Weekday": "Sunday",
-        "OpeningTime": null,
-        "ClosingTime": null,
-        "OffsetOpeningTime": 0,
-        "OffsetClosingTime": 0,
-        "OpeningTimeType": "General",
-        "AdditionalOpeningDate": "",
-        "IsOpen": false
-      }
-    ],
-    "Contacts": [],
-    "Facilities": [],
-    "GSD": null,
-    "LastUpdatedDates": {
-      "OpeningTimes": "2026-10-27T10:02:09.71Z",
-      "BankHolidayOpeningTimes": null,
-      "TemporaryChangesOpeningTimes": "2026-10-16T14:32:05.583Z",
-      "DentistsAcceptingPatients": null,
-      "Facilities": "2016-02-09T06:10:14Z",
-      "HospitalDepartment": null,
-      "Services": "2016-02-09T06:10:14Z",
-      "ContactDetails": "2016-02-09T06:10:14Z",
-      "AcceptingPatients": null,
-      "GpRegistration": null,
-      "ServiceOpeningTimes": null,
-      "OutpatientAppointments": null,
-      "TrustServices": null,
-      "KeyValueData": []
-    },
-    "AcceptingPatients": {
-      "GP": null,
-      "Dentist": []
-    },
-    "GpAcceptingPatients": null,
-    "GPRegistration": null,
-    "RelatedIAPTCCGs": [],
-    "Trusts": [],
-    "Metrics": [],
-    "ServiceOpeningTimes": []
-  },
-  {
-    "@search.score": 1,
     "SearchKey": "X154944",
     "ODSCode": "V024950",
     "OrganisationName": "St Annes Dental Clinic",
@@ -2181056,9 +2180577,9 @@
     "OrganisationTypeId": "DEN",
     "OrganisationType": "Dentist",
     "OrganisationStatus": "Visible",
-    "Address1": "(Temporary)",
-    "Address2": "16",
-    "Address3": "Robertson Street",
+    "Address1": "16 Robertson Street",
+    "Address2": "",
+    "Address3": "",
     "City": "Hastings",
     "County": "East Sussex",
     "Latitude": 50.8552131652832,
@@ -2260261,14 +2259782,14 @@
     "Address3": "",
     "City": "Cranleigh",
     "County": "",
-    "Latitude": 51.14265060424805,
-    "Longitude": -0.49097004532814026,
-    "Postcode": "GU6 8SW",
+    "Latitude": 51.142059326171875,
+    "Longitude": -0.49124661087989807,
+    "Postcode": "GU6 8BB",
     "Geocode": {
       "type": "Point",
       "coordinates": [
-        -0.49097,
-        51.1427
+        -0.491247,
+        51.1421
       ],
       "crs": {
         "type": "name",
